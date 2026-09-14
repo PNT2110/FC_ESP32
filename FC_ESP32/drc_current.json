@@ -1,0 +1,129 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-14T18:31:09",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "FC_ESP32.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 67.739293,
+                        "y": 126.46243
+                    },
+                    "uuid": "067af83a-824c-4979-a5fc-6423f62a9390"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 67.739293,
+                        "y": 126.46243
+                    },
+                    "uuid": "067af83a-824c-4979-a5fc-6423f62a9390"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [EN] on B.Cu, length 5.0932 mm",
+                    "pos": {
+                        "x": 90.0457,
+                        "y": 90.6583
+                    },
+                    "uuid": "cefe4d18-b30c-44a5-a968-602a540eaac4"
+                },
+                {
+                    "description": "Pad 1 [EN] of C3 on F.Cu",
+                    "pos": {
+                        "x": 89.325,
+                        "y": 93.25
+                    },
+                    "uuid": "41747b71-125c-4cc8-9f7d-ab562a308251"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [+5V_FLOW] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 83.8477,
+                        "y": 92.2142
+                    },
+                    "uuid": "64b2e674-3d24-4a25-887b-4787ade997a1"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [BOOST_FB] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 86.0149,
+                        "y": 91.3515
+                    },
+                    "uuid": "9f8c3304-a46e-4b4f-bae9-fd37970d1ce5"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [PWM4] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 92.966,
+                        "y": 95.4
+                    },
+                    "uuid": "967103fe-5804-4f50-af1b-61ea943022e7"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+(footprint "Motor_Wire_Pads"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "c9bd91e0-cae6-4588-8b4b-22ffd56beeae")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "86f90b38-ea3f-4918-bcf8-cd3b04f0a00d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0b2f29f0-5cb5-46cd-b019-5c39d571fdf5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "47c17bd0-bc3f-4429-9c23-48c086a04a18")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" smd roundrect
+		(at -1.4 0)
+		(size 2 2.4)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.2)
+		(thermal_bridge_angle 45)
+		(uuid "bcbec52a-5853-409d-b003-e794d076e030")
+	)
+	(pad "2" smd roundrect
+		(at 1.4 0)
+		(size 2 2.4)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.2)
+		(thermal_bridge_angle 45)
+		(uuid "99365c67-2e68-46de-9b7e-213a1d1df990")
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,61 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-14T18:31:06",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/66c77950-f666-53dc-975a-70bcd0f9045b",
+            "violations": []
+        },
+        {
+            "path": "/ESP32 and battery measurement/",
+            "uuid_path": "/66c77950-f666-53dc-975a-70bcd0f9045b/ca07774a-6629-53db-9400-506c57cbc3c8",
+            "violations": []
+        },
+        {
+            "path": "/MPU6500 SPI and optical flow/",
+            "uuid_path": "/66c77950-f666-53dc-975a-70bcd0f9045b/ce7cb099-29d6-533a-b629-369a55496226",
+            "violations": []
+        },
+        {
+            "path": "/USB-C programming and auto-reset/",
+            "uuid_path": "/66c77950-f666-53dc-975a-70bcd0f9045b/b5a55bf2-df74-585a-975e-c67a58a432eb",
+            "violations": []
+        },
+        {
+            "path": "/1S power distribution/",
+            "uuid_path": "/66c77950-f666-53dc-975a-70bcd0f9045b/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5",
+            "violations": []
+        },
+        {
+            "path": "/Four brushed motor drivers/",
+            "uuid_path": "/66c77950-f666-53dc-975a-70bcd0f9045b/4c50d56c-dab3-5718-84fa-150decac0854",
+            "violations": []
+        }
+    ],
+    "source": "FC_ESP32.kicad_sch"
+}

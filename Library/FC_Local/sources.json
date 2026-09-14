@@ -1,0 +1,20 @@
+{
+  "ESP32": "Library/ESP32-WROOM-32_8MB_/ESP32-WROOM-32_8MB_.kicad_sym",
+  "MPU6500": "Library/MPU-6500/MPU-6500.kicad_sym",
+  "CH340C": "Library/CH340C/CH340C.kicad_sym",
+  "AO3400": "Library/AO3400/AO3400.kicad_sym",
+  "MMBT3904": "Library/MMBT3904/MMBT3904.kicad_sym",
+  "SS16": "Library/SS16/SS16.kicad_sym",
+  "USB_C": "/usr/share/kicad/symbols/Connector.kicad_sym",
+  "BUTTON": "Library/FSM4JSMA/FSM4JSMA.kicad_sym",
+  "R": "/usr/share/kicad/symbols/Device.kicad_sym",
+  "C": "/usr/share/kicad/symbols/Device.kicad_sym",
+  "L": "/usr/share/kicad/symbols/Device.kicad_sym",
+  "D_Schottky": "/usr/share/kicad/symbols/Device.kicad_sym",
+  "Conn2": "/usr/share/kicad/symbols/Connector_Generic.kicad_sym",
+  "Conn4": "/usr/share/kicad/symbols/Connector_Generic.kicad_sym",
+  "TPS63001": "/usr/share/kicad/symbols/Regulator_Switching.kicad_sym",
+  "USBLC6": "/usr/share/kicad/symbols/Power_Protection.kicad_sym",
+  "PWR_FLAG": "/usr/share/kicad/symbols/power.kicad_sym",
+  "TPS61070": "Datasheet-derived local symbol"
+}

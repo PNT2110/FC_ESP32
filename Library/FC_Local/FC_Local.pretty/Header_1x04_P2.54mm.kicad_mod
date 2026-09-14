@@ -1,0 +1,142 @@
+(footprint "Header_1x04_P2.54mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "9dc67ee5-3faa-4b59-ba03-9d663ad84374")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "6402c4fa-b3b1-41b0-92d9-66ba24a60f87")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d6c3b5a2-d325-4e4b-ad62-215d6e43015f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fffc25e0-29b2-4547-8e06-47d80008f10c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -5.33 -1.52)
+		(end 5.33 -1.52)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "804c8d0f-10c8-4829-96cb-96dac1bbb4f5")
+	)
+	(fp_line
+		(start -5.33 1.52)
+		(end -5.33 -1.52)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "d8857fd4-bdc7-439a-b4f3-38f8942405b1")
+	)
+	(fp_line
+		(start 5.33 -1.52)
+		(end 5.33 1.52)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "a796986b-c929-4056-8b16-a61d0fd67b04")
+	)
+	(fp_line
+		(start 5.33 1.52)
+		(end -5.33 1.52)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "be47ebea-a32d-47d1-93a2-6936964063d1")
+	)
+	(pad "1" thru_hole roundrect
+		(at -3.81 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.2)
+		(thermal_bridge_angle 45)
+		(uuid "3601472c-9dab-4a42-bdec-0184e68c25bc")
+	)
+	(pad "2" thru_hole roundrect
+		(at -1.27 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.2)
+		(thermal_bridge_angle 45)
+		(uuid "a77592f6-6149-440d-b24b-17b845eeda5c")
+	)
+	(pad "3" thru_hole roundrect
+		(at 1.27 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.2)
+		(thermal_bridge_angle 45)
+		(uuid "1050e5cc-9915-41d9-b63b-897cb6d6b2bd")
+	)
+	(pad "4" thru_hole roundrect
+		(at 3.81 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.2)
+		(thermal_bridge_angle 45)
+		(uuid "c8d11b55-7c70-4579-a6b0-2e8204222295")
+	)
+	(embedded_fonts no)
+	(model "/usr/share/kicad/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step"
+		(offset
+			(xyz -3.81 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+)

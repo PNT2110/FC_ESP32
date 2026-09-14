@@ -1,0 +1,1310 @@
+[
+  {
+    "ref": "U1",
+    "sym": "ESP32",
+    "fp": "ESP32",
+    "nets": {
+      "1": "GND",
+      "15": "GND",
+      "38": "GND",
+      "39": "GND",
+      "2": "+3V3",
+      "3": "EN",
+      "6": "IMU_INT",
+      "7": "VBAT_ADC",
+      "8": "UART1_RX",
+      "9": "PWM4",
+      "10": "PWM1",
+      "11": "PWM2",
+      "12": "PWM3",
+      "13": "UART1_TX",
+      "25": "BOOT",
+      "26": "I2C_SDA",
+      "27": "FLOW_RX",
+      "28": "FLOW_TX",
+      "30": "SPI_SCK",
+      "31": "SPI_MISO",
+      "33": "IMU_CS",
+      "36": "I2C_SCL",
+      "37": "SPI_MOSI",
+      "34": "UART0_RX",
+      "35": "UART0_TX"
+    },
+    "x": 100.0,
+    "y": 90.5,
+    "side": "F",
+    "angle": 0,
+    "page": "mcu",
+    "value": "ESP32-WROOM-32 (8MB)",
+    "note": "",
+    "uuid": "b11c6bc9-f954-5ffb-914a-3254ca224448"
+  },
+  {
+    "ref": "C1",
+    "sym": "C",
+    "fp": "C_0805_2012Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "x": 86.0,
+    "y": 82.7,
+    "side": "F",
+    "angle": 0,
+    "page": "mcu",
+    "value": "22uF 10V X5R",
+    "note": "",
+    "uuid": "6ee3019a-f3d5-5916-a106-4b4943f93c20"
+  },
+  {
+    "ref": "C2",
+    "sym": "C",
+    "fp": "C_0402_1005Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "x": 88.7,
+    "y": 85.4,
+    "side": "F",
+    "angle": 0,
+    "page": "mcu",
+    "value": "100nF",
+    "note": "",
+    "uuid": "5c6d651d-fffa-546a-ba25-2a26713dc466"
+  },
+  {
+    "ref": "R1",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "EN"
+    },
+    "x": 88.3,
+    "y": 88.25,
+    "side": "F",
+    "angle": 0,
+    "page": "mcu",
+    "value": "10k",
+    "note": "",
+    "uuid": "888913d2-f4a4-5eda-b303-63ac01b54fd6"
+  },
+  {
+    "ref": "C3",
+    "sym": "C",
+    "fp": "C_0603_1608Metric",
+    "nets": {
+      "1": "EN",
+      "2": "GND"
+    },
+    "x": 88.55,
+    "y": 93.25,
+    "side": "F",
+    "angle": 180,
+    "page": "mcu",
+    "value": "1uF",
+    "note": "",
+    "uuid": "bbab7da0-83b8-51c9-b5fe-e323d5c0aecf"
+  },
+  {
+    "ref": "R2",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "BOOT"
+    },
+    "x": 112.0,
+    "y": 102.0,
+    "side": "F",
+    "angle": 0,
+    "page": "mcu",
+    "value": "10k",
+    "note": "",
+    "uuid": "41390c08-ea2f-5f06-b562-85c82a734db8"
+  },
+  {
+    "ref": "R3",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "VBAT",
+      "2": "VBAT_ADC"
+    },
+    "x": 89.15,
+    "y": 91.85,
+    "side": "F",
+    "angle": 0,
+    "page": "mcu",
+    "value": "100k 1%",
+    "note": "",
+    "uuid": "6695888e-7c52-532d-8c2f-c7fc838a2894"
+  },
+  {
+    "ref": "R4",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "VBAT_ADC",
+      "2": "GND"
+    },
+    "x": 88.4,
+    "y": 95.9,
+    "side": "F",
+    "angle": 0,
+    "page": "mcu",
+    "value": "100k 1%",
+    "note": "",
+    "uuid": "4fb7592e-67bd-56cc-bc9d-66e216a53811"
+  },
+  {
+    "ref": "C4",
+    "sym": "C",
+    "fp": "C_0402_1005Metric",
+    "nets": {
+      "1": "VBAT_ADC",
+      "2": "GND"
+    },
+    "x": 89.15,
+    "y": 90.7,
+    "side": "F",
+    "angle": 0,
+    "page": "mcu",
+    "value": "100nF",
+    "note": "",
+    "uuid": "8adeecd6-9a1a-565f-9e91-571c79579617"
+  },
+  {
+    "ref": "U2",
+    "sym": "MPU6500",
+    "fp": "MPU6500",
+    "nets": {
+      "8": "+3V3_IMU",
+      "9": "SPI_MISO",
+      "10": "REGOUT",
+      "11": "GND",
+      "12": "IMU_INT",
+      "13": "+3V3_IMU",
+      "18": "GND",
+      "20": "GND",
+      "22": "IMU_CS",
+      "23": "SPI_SCK",
+      "24": "SPI_MOSI",
+      "25": "GND"
+    },
+    "x": 100.0,
+    "y": 107.0,
+    "side": "F",
+    "angle": 0,
+    "page": "imu",
+    "value": "MPU-6500",
+    "note": "",
+    "uuid": "4c7b0d68-711a-5013-9a6d-ef09b278b984"
+  },
+  {
+    "ref": "R5",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "+3V3_IMU"
+    },
+    "x": 103.3,
+    "y": 108.45,
+    "side": "F",
+    "angle": 0,
+    "page": "imu",
+    "value": "10R",
+    "note": "",
+    "uuid": "dff187db-9212-5cab-9cb3-70c96a566d41"
+  },
+  {
+    "ref": "C5",
+    "sym": "C",
+    "fp": "C_0402_1005Metric",
+    "nets": {
+      "1": "+3V3_IMU",
+      "2": "GND"
+    },
+    "x": 102.8,
+    "y": 109.7,
+    "side": "F",
+    "angle": 0,
+    "page": "imu",
+    "value": "100nF",
+    "note": "",
+    "uuid": "e9eac104-6d91-5227-8df3-5d24e2c32891"
+  },
+  {
+    "ref": "C6",
+    "sym": "C",
+    "fp": "C_0402_1005Metric",
+    "nets": {
+      "1": "+3V3_IMU",
+      "2": "GND"
+    },
+    "x": 96.7,
+    "y": 106.0,
+    "side": "F",
+    "angle": 0,
+    "page": "imu",
+    "value": "10nF",
+    "note": "",
+    "uuid": "7893be30-11e1-53f2-aaf2-bc2bcc1de770"
+  },
+  {
+    "ref": "C7",
+    "sym": "C",
+    "fp": "C_0402_1005Metric",
+    "nets": {
+      "1": "REGOUT",
+      "2": "GND"
+    },
+    "x": 94.7,
+    "y": 106.9,
+    "side": "F",
+    "angle": 0,
+    "page": "imu",
+    "value": "100nF",
+    "note": "",
+    "uuid": "b42595ac-9d5a-557b-a90b-5413c4656dd5"
+  },
+  {
+    "ref": "C8",
+    "sym": "C",
+    "fp": "C_0402_1005Metric",
+    "nets": {
+      "1": "+3V3_IMU",
+      "2": "GND"
+    },
+    "x": 96.7,
+    "y": 104.75,
+    "side": "F",
+    "angle": 0,
+    "page": "imu",
+    "value": "1uF",
+    "note": "",
+    "uuid": "63ca3f16-ccce-5a3e-9d21-bd75c1d0b37b"
+  },
+  {
+    "ref": "R6",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "+3V3_IMU",
+      "2": "IMU_CS"
+    },
+    "x": 105.5,
+    "y": 108.3,
+    "side": "F",
+    "angle": 0,
+    "page": "imu",
+    "value": "10k",
+    "note": "",
+    "uuid": "e0b29c5c-ea07-5d07-8dd3-e5edca694cd4"
+  },
+  {
+    "ref": "J1",
+    "sym": "USB_C",
+    "fp": "USB_C",
+    "nets": {
+      "A1": "GND",
+      "A12": "GND",
+      "B1": "GND",
+      "B12": "GND",
+      "SH": "GND",
+      "S1": "GND",
+      "A4": "VBUS",
+      "A9": "VBUS",
+      "B4": "VBUS",
+      "B9": "VBUS",
+      "A5": "CC1",
+      "B5": "CC2",
+      "A6": "USB_DP",
+      "B6": "USB_DP",
+      "A7": "USB_DM",
+      "B7": "USB_DM"
+    },
+    "x": 100.0,
+    "y": 116.0,
+    "side": "F",
+    "angle": 0,
+    "page": "usb",
+    "value": "USB4105-GF-A",
+    "note": "",
+    "uuid": "9a04d0aa-e17d-5613-ad69-89b3f7bf51bd"
+  },
+  {
+    "ref": "U3",
+    "sym": "CH340C",
+    "fp": "CH340C",
+    "nets": {
+      "1": "GND",
+      "2": "UART0_RX",
+      "3": "UART0_TX",
+      "4": "+3V3",
+      "5": "USB_DP",
+      "6": "USB_DM",
+      "13": "DTR",
+      "14": "RTS",
+      "15": "GND",
+      "16": "+3V3"
+    },
+    "x": 88.0,
+    "y": 109.5,
+    "side": "F",
+    "angle": 0,
+    "page": "usb",
+    "value": "CH340C",
+    "note": "",
+    "uuid": "a62c82a2-b329-571c-b7c5-ccca33ebf8db"
+  },
+  {
+    "ref": "C9",
+    "sym": "C",
+    "fp": "C_0402_1005Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "x": 94.0,
+    "y": 104.75,
+    "side": "F",
+    "angle": 0,
+    "page": "usb",
+    "value": "100nF",
+    "note": "",
+    "uuid": "4ca7e863-9659-5ff9-a5fb-b0a61311ebe1"
+  },
+  {
+    "ref": "R7",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "CC1",
+      "2": "GND"
+    },
+    "x": 93.5,
+    "y": 113.5,
+    "side": "F",
+    "angle": 0,
+    "page": "usb",
+    "value": "5.1k 1%",
+    "note": "",
+    "uuid": "34bf83b7-f43f-5c07-922f-814088eecd6a"
+  },
+  {
+    "ref": "R8",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "CC2",
+      "2": "GND"
+    },
+    "x": 106.5,
+    "y": 114.25,
+    "side": "F",
+    "angle": 0,
+    "page": "usb",
+    "value": "5.1k 1%",
+    "note": "",
+    "uuid": "e652b815-21cb-5b1c-b327-1ae92b727d86"
+  },
+  {
+    "ref": "U4",
+    "sym": "USBLC6",
+    "fp": "SOT-23-6",
+    "nets": {
+      "1": "USB_DM",
+      "2": "GND",
+      "3": "USB_DP",
+      "4": "USB_DP",
+      "5": "VBUS",
+      "6": "USB_DM"
+    },
+    "x": 95.5,
+    "y": 109.25,
+    "side": "F",
+    "angle": 0,
+    "page": "usb",
+    "value": "USBLC6-2SC6",
+    "note": "",
+    "uuid": "5d6f5b74-9217-5bd2-a281-70a09305a843"
+  },
+  {
+    "ref": "C11",
+    "sym": "C",
+    "fp": "C_0603_1608Metric",
+    "nets": {
+      "1": "VBUS",
+      "2": "GND"
+    },
+    "x": 106.5,
+    "y": 109.75,
+    "side": "F",
+    "angle": 0,
+    "page": "usb",
+    "value": "1uF 10V",
+    "note": "",
+    "uuid": "1de3fd25-af34-54a3-9bb3-c657a6c9a5b0"
+  },
+  {
+    "ref": "Q5",
+    "sym": "MMBT3904",
+    "fp": "MMBT3904",
+    "nets": {
+      "1": "BASE_EN",
+      "2": "RTS",
+      "3": "EN"
+    },
+    "x": 108.5,
+    "y": 106.0,
+    "side": "F",
+    "angle": 0,
+    "page": "usb",
+    "value": "MMBT3904",
+    "note": "",
+    "uuid": "bb34071a-2770-5353-810b-881f0418d893"
+  },
+  {
+    "ref": "Q6",
+    "sym": "MMBT3904",
+    "fp": "MMBT3904",
+    "nets": {
+      "1": "BASE_BOOT",
+      "2": "DTR",
+      "3": "BOOT"
+    },
+    "x": 104.25,
+    "y": 106.0,
+    "side": "F",
+    "angle": 0,
+    "page": "usb",
+    "value": "MMBT3904",
+    "note": "",
+    "uuid": "3eb60846-cfdb-5504-b50f-049b961781d8"
+  },
+  {
+    "ref": "R9",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "DTR",
+      "2": "BASE_EN"
+    },
+    "x": 110.5,
+    "y": 98.0,
+    "side": "F",
+    "angle": 90,
+    "page": "usb",
+    "value": "10k",
+    "note": "",
+    "uuid": "cac7a090-454c-55b9-b27c-ec6c4572387c"
+  },
+  {
+    "ref": "R10",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "RTS",
+      "2": "BASE_BOOT"
+    },
+    "x": 110.5,
+    "y": 100.5,
+    "side": "F",
+    "angle": 90,
+    "page": "usb",
+    "value": "10k",
+    "note": "",
+    "uuid": "f518ad0d-cf94-5fec-b0a2-38259ad82e7c"
+  },
+  {
+    "ref": "J2",
+    "sym": "Conn4",
+    "fp": "JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal",
+    "nets": {
+      "1": "GND",
+      "2": "+5V_FLOW",
+      "3": "FLOW_TX",
+      "4": "FLOW_RX"
+    },
+    "x": 113.95,
+    "y": 106.8,
+    "side": "F",
+    "angle": 90,
+    "page": "imu",
+    "value": "MTF-01P SH1.0",
+    "note": "Pin 3 to sensor Rx; pin 4 to sensor Tx. Verify cable orientation.",
+    "uuid": "f1ae49fc-2a95-5ce7-b6dc-854c4c040014"
+  },
+  {
+    "ref": "J8",
+    "sym": "Conn4",
+    "fp": "Header_1x04_P2.54mm",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND",
+      "3": "I2C_SDA",
+      "4": "I2C_SCL"
+    },
+    "x": 115.0,
+    "y": 96.85,
+    "side": "F",
+    "angle": 90,
+    "page": "mcu",
+    "value": "I2C",
+    "note": "",
+    "uuid": "75c64c4f-3c1d-5c12-8009-7636b0dc3a47"
+  },
+  {
+    "ref": "J9",
+    "sym": "Conn4",
+    "fp": "Header_1x04_P2.54mm",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND",
+      "3": "UART1_TX",
+      "4": "UART1_RX"
+    },
+    "x": 85.25,
+    "y": 98.75,
+    "side": "F",
+    "angle": 90,
+    "page": "mcu",
+    "value": "UART1",
+    "note": "",
+    "uuid": "adcb6c8c-39b2-55dd-aaf2-b1372fabdd1e"
+  },
+  {
+    "ref": "R23",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "I2C_SDA"
+    },
+    "x": 115.75,
+    "y": 90.75,
+    "side": "F",
+    "angle": 0,
+    "page": "mcu",
+    "value": "4.7k",
+    "note": "",
+    "uuid": "5149a271-ecda-5a2a-8127-23da042edbb1"
+  },
+  {
+    "ref": "R24",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "I2C_SCL"
+    },
+    "x": 112.25,
+    "y": 94.75,
+    "side": "F",
+    "angle": 0,
+    "page": "mcu",
+    "value": "4.7k",
+    "note": "",
+    "uuid": "a44c13e1-9e96-5517-b66a-af5fc8320753"
+  },
+  {
+    "ref": "J3",
+    "sym": "Conn2",
+    "fp": "Battery_Wire_Pads",
+    "nets": {
+      "1": "VBAT",
+      "2": "GND"
+    },
+    "x": 110.25,
+    "y": 112.2,
+    "side": "F",
+    "angle": 0,
+    "page": "power",
+    "value": "BAT 1S",
+    "note": "",
+    "uuid": "0400d22c-65b6-5532-8518-25f5f784b9f5"
+  },
+  {
+    "ref": "D5",
+    "sym": "SS16",
+    "fp": "SS16",
+    "nets": {
+      "1": "VSYS",
+      "2": "VBAT"
+    },
+    "x": 82.5,
+    "y": 116.0,
+    "side": "F",
+    "angle": 90,
+    "page": "power",
+    "value": "SS16",
+    "note": "",
+    "uuid": "997089e3-addb-5f2a-bf11-088a75d6e618"
+  },
+  {
+    "ref": "D6",
+    "sym": "SS16",
+    "fp": "SS16",
+    "nets": {
+      "1": "VSYS",
+      "2": "VBUS"
+    },
+    "x": 88.5,
+    "y": 100.5,
+    "side": "F",
+    "angle": 90,
+    "page": "power",
+    "value": "SS16",
+    "note": "",
+    "uuid": "81c0681b-3825-5cd3-a79c-712687bbd8b0"
+  },
+  {
+    "ref": "U5",
+    "sym": "TPS63001",
+    "fp": "Texas_DRC0010J",
+    "nets": {
+      "1": "+3V3",
+      "2": "BUCK_L2",
+      "3": "GND",
+      "4": "BUCK_L1",
+      "5": "VSYS",
+      "6": "VSYS",
+      "7": "VSYS",
+      "8": "VINA",
+      "9": "GND",
+      "10": "+3V3",
+      "11": "GND"
+    },
+    "x": 112.0,
+    "y": 89.25,
+    "side": "F",
+    "angle": 0,
+    "page": "power",
+    "value": "TPS63001DRCR",
+    "note": "",
+    "uuid": "7d9ead9d-d182-5d30-811d-c556677aedb4"
+  },
+  {
+    "ref": "L1",
+    "sym": "L",
+    "fp": "L_VLF4012",
+    "nets": {
+      "1": "BUCK_L1",
+      "2": "BUCK_L2"
+    },
+    "x": 116.0,
+    "y": 85.25,
+    "side": "F",
+    "angle": 90,
+    "page": "power",
+    "value": "2.2uH VLF4012-2R2M1R5",
+    "note": "",
+    "uuid": "52804509-60ec-5abc-9d90-d6f8249fc4ea"
+  },
+  {
+    "ref": "C12",
+    "sym": "C",
+    "fp": "C_0805_2012Metric",
+    "nets": {
+      "1": "VSYS",
+      "2": "GND"
+    },
+    "x": 112.0,
+    "y": 86.0,
+    "side": "F",
+    "angle": 0,
+    "page": "power",
+    "value": "10uF 10V X5R",
+    "note": "",
+    "uuid": "60739533-e3aa-5be0-8877-558f85777849"
+  },
+  {
+    "ref": "C13",
+    "sym": "C",
+    "fp": "C_0805_2012Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "x": 112.0,
+    "y": 83.75,
+    "side": "F",
+    "angle": 0,
+    "page": "power",
+    "value": "10uF 10V X5R",
+    "note": "",
+    "uuid": "756d104c-e90b-537c-9ea1-ded5fcf67305"
+  },
+  {
+    "ref": "R11",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "VSYS",
+      "2": "VINA"
+    },
+    "x": 111.0,
+    "y": 93.5,
+    "side": "F",
+    "angle": 0,
+    "page": "power",
+    "value": "100R",
+    "note": "",
+    "uuid": "5d544984-1495-57f6-9e9b-d2178b24588b"
+  },
+  {
+    "ref": "C15",
+    "sym": "C",
+    "fp": "C_0402_1005Metric",
+    "nets": {
+      "1": "VINA",
+      "2": "GND"
+    },
+    "x": 111.0,
+    "y": 92.0,
+    "side": "F",
+    "angle": 0,
+    "page": "power",
+    "value": "100nF",
+    "note": "",
+    "uuid": "b3ae872c-38dc-5438-9fd3-e357ab92150b"
+  },
+  {
+    "ref": "U6",
+    "sym": "TPS61070",
+    "fp": "SOT-23-6",
+    "nets": {
+      "1": "BOOST_SW",
+      "2": "GND",
+      "3": "+3V3",
+      "4": "BOOST_FB",
+      "5": "+5V_FLOW",
+      "6": "+3V3"
+    },
+    "x": 86.0,
+    "y": 90.5,
+    "side": "F",
+    "angle": 180,
+    "page": "power",
+    "value": "TPS61070DDCR",
+    "note": "",
+    "uuid": "391f2c29-bb24-58e7-a4b2-35cb115e5f60"
+  },
+  {
+    "ref": "L2",
+    "sym": "L",
+    "fp": "L_4x4",
+    "nets": {
+      "1": "+3V3",
+      "2": "BOOST_SW"
+    },
+    "x": 85.0,
+    "y": 86.25,
+    "side": "F",
+    "angle": 90,
+    "page": "power",
+    "value": "4.7uH >=1A shielded",
+    "note": "4x4 land; choose matching inductor before ordering",
+    "uuid": "8aae7433-525a-58f4-834a-8a9f13a17712"
+  },
+  {
+    "ref": "C17",
+    "sym": "C",
+    "fp": "C_0805_2012Metric",
+    "nets": {
+      "1": "+5V_FLOW",
+      "2": "GND"
+    },
+    "x": 81.25,
+    "y": 84.5,
+    "side": "F",
+    "angle": 0,
+    "page": "power",
+    "value": "22uF 10V X5R",
+    "note": "",
+    "uuid": "101f876f-d44e-5abf-8c0c-333c224622d4"
+  },
+  {
+    "ref": "R12",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "+5V_FLOW",
+      "2": "BOOST_FB"
+    },
+    "x": 89.0,
+    "y": 94.75,
+    "side": "F",
+    "angle": 0,
+    "page": "power",
+    "value": "1.8M 1%",
+    "note": "",
+    "uuid": "92a68341-45b2-5acd-8453-798c11ddd400"
+  },
+  {
+    "ref": "R13",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "BOOST_FB",
+      "2": "GND"
+    },
+    "x": 89.0,
+    "y": 87.0,
+    "side": "F",
+    "angle": 0,
+    "page": "power",
+    "value": "200k 1%",
+    "note": "",
+    "uuid": "98d40c03-caf7-593e-a623-d800e3fd9b83"
+  },
+  {
+    "ref": "C18",
+    "sym": "C",
+    "fp": "C_0402_1005Metric",
+    "nets": {
+      "1": "+5V_FLOW",
+      "2": "GND"
+    },
+    "x": 109.0,
+    "y": 108.3,
+    "side": "F",
+    "angle": 0,
+    "page": "imu",
+    "value": "100nF",
+    "note": "",
+    "uuid": "5a6ca38a-967a-5e2d-94d2-c54d91338fea"
+  },
+  {
+    "ref": "C19",
+    "sym": "C",
+    "fp": "C_1206_3216Metric",
+    "nets": {
+      "1": "VBAT",
+      "2": "GND"
+    },
+    "x": 111.2,
+    "y": 115.7,
+    "side": "F",
+    "angle": 0,
+    "page": "power",
+    "value": "47uF 10V X5R",
+    "note": "",
+    "uuid": "56f662fc-7fc5-5f56-a76e-4bd3490b5c15"
+  },
+  {
+    "ref": "Q1",
+    "sym": "AO3400",
+    "fp": "AO3400",
+    "nets": {
+      "1": "GATE1",
+      "2": "GND",
+      "3": "M1_NEG"
+    },
+    "x": 76.45,
+    "y": 74.45,
+    "side": "F",
+    "angle": 90,
+    "page": "motors",
+    "value": "AO3400",
+    "note": "",
+    "uuid": "5b7a3710-b77b-56da-945c-701022729203"
+  },
+  {
+    "ref": "D1",
+    "sym": "SS16",
+    "fp": "SS16",
+    "nets": {
+      "1": "VBAT",
+      "2": "M1_NEG"
+    },
+    "x": 78.0,
+    "y": 79.5,
+    "side": "F",
+    "angle": 90,
+    "page": "motors",
+    "value": "SS16",
+    "note": "",
+    "uuid": "dd78090f-408e-548b-af8b-328d7f7d3bc5"
+  },
+  {
+    "ref": "J4",
+    "sym": "Conn2",
+    "fp": "Motor_Wire_Pads",
+    "nets": {
+      "1": "VBAT",
+      "2": "M1_NEG"
+    },
+    "x": 73.261,
+    "y": 73.261,
+    "side": "F",
+    "angle": 90,
+    "page": "motors",
+    "value": "M1 + / -",
+    "note": "",
+    "uuid": "00491ca6-c35d-5282-9c07-af6ce171dc78"
+  },
+  {
+    "ref": "R15",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "PWM1",
+      "2": "GATE1"
+    },
+    "x": 74.7,
+    "y": 76.8,
+    "side": "F",
+    "angle": 90,
+    "page": "motors",
+    "value": "100R",
+    "note": "",
+    "uuid": "156a1c39-a80f-5224-9261-fdcef47b38f1"
+  },
+  {
+    "ref": "R16",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "GATE1",
+      "2": "GND"
+    },
+    "x": 73.45,
+    "y": 76.8,
+    "side": "F",
+    "angle": 90,
+    "page": "motors",
+    "value": "100k",
+    "note": "",
+    "uuid": "568e0e16-a045-587f-8fd3-ea09a3d76261"
+  },
+  {
+    "ref": "C21",
+    "sym": "C",
+    "fp": "C_0603_1608Metric",
+    "nets": {
+      "1": "VBAT",
+      "2": "M1_NEG"
+    },
+    "x": 72.75,
+    "y": 69.25,
+    "side": "F",
+    "angle": 90,
+    "page": "motors",
+    "value": "100nF 10V",
+    "note": "",
+    "uuid": "4a9697c0-59de-5850-b7c9-f663c68d4572"
+  },
+  {
+    "ref": "Q2",
+    "sym": "AO3400",
+    "fp": "AO3400",
+    "nets": {
+      "1": "GATE2",
+      "2": "GND",
+      "3": "M2_NEG"
+    },
+    "x": 125.55,
+    "y": 76.45,
+    "side": "F",
+    "angle": 0,
+    "page": "motors",
+    "value": "AO3400",
+    "note": "",
+    "uuid": "34a3e9d9-6b8c-5f0c-a98c-0dca69b177d5"
+  },
+  {
+    "ref": "D2",
+    "sym": "SS16",
+    "fp": "SS16",
+    "nets": {
+      "1": "VBAT",
+      "2": "M2_NEG"
+    },
+    "x": 120.5,
+    "y": 78.0,
+    "side": "F",
+    "angle": 0,
+    "page": "motors",
+    "value": "SS16",
+    "note": "",
+    "uuid": "d03251f8-7c83-5caa-8198-fbb126ebdd6a"
+  },
+  {
+    "ref": "J5",
+    "sym": "Conn2",
+    "fp": "Motor_Wire_Pads",
+    "nets": {
+      "1": "VBAT",
+      "2": "M2_NEG"
+    },
+    "x": 126.739,
+    "y": 73.261,
+    "side": "F",
+    "angle": 0,
+    "page": "motors",
+    "value": "M2 + / -",
+    "note": "",
+    "uuid": "5a8d3c51-904a-5479-948a-da630abec57d"
+  },
+  {
+    "ref": "R17",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "PWM2",
+      "2": "GATE2"
+    },
+    "x": 125.3,
+    "y": 78.8,
+    "side": "F",
+    "angle": 0,
+    "page": "motors",
+    "value": "100R",
+    "note": "",
+    "uuid": "2231a861-ed14-5421-97a9-4c906fba77fe"
+  },
+  {
+    "ref": "R18",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "GATE2",
+      "2": "GND"
+    },
+    "x": 122.8,
+    "y": 75.8,
+    "side": "F",
+    "angle": 0,
+    "page": "motors",
+    "value": "100k",
+    "note": "",
+    "uuid": "348f26e1-2397-511a-a75e-677c11fd2e0c"
+  },
+  {
+    "ref": "C22",
+    "sym": "C",
+    "fp": "C_0603_1608Metric",
+    "nets": {
+      "1": "VBAT",
+      "2": "M2_NEG"
+    },
+    "x": 122.75,
+    "y": 73.75,
+    "side": "F",
+    "angle": 0,
+    "page": "motors",
+    "value": "100nF 10V",
+    "note": "",
+    "uuid": "dfb4b442-0f24-52e5-85d8-fe7ad91ff5d8"
+  },
+  {
+    "ref": "Q3",
+    "sym": "AO3400",
+    "fp": "AO3400",
+    "nets": {
+      "1": "GATE3",
+      "2": "GND",
+      "3": "M3_NEG"
+    },
+    "x": 123.55,
+    "y": 126.3,
+    "side": "F",
+    "angle": 90,
+    "page": "motors",
+    "value": "AO3400",
+    "note": "",
+    "uuid": "92d4d5b1-7ae5-5b43-a406-9dcc4f8f88b8"
+  },
+  {
+    "ref": "D3",
+    "sym": "SS16",
+    "fp": "SS16",
+    "nets": {
+      "1": "VBAT",
+      "2": "M3_NEG"
+    },
+    "x": 122.75,
+    "y": 121.25,
+    "side": "F",
+    "angle": 90,
+    "page": "motors",
+    "value": "SS16",
+    "note": "",
+    "uuid": "f77faa6a-50c2-5a7a-87cb-72cd2615d3f7"
+  },
+  {
+    "ref": "J6",
+    "sym": "Conn2",
+    "fp": "Motor_Wire_Pads",
+    "nets": {
+      "1": "VBAT",
+      "2": "M3_NEG"
+    },
+    "x": 126.739,
+    "y": 126.739,
+    "side": "F",
+    "angle": 90,
+    "page": "motors",
+    "value": "M3 + / -",
+    "note": "",
+    "uuid": "d694288d-1ffd-587c-a43e-13bdd464435b"
+  },
+  {
+    "ref": "R19",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "PWM3",
+      "2": "GATE3"
+    },
+    "x": 126.3,
+    "y": 123.2,
+    "side": "F",
+    "angle": 90,
+    "page": "motors",
+    "value": "100R",
+    "note": "",
+    "uuid": "a9d41a50-025a-54da-8d28-f75ec05c3f70"
+  },
+  {
+    "ref": "R20",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "GATE3",
+      "2": "GND"
+    },
+    "x": 125.05,
+    "y": 123.2,
+    "side": "F",
+    "angle": 90,
+    "page": "motors",
+    "value": "100k",
+    "note": "",
+    "uuid": "a292f71c-6ca6-5f8f-b9c4-e95209cd5838"
+  },
+  {
+    "ref": "C23",
+    "sym": "C",
+    "fp": "C_0603_1608Metric",
+    "nets": {
+      "1": "VBAT",
+      "2": "M3_NEG"
+    },
+    "x": 120.25,
+    "y": 123.75,
+    "side": "F",
+    "angle": 90,
+    "page": "motors",
+    "value": "100nF 10V",
+    "note": "",
+    "uuid": "a178a8fa-7192-5f7c-bba6-6a570ff9b676"
+  },
+  {
+    "ref": "Q4",
+    "sym": "AO3400",
+    "fp": "AO3400",
+    "nets": {
+      "1": "GATE4",
+      "2": "GND",
+      "3": "M4_NEG"
+    },
+    "x": 73.7,
+    "y": 123.55,
+    "side": "F",
+    "angle": 0,
+    "page": "motors",
+    "value": "AO3400",
+    "note": "",
+    "uuid": "8953694f-dc98-5853-a0e8-c1138c7759e9"
+  },
+  {
+    "ref": "D4",
+    "sym": "SS16",
+    "fp": "SS16",
+    "nets": {
+      "1": "VBAT",
+      "2": "M4_NEG"
+    },
+    "x": 78.75,
+    "y": 122.75,
+    "side": "F",
+    "angle": 0,
+    "page": "motors",
+    "value": "SS16",
+    "note": "",
+    "uuid": "b3ec36da-1b5d-57f6-9b49-2a48ecb23e9e"
+  },
+  {
+    "ref": "J7",
+    "sym": "Conn2",
+    "fp": "Motor_Wire_Pads",
+    "nets": {
+      "1": "VBAT",
+      "2": "M4_NEG"
+    },
+    "x": 73.261,
+    "y": 126.739,
+    "side": "F",
+    "angle": 0,
+    "page": "motors",
+    "value": "M4 + / -",
+    "note": "",
+    "uuid": "c60d6186-33c8-58e3-8d80-330da56d8034"
+  },
+  {
+    "ref": "R21",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "PWM4",
+      "2": "GATE4"
+    },
+    "x": 76.2,
+    "y": 124.95,
+    "side": "F",
+    "angle": 0,
+    "page": "motors",
+    "value": "100R",
+    "note": "",
+    "uuid": "bf4042ac-e08c-5047-84fc-4f9d6f3b0158"
+  },
+  {
+    "ref": "R22",
+    "sym": "R",
+    "fp": "R_0402_1005Metric",
+    "nets": {
+      "1": "GATE4",
+      "2": "GND"
+    },
+    "x": 75.45,
+    "y": 120.45,
+    "side": "F",
+    "angle": 0,
+    "page": "motors",
+    "value": "100k",
+    "note": "",
+    "uuid": "e297a2c8-f7ce-597d-89df-db7d54daead5"
+  },
+  {
+    "ref": "C24",
+    "sym": "C",
+    "fp": "C_0603_1608Metric",
+    "nets": {
+      "1": "VBAT",
+      "2": "M4_NEG"
+    },
+    "x": 77.25,
+    "y": 126.25,
+    "side": "F",
+    "angle": 0,
+    "page": "motors",
+    "value": "100nF 10V",
+    "note": "",
+    "uuid": "47132974-983d-5abe-89bf-6e737c0a482d"
+  }
+]

@@ -1,0 +1,4 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+Removed 218 tracks/vias for ['FLOW_RX', 'FLOW_TX', 'I2C_SCL', 'I2C_SDA', 'IMU_CS', 'IMU_INT', 'PWM1', 'PWM2', 'PWM3', 'PWM4', 'SPI_MISO', 'SPI_MOSI', 'SPI_SCK', 'UART1_RX', 'UART1_TX']

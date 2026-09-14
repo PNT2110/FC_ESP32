@@ -1,0 +1,9 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+GATE4 islands 2
+Copper bounds: [(0, 0, (76.439, 124.629, 76.981, 125.271)), (1, 0, (72.249, 120.129, 75.211, 125.351))]
+Accessible grid points: [np.int64(135), np.int64(945)]
+Added 37 segments; cost 18.014570696119904
+GATE4 islands 1
+Copper bounds: [(0, 0, (76.149, 124.629, 76.981, 125.351)), (0, 0, (71.949, 120.129, 75.211, 125.351)), (0, 1, (70.859, 124.749, 76.751, 129.491))]

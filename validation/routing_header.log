@@ -1,0 +1,90 @@
+2026-09-14 13:01:05.035 INFO   Freerouting v2.4.1 (build-date: 2026-09-03)
+2026-09-14 13:01:06.555 INFO   [A72FED\91BC45] Loading board file 'FC_ESP32.dsn'...
+2026-09-14 13:01:06.662 INFO   [A72FED\91BC45] Job 'A72FED\91BC45' started at 2026-09-14T06:01:06.662742168Z.
+2026-09-14 13:01:06.736 INFO   [A72FED\91BC45] Fanout stage started on board 'a0c054d5678c579fe283bcebc039f738' with 218 of 255 SMD pins needing fanout (24 already connected, 13 netless).
+2026-09-14 13:01:09.386 INFO   [A72FED\91BC45] Fanout pass #1 on board 'e7d5b4bbcef917d207a31806b7a0410c' completed in 2.61 seconds with 194 SMD pins fanouted, 6 not routed, 0 insert errors, +76 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-09-14 13:01:10.717 INFO   [A72FED\91BC45] Fanout pass #2 on board '1824d17d6cc0104b03f060dcec37de89' completed in 1.31 seconds with 58 SMD pins fanouted, 9 not routed, 0 insert errors, +15 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-09-14 13:01:11.667 INFO   [A72FED\91BC45] Fanout pass #3 on board 'd617c26ac1c4dfd1acc32ced81616745' completed in 0.94 seconds with 36 SMD pins fanouted, 9 not routed, 0 insert errors, +3 extra vias (0 SMD pins still to check in pass, ripup costs=300).
+2026-09-14 13:01:12.563 INFO   [A72FED\91BC45] Fanout pass #4 on board 'ce20d79950d92476bb9b691969200213' completed in 0.88 seconds with 27 SMD pins fanouted, 9 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=400).
+2026-09-14 13:01:13.417 INFO   [A72FED\91BC45] Fanout pass #5 on board '3ebd96fe016d5974197beb886101e66d' completed in 0.84 seconds with 29 SMD pins fanouted, 9 not routed, 0 insert errors, +3 extra vias (0 SMD pins still to check in pass, ripup costs=500).
+2026-09-14 13:01:14.109 INFO   [A72FED\91BC45] Fanout pass #6 on board '7fbf5025f9f029e0c87cf8f02c10e781' completed in 0.68 seconds with 19 SMD pins fanouted, 10 not routed, 0 insert errors, +3 extra vias (0 SMD pins still to check in pass, ripup costs=600).
+2026-09-14 13:01:14.666 INFO   [A72FED\91BC45] Fanout pass #7 on board '6c5e381966314053d2fccb48e1fe792c' completed in 0.54 seconds with 11 SMD pins fanouted, 11 not routed, 0 insert errors, +3 extra vias (0 SMD pins still to check in pass, ripup costs=700).
+2026-09-14 13:01:15.087 INFO   [A72FED\91BC45] Fanout pass #8 on board '5a57a3f6d1f68e4d3ef3ea7a28e51275' completed in 0.41 seconds with 9 SMD pins fanouted, 10 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=800).
+2026-09-14 13:01:15.515 INFO   [A72FED\91BC45] Fanout pass #9 on board '44eeb491e8c05b35d4775beafa3faf9f' completed in 0.42 seconds with 9 SMD pins fanouted, 10 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=900).
+2026-09-14 13:01:16.015 INFO   [A72FED\91BC45] Fanout pass #10 on board '1156fa9cbefc1369684ab087510e4868' completed in 0.49 seconds with 7 SMD pins fanouted, 11 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1000).
+2026-09-14 13:01:16.447 INFO   [A72FED\91BC45] Fanout pass #11 on board '73cf48fd7e493596eaf772e612bbd38c' completed in 0.42 seconds with 10 SMD pins fanouted, 10 not routed, 0 insert errors, +2 extra vias (0 SMD pins still to check in pass, ripup costs=1100).
+2026-09-14 13:01:16.801 INFO   [A72FED\91BC45] Fanout pass #12 on board 'b1457fcbcf65b031a6aaa5dd6fab86da' completed in 0.34 seconds with 6 SMD pins fanouted, 9 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1200).
+2026-09-14 13:01:17.517 INFO   [A72FED\91BC45] Fanout pass #13 on board '7936baa651187bc0f79a55c225cbf70a' completed in 0.70 seconds with 20 SMD pins fanouted, 7 not routed, 0 insert errors, +5 extra vias (0 SMD pins still to check in pass, ripup costs=1300).
+2026-09-14 13:01:18.009 INFO   [A72FED\91BC45] Fanout pass #14 on board 'f430fb4b2606226277a35ec37df37239' completed in 0.48 seconds with 10 SMD pins fanouted, 7 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1400).
+2026-09-14 13:01:18.505 INFO   [A72FED\91BC45] Fanout pass #15 on board '0126aa382f2b9924e4c7c60c364604f4' completed in 0.48 seconds with 10 SMD pins fanouted, 8 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1500).
+2026-09-14 13:01:19.191 INFO   [A72FED\91BC45] Fanout pass #16 on board 'fac77f4c070728eed75484014f64a9a4' completed in 0.67 seconds with 16 SMD pins fanouted, 7 not routed, 0 insert errors, +4 extra vias (0 SMD pins still to check in pass, ripup costs=1600).
+2026-09-14 13:01:19.665 INFO   [A72FED\91BC45] Fanout pass #17 on board '5e527bc7a115ac4aed7e0aa2c3342603' completed in 0.46 seconds with 9 SMD pins fanouted, 8 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1700).
+2026-09-14 13:01:20.159 INFO   [A72FED\91BC45] Fanout pass #18 on board '4a06ecc7d0c31165460730d8f2e520ee' completed in 0.48 seconds with 9 SMD pins fanouted, 9 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1800).
+2026-09-14 13:01:20.783 INFO   [A72FED\91BC45] Fanout pass #19 on board '74144bb1523be458d44c27f0cc849ae1' completed in 0.61 seconds with 14 SMD pins fanouted, 7 not routed, 0 insert errors, +2 extra vias (0 SMD pins still to check in pass, ripup costs=1900).
+2026-09-14 13:01:21.116 INFO   [A72FED\91BC45] Fanout pass #20 on board 'c82135d9a0547bc859e4c86b1551d85d' completed in 0.32 seconds with 6 SMD pins fanouted, 7 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=2000).
+2026-09-14 13:01:21.149 INFO   [A72FED\91BC45] Fanout stage completed: started with 242 total SMD pins, completed in 14.39 seconds, escaped pins: 208/242 (86.0%), using 14.17 total CPU seconds, 94.44 GB total allocated, and 335.3 MB peak heap usage.
+2026-09-14 13:01:21.164 INFO   [A72FED\91BC45] Auto-routing stage started on board 'c82135d9a0547bc859e4c86b1551d85d' for 93 unrouted items.
+2026-09-14 13:01:30.970 INFO   [A72FED\91BC45] Auto-routing pass #1 on board 'c82135d9a0547bc859e4c86b1551d85d' was completed in 9.62 seconds with score 725.96 (44 unrouted and 28 violations), using 23.60 CPU seconds and the job allocated 154.03 GB of memory so far.
+2026-09-14 13:01:40.544 INFO   [A72FED\91BC45] Auto-routing pass #2 on board '9b3e6ec84b783e066c418ef89435a5d5' was completed in 9.38 seconds with score 803.30 (30 unrouted and 28 violations), using 32.45 CPU seconds and the job allocated 206.66 GB of memory so far.
+2026-09-14 13:01:50.476 INFO   [A72FED\91BC45] Auto-routing pass #3 on board 'd770338b38d02d6f6f02810fb4ab2b4a' was completed in 9.70 seconds with score 836.45 (24 unrouted and 28 violations), using 42.30 CPU seconds and the job allocated 262.62 GB of memory so far.
+2026-09-14 13:01:59.337 INFO   [A72FED\91BC45] Auto-routing pass #4 on board '6c88d56ddc3efab83c5aaa2978aa40e0' was completed in 8.63 seconds with score 786.73 (33 unrouted and 28 violations), using 51.18 CPU seconds and the job allocated 314.51 GB of memory so far.
+2026-09-14 13:02:08.620 INFO   [A72FED\91BC45] Auto-routing pass #5 on board 'f54112b4683b93aa9d39d022b5d452ea' was completed in 9.02 seconds with score 841.98 (23 unrouted and 28 violations), using 60.06 CPU seconds and the job allocated 364.93 GB of memory so far.
+2026-09-14 13:02:19.656 INFO   [A72FED\91BC45] Auto-routing pass #6 on board '3bda32c7c6f2408cb6270dc245f63419' was completed in 10.75 seconds with score 880.65 (16 unrouted and 28 violations), using 70.92 CPU seconds and the job allocated 425.94 GB of memory so far.
+2026-09-14 13:02:27.056 INFO   [A72FED\91BC45] Auto-routing pass #7 on board '4e3d01425d9bce157b4aa5ac0a438f80' was completed in 7.12 seconds with score 853.03 (21 unrouted and 28 violations), using 78.80 CPU seconds and the job allocated 468.05 GB of memory so far.
+2026-09-14 13:02:35.695 INFO   [A72FED\91BC45] Auto-routing pass #8 on board '4e3d01425d9bce157b4aa5ac0a438f80' was completed in 0.00 seconds with score 880.65 (16 unrouted and 28 violations), using 87.44 CPU seconds and the job allocated 513.20 GB of memory so far.
+2026-09-14 13:02:42.858 INFO   [A72FED\91BC45] Auto-routing pass #9 on board '4e3d01425d9bce157b4aa5ac0a438f80' was completed in 7.01 seconds with score 853.03 (21 unrouted and 28 violations), using 94.35 CPU seconds and the job allocated 550.88 GB of memory so far.
+2026-09-14 13:02:50.880 INFO   [A72FED\91BC45] Auto-routing pass #10 on board 'd4c57b4e7cae184337a2511d51b10e63' was completed in 7.73 seconds with score 875.12 (17 unrouted and 28 violations), using 102.26 CPU seconds and the job allocated 594.70 GB of memory so far.
+2026-09-14 13:02:57.225 INFO   [A72FED\91BC45] Auto-routing pass #11 on board 'fe728210f6f5daaec76bff8faae918ed' was completed in 5.90 seconds with score 891.70 (14 unrouted and 28 violations), using 108.20 CPU seconds and the job allocated 628.76 GB of memory so far.
+2026-09-14 13:03:03.290 INFO   [A72FED\91BC45] Auto-routing pass #12 on board '65a959acc1f7d8cf3739b455b782b285' was completed in 5.78 seconds with score 902.75 (12 unrouted and 28 violations), using 114.13 CPU seconds and the job allocated 661.26 GB of memory so far.
+2026-09-14 13:03:09.221 INFO   [A72FED\91BC45] Auto-routing pass #13 on board 'e12e617359eb6c17e0cccc7bb32805f7' was completed in 5.70 seconds with score 902.75 (12 unrouted and 28 violations), using 120.07 CPU seconds and the job allocated 695.02 GB of memory so far.
+2026-09-14 13:03:15.985 INFO   [A72FED\91BC45] Auto-routing pass #14 on board '224546ac9f2051778fd3225973c09991' was completed in 6.47 seconds with score 869.60 (18 unrouted and 28 violations), using 126.99 CPU seconds and the job allocated 737.52 GB of memory so far.
+2026-09-14 13:03:23.703 INFO   [A72FED\91BC45] Auto-routing pass #15 on board '38574312543e596cda441b5283b78590' was completed in 7.44 seconds with score 902.75 (12 unrouted and 28 violations), using 134.90 CPU seconds and the job allocated 783.68 GB of memory so far.
+2026-09-14 13:03:30.336 INFO   [A72FED\91BC45] Auto-routing pass #16 on board 'e12e617359eb6c17e0cccc7bb32805f7' was completed in 0.00 seconds with score 902.75 (12 unrouted and 28 violations), using 140.83 CPU seconds and the job allocated 815.10 GB of memory so far.
+2026-09-14 13:03:35.946 INFO   [A72FED\91BC45] Auto-routing pass #17 on board 'e12e617359eb6c17e0cccc7bb32805f7' was completed in 5.49 seconds with score 902.75 (12 unrouted and 28 violations), using 146.75 CPU seconds and the job allocated 850.54 GB of memory so far.
+2026-09-14 13:03:42.524 INFO   [A72FED\91BC45] Auto-routing pass #18 on board 'adab16851e2bbf0cc142ccb9a92dcd59' was completed in 6.29 seconds with score 913.80 (10 unrouted and 28 violations), using 152.68 CPU seconds and the job allocated 888.75 GB of memory so far.
+2026-09-14 13:03:47.077 INFO   [A72FED\91BC45] Auto-routing pass #19 on board '1188058b81e697321dda0fbf7e6fb8d1' was completed in 4.26 seconds with score 913.80 (10 unrouted and 28 violations), using 157.63 CPU seconds and the job allocated 916.79 GB of memory so far.
+2026-09-14 13:03:52.497 INFO   [A72FED\91BC45] Auto-routing pass #20 on board 'b5b126d1570533bc05f9fccb05e2117c' was completed in 5.12 seconds with score 913.80 (10 unrouted and 28 violations), using 162.58 CPU seconds and the job allocated 943.59 GB of memory so far.
+2026-09-14 13:03:57.379 INFO   [A72FED\91BC45] Auto-routing pass #21 on board 'b5b126d1570533bc05f9fccb05e2117c' was completed in 4.73 seconds with score 908.27 (11 unrouted and 28 violations), using 167.52 CPU seconds and the job allocated 971.41 GB of memory so far.
+2026-09-14 13:04:03.103 INFO   [A72FED\91BC45] Auto-routing pass #22 on board 'a4105f6b121627dae656ac47293bdbba' was completed in 5.44 seconds with score 919.32 (9 unrouted and 28 violations), using 173.45 CPU seconds and the job allocated 1007.70 GB of memory so far.
+2026-09-14 13:04:06.796 INFO   [A72FED\91BC45] Auto-routing pass #23 on board 'e39be3fe1e4c016b37cd481c5f9f856d' was completed in 3.38 seconds with score 919.32 (9 unrouted and 28 violations), using 177.40 CPU seconds and the job allocated 1031.46 GB of memory so far.
+2026-09-14 13:04:10.184 INFO   [A72FED\91BC45] Auto-routing pass #24 on board '624cb4d3103bd5a105e0ca1d8cc71403' was completed in 3.08 seconds with score 924.85 (8 unrouted and 28 violations), using 180.37 CPU seconds and the job allocated 1049.31 GB of memory so far.
+2026-09-14 13:04:13.549 INFO   [A72FED\91BC45] Auto-routing pass #25 on board 'c69000f31676f63fc809a3cd39955e85' was completed in 3.06 seconds with score 924.85 (8 unrouted and 28 violations), using 183.34 CPU seconds and the job allocated 1067.03 GB of memory so far.
+2026-09-14 13:04:16.876 INFO   [A72FED\91BC45] Auto-routing pass #26 on board '58147850067874536224b45c0c7713e4' was completed in 3.02 seconds with score 924.85 (8 unrouted and 28 violations), using 187.29 CPU seconds and the job allocated 1091.87 GB of memory so far.
+2026-09-14 13:04:20.020 INFO   [A72FED\91BC45] Auto-routing pass #27 on board '445d37c73c50c58b651b9adf76511872' was completed in 2.85 seconds with score 924.85 (8 unrouted and 28 violations), using 190.25 CPU seconds and the job allocated 1110.71 GB of memory so far.
+2026-09-14 13:04:23.536 INFO   [A72FED\91BC45] Auto-routing pass #28 on board '58147850067874536224b45c0c7713e4' was completed in 0.00 seconds with score 924.85 (8 unrouted and 28 violations), using 193.22 CPU seconds and the job allocated 1129.06 GB of memory so far.
+2026-09-14 13:04:26.697 INFO   [A72FED\91BC45] Auto-routing pass #29 on board '58147850067874536224b45c0c7713e4' was completed in 3.00 seconds with score 924.85 (8 unrouted and 28 violations), using 196.17 CPU seconds and the job allocated 1147.17 GB of memory so far.
+2026-09-14 13:04:30.086 INFO   [A72FED\91BC45] Auto-routing pass #30 on board '3bd8d4056151f2cc3d281cd6f96366a5' was completed in 3.01 seconds with score 924.85 (8 unrouted and 28 violations), using 200.13 CPU seconds and the job allocated 1170.85 GB of memory so far.
+2026-09-14 13:04:33.338 INFO   [A72FED\91BC45] Auto-routing pass #31 on board 'ac267de8ea9b540f20469e00004527a0' was completed in 2.95 seconds with score 924.85 (8 unrouted and 28 violations), using 203.09 CPU seconds and the job allocated 1189.77 GB of memory so far.
+2026-09-14 13:04:36.550 INFO   [A72FED\91BC45] Auto-routing pass #32 on board 'dfaf9941964300d8ab24de3148d8ec3a' was completed in 2.92 seconds with score 924.85 (8 unrouted and 28 violations), using 206.05 CPU seconds and the job allocated 1208.04 GB of memory so far.
+2026-09-14 13:04:39.973 INFO   [A72FED\91BC45] Auto-routing pass #33 on board '4c4abe58803b34dbda19de5fdc948222' was completed in 3.13 seconds with score 924.85 (8 unrouted and 28 violations), using 210.00 CPU seconds and the job allocated 1233.31 GB of memory so far.
+2026-09-14 13:04:43.326 INFO   [A72FED\91BC45] Auto-routing pass #34 on board 'a5dae4607b092c569691850b9c6aaa1b' was completed in 3.05 seconds with score 924.85 (8 unrouted and 28 violations), using 212.97 CPU seconds and the job allocated 1251.45 GB of memory so far.
+2026-09-14 13:04:43.359 INFO   [A72FED\91BC45] The router's best score (924.85) has not improved by more than 0.5 points since pass #24. Stopping the auto-router after 34 passes (8 items still unconnected).
+The following connections could not be routed -- please review your design (e.g. check pad clearances, trace width rules, and available routing space):
+  Net 'VBAT' (6 unrouted connections):
+    - D3-1  ->  C23-1
+    - D4-1  ->  C24-1
+    - via  ->  R3-1
+    - R3-1  ->  via
+    - via  ->  J3-1
+    - R3-1  ->  D2-1
+  Net 'GND' (1 unrouted connection):
+    - C12-2  ->  U5-9
+  Net 'VBAT_ADC' (1 unrouted connection):
+    - R4-1  ->  R3-2
+2026-09-14 13:04:43.987 INFO   [A72FED\91BC45] Auto-routing stage completed: started with 177 unrouted nets, completed in 217.12 seconds, final score: 924.85 (8 unrouted and 28 violations), using 213.96 total CPU seconds, 1257.92 GB total allocated, and 688.1 MB peak heap usage.
+2026-09-14 13:04:44.130 INFO   [A72FED\91BC45] Optimization stage started on board '67d129cbe47a4fd4a9cc916af6c184ec' with score 875.12 (17 unrouted and 28 violations).
+2026-09-14 13:04:55.885 INFO   [A72FED\91BC45] Stopping optimization pass #1 early after 50 consecutive items could not be improved.
+2026-09-14 13:04:56.025 INFO   [A72FED\91BC45] Optimizer pass #1 on board 'd520165a11eebbe52b83425ba0f8fcc8' was completed in 11.46 seconds with the score of 875.13 (17 unrouted and 28 violations).
+2026-09-14 13:04:56.157 INFO   [A72FED\91BC45] Stopping optimizer because the improvement in this pass (0.0001%) is below the threshold (1.00%).
+2026-09-14 13:04:56.290 INFO   [A72FED\91BC45] Optimization stage completed: started with score 875.12 (17 unrouted and 28 violations), completed in 12.03 seconds, final score: 875.13 (17 unrouted and 28 violations), using 11.90 total CPU seconds, 107.39 GB total allocated, and 554.2 MB peak heap usage.
+2026-09-14 13:04:56.301 INFO   [A72FED\91BC45] Job 'A72FED\91BC45' finished with state: COMPLETED (elapsed: 3 minutes 49.64 seconds, finished at UTC: 2026-09-14T06:04:56.300986872Z).
+2026-09-14 13:04:56.408 INFO   Saving output file '/home/pnt/FC_ESP32/FC_ESP32/FC_ESP32.ses' (SES)...
+2026-09-14 13:04:56.410 INFO   Successfully saved output file '/home/pnt/FC_ESP32/FC_ESP32/FC_ESP32.ses' (76872 bytes).
+
+╔══════════════════════════════════════════════════════════════════╗
+║           Thank you for using Freerouting!                       ║
+║                                                                  ║
+║  If you would like to support the project, please visit          ║
+║  https://www.freerouting.app/donate.html                         ║
+║  Every contribution helps keep this project open and active!     ║
+╚══════════════════════════════════════════════════════════════════╝

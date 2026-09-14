@@ -1,0 +1,16 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+13:19:46: Debug: Adding duplicate image handler for 'PNG file'
+13:19:46: Debug: Adding duplicate image handler for 'JPEG file'
+13:19:46: Debug: Adding duplicate image handler for 'TIFF file'
+13:19:46: Debug: Adding duplicate image handler for 'GIF file'
+13:19:46: Debug: Adding duplicate image handler for 'PNM file'
+13:19:46: Debug: Adding duplicate image handler for 'PCX file'
+13:19:46: Debug: Adding duplicate image handler for 'IFF file'
+13:19:46: Debug: Adding duplicate image handler for 'Windows icon file'
+13:19:46: Debug: Adding duplicate image handler for 'Windows cursor file'
+13:19:46: Debug: Adding duplicate image handler for 'Windows animated cursor file'
+13:19:46: Debug: Adding duplicate image handler for 'TGA file'
+13:19:46: Debug: Adding duplicate image handler for 'XPM file'
+DSN exported

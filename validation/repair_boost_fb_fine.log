@@ -1,0 +1,13 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+BOOST_FB islands 3
+Copper bounds: [(0, 0, (89.239, 94.429, 89.781, 95.071)), (1, 0, (88.219, 86.679, 88.761, 87.321)), (2, 0, (84.199, 89.249, 85.526, 89.851))]
+Accessible grid points: [np.int64(526), np.int64(526), np.int64(1294)]
+Traceback (most recent call last):
+  File "/home/pnt/FC_ESP32/tools/route_remaining.py", line 139, in <module>
+    if not route(args.net,args.width):break
+           ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pnt/FC_ESP32/tools/route_remaining.py", line 107, in route
+    raise RuntimeError('No path '+net)
+RuntimeError: No path BOOST_FB

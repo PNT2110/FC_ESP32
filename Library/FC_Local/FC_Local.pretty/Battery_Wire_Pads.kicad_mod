@@ -1,0 +1,67 @@
+(footprint "Battery_Wire_Pads"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "4c8ca95f-60c0-4b3d-b8f2-c0e09031a335")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "7c96ecc5-7c07-4208-a291-87fb6a710289")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4cced4c9-0f9c-476b-b586-0d4e38f1afef")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "30b32f0e-10f6-4e67-8919-8826ea22eadd")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" smd roundrect
+		(at -2 0)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.2)
+		(thermal_bridge_angle 45)
+		(uuid "9374493c-599b-485e-810b-d747007fb901")
+	)
+	(pad "2" smd roundrect
+		(at 2 0)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.2)
+		(thermal_bridge_angle 45)
+		(uuid "439726bd-b949-4ec6-8673-339f1d41efe1")
+	)
+	(embedded_fonts no)
+)

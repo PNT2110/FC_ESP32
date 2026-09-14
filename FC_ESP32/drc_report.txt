@@ -1,0 +1,160 @@
+** Drc report for FC_ESP32.kicad_pcb **
+** Created on 2026-09-13T22:51:14 **
+** Report includes: Errors, Warnings **
+
+** Found 24 DRC violations **
+[silk_overlap]: Silkscreen clearance (board setup constraints silk clearance 0.1000 mm; actual 0.0039 mm)
+    Rule: board setup constraints silk; warning
+    @(110.5600 mm, 109.9850 mm): Segment of J2 on F.Silkscreen
+    @(110.5000 mm, 110.0000 mm): PCB text '1S ONLY' on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(110.5000 mm, 110.0000 mm): PCB text '1S ONLY' on F.Silkscreen
+    @(109.7000 mm, 109.1750 mm): Pad MP [<no net>] of J2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(110.5000 mm, 114.0000 mm): PCB text 'BAT+  BAT-' on F.Silkscreen
+    @(108.5000 mm, 112.2000 mm): Pad 1 [VBAT] of J3 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(110.5000 mm, 114.0000 mm): PCB text 'BAT+  BAT-' on F.Silkscreen
+    @(112.5000 mm, 112.2000 mm): Pad 2 [GND] of J3 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(110.5000 mm, 114.0000 mm): PCB text 'BAT+  BAT-' on F.Silkscreen
+    @(113.1000 mm, 114.5500 mm): Pad 2 [GND] of Q3 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(90.0000 mm, 85.2500 mm): Circle of U1 on F.Silkscreen
+    @(89.1000 mm, 85.0500 mm): Pad 2 [GND] of Q1 on F.Cu
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(100.0000 mm, 117.0000 mm): PCB text 'USB' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(110.5000 mm, 110.0000 mm): PCB text '1S ONLY' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(110.5000 mm, 114.0000 mm): PCB text 'BAT+  BAT-' on F.Silkscreen
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(86.5514 mm, 87.3786 mm): Via [GATE1] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(110.3922 mm, 92.1230 mm): Via [PWM2] on F.Cu - B.Cu
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(99.6000 mm, 109.9000 mm): Track [SPI_MISO] on B.Cu, length 0.5160 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(100.4000 mm, 109.9359 mm): Track [REGOUT] on F.Cu, length 0.5859 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(101.9708 mm, 109.9000 mm): Track [IMU_INT] on B.Cu, length 0.6708 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(100.4011 mm, 104.1989 mm): Track [IMU_CS] on F.Cu, length 0.2844 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(100.2000 mm, 104.4000 mm): Track [IMU_CS] on B.Cu, length 0.9881 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(98.3500 mm, 104.4000 mm): Track [SPI_MOSI] on B.Cu, length 2.5460 mm
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(95.9221 mm, 89.0085 mm): Via [+5V_FLOW] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(112.0000 mm, 106.5347 mm): Via [+5V_FLOW] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(111.5559 mm, 97.6595 mm): Via [EN] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(116.8767 mm, 115.3522 mm): Via [GATE3] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(109.3222 mm, 115.4896 mm): Via [M3_NEG] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(95.0887 mm, 110.4342 mm): Via [VSYS] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(104.1904 mm, 101.2292 mm): Via [PWM3] on F.Cu - B.Cu
+
+** Found 16 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(110.3922 mm, 92.1230 mm): Track [PWM2] on F.Cu, length 0.5748 mm
+    @(91.5000 mm, 97.9400 mm): Pad 11 [PWM2] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(99.4000 mm, 108.5450 mm): Pad 8 [+3V3_IMU] of U2 on F.Cu
+    @(98.8000 mm, 109.3500 mm): Track [+3V3_IMU] on B.Cu, length 1.6539 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(100.2530 mm, 108.7310 mm): Track [SPI_MISO] on B.Cu, length 2.3442 mm
+    @(99.8000 mm, 108.5450 mm): Pad 9 [SPI_MISO] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(100.4000 mm, 109.9359 mm): Track [REGOUT] on F.Cu, length 0.5859 mm
+    @(100.2000 mm, 108.5450 mm): Pad 10 [REGOUT] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(101.0000 mm, 108.5450 mm): Pad 12 [IMU_INT] of U2 on F.Cu
+    @(101.9708 mm, 109.9000 mm): Track [IMU_INT] on B.Cu, length 0.6708 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(100.4011 mm, 104.1989 mm): Track [IMU_CS] on F.Cu, length 0.2844 mm
+    @(100.2000 mm, 104.4000 mm): Track [IMU_CS] on B.Cu, length 0.9881 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(100.2000 mm, 104.4000 mm): Track [IMU_CS] on B.Cu, length 0.9881 mm
+    @(99.8000 mm, 105.4550 mm): Pad 22 [IMU_CS] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(99.4000 mm, 105.4550 mm): Pad 23 [SPI_SCK] of U2 on F.Cu
+    @(108.5000 mm, 95.4000 mm): Pad 30 [SPI_SCK] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(98.3500 mm, 104.4000 mm): Track [SPI_MOSI] on B.Cu, length 2.5460 mm
+    @(99.0000 mm, 105.4550 mm): Pad 24 [SPI_MOSI] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(110.6000 mm, 98.0000 mm): Pad 3 [EN] of Q5 on B.Cu
+    @(90.2583 mm, 91.9671 mm): Track [EN] on F.Cu, length 1.0851 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(102.7500 mm, 97.6350 mm): Pad 5 [USB_DP] of U3 on B.Cu
+    @(100.1402 mm, 111.3527 mm): Track [USB_DP] on F.Cu, length 0.2183 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(108.0000 mm, 109.9100 mm): Pad 1 [PWM3] of R19 on F.Cu
+    @(97.2374 mm, 101.2292 mm): Track [PWM3] on F.Cu, length 6.9530 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(87.5000 mm, 89.0000 mm): Pad 2 [BOOST_SW] of L2 on B.Cu
+    @(90.8625 mm, 91.4500 mm): Pad 1 [BOOST_SW] of U6 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(97.2500 mm, 96.3650 mm): Pad 13 [DTR] of U3 on B.Cu
+    @(108.4000 mm, 98.5100 mm): Track [DTR] on B.Cu, length 0.0806 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(109.4000 mm, 91.0000 mm): Pad 4 [BUCK_L1] of U5 on B.Cu
+    @(112.7000 mm, 92.1000 mm): Pad 1 [BUCK_L1] of L1 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(109.4000 mm, 90.0000 mm): Pad 2 [BUCK_L2] of U5 on B.Cu
+    @(112.7000 mm, 88.9000 mm): Pad 2 [BUCK_L2] of L1 on B.Cu
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

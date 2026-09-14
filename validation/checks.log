@@ -1,0 +1,22 @@
+Found 0 violations
+Saved ERC Report to /home/pnt/FC_ESP32/FC_ESP32/erc_current.json
+Found 3 violations
+Found 2 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to /home/pnt/FC_ESP32/FC_ESP32/drc_current.json
+{
+  "kicad_version": "10.0.6",
+  "date": "2026-09-14T18:31:09",
+  "erc_violations": 0,
+  "drc_violations": 3,
+  "unconnected_items": 2,
+  "schematic_parity_issues": 0,
+  "errors": 2,
+  "counts_by_type": {
+    "via_dangling": 3,
+    "unconnected_items": 2
+  },
+  "electrical_checks_pass": false,
+  "manufacturing_release": false,
+  "note": "DRC/ERC alone do not validate component ratings, current capacity, sensor cable orientation or flight behavior."
+}

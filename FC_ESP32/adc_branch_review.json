@@ -1,0 +1,15 @@
+{
+  "net": "VBAT",
+  "purpose": "R3/R4 voltage sense only",
+  "width_mm": 0.4,
+  "length_mm": 13.003657992645927,
+  "assumed_copper_um": 35,
+  "worst_operating_current_a": 2.1749999999999997e-05,
+  "maximum_reviewed_length_mm": 30,
+  "track_uuids": [
+    "d00c66a2-61f0-4f98-ad77-9e1ea00caa7c",
+    "01f6d9cd-4387-4f93-b05f-58b45fbb1858",
+    "85a76f84-19ff-4ab9-9d98-7cc26eec3f9d",
+    "f09b29df-2764-4289-acca-ca869d14d65d"
+  ]
+}

@@ -1,0 +1,18 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+{
+  "net": "VBAT",
+  "purpose": "R3/R4 battery ADC sense branch only",
+  "width_mm": 0.4,
+  "length_mm": 2.1319459371913765,
+  "assumed_copper_um": 35,
+  "worst_operating_current_a": 2.1749999999999997e-05,
+  "maximum_reviewed_length_mm": 3,
+  "track_uuids": [
+    "c19f829a-2aa6-4c8e-b571-a74352eda4b4",
+    "b9733cef-b31f-4c37-af42-e897bd9cbd58",
+    "09065109-3fd3-4bea-9699-363512ffb9ae",
+    "88602aa6-6457-43e1-ba25-58e7c4dbb451"
+  ]
+}

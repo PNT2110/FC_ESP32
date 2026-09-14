@@ -1,0 +1,235 @@
+#include <stdio.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "driver/ledc.h"
+#include "driver/spi_master.h"
+#include "driver/gpio.h"
+#include "driver/uart.h"
+#include "driver/i2c_master.h"
+#include "esp_log.h"
+#include "esp_adc/adc_oneshot.h"
+#include "hal/adc_types.h"
+#include "mpu6500.h"
+#include "pid.h"
+
+static const char *TAG = "FC_MAIN";
+
+// Motor PWM Pins
+#define MOTOR1_PIN 25
+#define MOTOR2_PIN 26
+#define MOTOR3_PIN 27
+#define MOTOR4_PIN 33
+
+// MPU-6500 SPI Pins
+#define MPU_MISO_PIN 19
+#define MPU_MOSI_PIN 23
+#define MPU_CLK_PIN  18
+#define MPU_CS_PIN   21
+#define MPU_INT_PIN  34
+#define SPI_HOST    VSPI_HOST
+
+// LEDC Configuration
+#define LEDC_TIMER              LEDC_TIMER_0
+#define LEDC_MODE               LEDC_LOW_SPEED_MODE
+#define LEDC_DUTY_RES           LEDC_TIMER_13_BIT 
+#define LEDC_FREQUENCY          400 
+
+// Optical Flow (MTF-01P) UART2
+#define OPTFLOW_UART_NUM UART_NUM_2
+#define OPTFLOW_TX_PIN   GPIO_NUM_17
+#define OPTFLOW_RX_PIN   GPIO_NUM_16
+#define OPTFLOW_BUF_SIZE 256
+
+// I2C Expansion
+#define I2C_MASTER_SCL_IO           GPIO_NUM_22      
+#define I2C_MASTER_SDA_IO           GPIO_NUM_4       
+#define I2C_MASTER_NUM              I2C_NUM_0        
+#define I2C_MASTER_FREQ_HZ          400000
+
+// UART1 Expansion
+#define EXP_UART_NUM UART_NUM_1
+#define EXP_TX_PIN   GPIO_NUM_14
+#define EXP_RX_PIN   GPIO_NUM_32
+
+// Battery ADC
+#define BATT_ADC_CHAN ADC_CHANNEL_7 // GPIO35
+static adc_oneshot_unit_handle_t adc1_handle;
+i2c_master_bus_handle_t i2c_bus_handle;
+static spi_device_handle_t spi_mpu;
+
+static void init_motor_pwm(void) {
+    ESP_LOGI(TAG, "Initializing Motor PWM...");
+    ledc_timer_config_t ledc_timer = {
+        .speed_mode       = LEDC_MODE,
+        .timer_num        = LEDC_TIMER,
+        .duty_resolution  = LEDC_DUTY_RES,
+        .freq_hz          = LEDC_FREQUENCY,
+        .clk_cfg          = LEDC_AUTO_CLK
+    };
+    ledc_timer_config(&ledc_timer);
+
+    int motor_pins[4] = {MOTOR1_PIN, MOTOR2_PIN, MOTOR3_PIN, MOTOR4_PIN};
+    for (int i = 0; i < 4; i++) {
+        ledc_channel_config_t ledc_channel = {
+            .speed_mode     = LEDC_MODE,
+            .channel        = (ledc_channel_t)i,
+            .timer_sel      = LEDC_TIMER,
+            .intr_type      = LEDC_INTR_DISABLE,
+            .gpio_num       = motor_pins[i],
+            .duty           = 0,
+            .hpoint         = 0
+        };
+        ledc_channel_config(&ledc_channel);
+    }
+}
+
+void set_motor_duty(int motor_num, uint32_t duty) {
+    ledc_set_duty(LEDC_MODE, (ledc_channel_t)motor_num, duty);
+    ledc_update_duty(LEDC_MODE, (ledc_channel_t)motor_num);
+}
+
+static void init_mpu6500_spi(void) {
+    ESP_LOGI(TAG, "Initializing MPU-6500 SPI...");
+    spi_bus_config_t buscfg = {
+        .miso_io_num = MPU_MISO_PIN,
+        .mosi_io_num = MPU_MOSI_PIN,
+        .sclk_io_num = MPU_CLK_PIN,
+        .quadwp_io_num = -1,
+        .quadhd_io_num = -1,
+        .max_transfer_sz = 32
+    };
+    
+    spi_device_interface_config_t devcfg = {
+        .clock_speed_hz = 1000000,
+        .mode = 3,
+        .spics_io_num = MPU_CS_PIN,
+        .queue_size = 7,
+    };
+    
+    spi_bus_initialize(SPI_HOST, &buscfg, SPI_DMA_CH_AUTO);
+    spi_bus_add_device(SPI_HOST, &devcfg, &spi_mpu);
+    
+    gpio_config_t int_conf = {
+        .intr_type = GPIO_INTR_POSEDGE,
+        .pin_bit_mask = (1ULL << MPU_INT_PIN),
+        .mode = GPIO_MODE_INPUT,
+        .pull_up_en = GPIO_PULLUP_DISABLE,
+        .pull_down_en = GPIO_PULLDOWN_DISABLE
+    };
+    gpio_config(&int_conf);
+}
+
+void battery_adc_init(void) {
+    adc_oneshot_unit_init_cfg_t init_config = {
+        .unit_id = ADC_UNIT_1,
+    };
+    adc_oneshot_new_unit(&init_config, &adc1_handle);
+
+    adc_oneshot_chan_cfg_t config = {
+        .bitwidth = ADC_BITWIDTH_DEFAULT,
+        .atten = ADC_ATTEN_DB_12,
+    };
+    adc_oneshot_config_channel(adc1_handle, BATT_ADC_CHAN, &config);
+}
+
+void optflow_uart_init(void) {
+    uart_config_t uart_config = {
+        .baud_rate = 115200,
+        .data_bits = UART_DATA_8_BITS,
+        .parity    = UART_PARITY_DISABLE,
+        .stop_bits = UART_STOP_BITS_1,
+        .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+        .source_clk = UART_SCLK_DEFAULT,
+    };
+    uart_param_config(OPTFLOW_UART_NUM, &uart_config);
+    uart_set_pin(OPTFLOW_UART_NUM, OPTFLOW_TX_PIN, OPTFLOW_RX_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+    uart_driver_install(OPTFLOW_UART_NUM, OPTFLOW_BUF_SIZE * 2, 0, 0, NULL, 0);
+}
+
+void exp_uart_init(void) {
+    uart_config_t uart_config = {
+        .baud_rate = 115200,
+        .data_bits = UART_DATA_8_BITS,
+        .parity    = UART_PARITY_DISABLE,
+        .stop_bits = UART_STOP_BITS_1,
+        .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+        .source_clk = UART_SCLK_DEFAULT,
+    };
+    uart_param_config(EXP_UART_NUM, &uart_config);
+    uart_set_pin(EXP_UART_NUM, EXP_TX_PIN, EXP_RX_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+    uart_driver_install(EXP_UART_NUM, 256 * 2, 0, 0, NULL, 0);
+}
+
+void i2c_master_init(void) {
+    i2c_master_bus_config_t i2c_bus_config = {
+        .clk_source = I2C_CLK_SRC_DEFAULT,
+        .i2c_port = I2C_MASTER_NUM,
+        .scl_io_num = I2C_MASTER_SCL_IO,
+        .sda_io_num = I2C_MASTER_SDA_IO,
+        .glitch_ignore_cnt = 7,
+        .flags.enable_internal_pullup = true,
+    };
+    i2c_new_master_bus(&i2c_bus_config, &i2c_bus_handle);
+}
+
+static void pid_task(void *pvParameters) {
+    ESP_LOGI(TAG, "PID Task Started");
+    
+    pid_ctrl_t pid_pitch, pid_roll, pid_yaw;
+    pid_init(&pid_pitch, 1.0f, 0.0f, 0.01f, 100.0f, 4000.0f);
+    pid_init(&pid_roll, 1.0f, 0.0f, 0.01f, 100.0f, 4000.0f);
+    pid_init(&pid_yaw, 2.0f, 0.0f, 0.0f, 100.0f, 4000.0f);
+    
+    TickType_t xLastWakeTime = xTaskGetTickCount();
+    const TickType_t xFrequency = pdMS_TO_TICKS(2); // 500Hz loop
+    
+    while(1) {
+        float ax, ay, az;
+        float gx, gy, gz;
+        
+        mpu6500_read_accel(&ax, &ay, &az);
+        mpu6500_read_gyro(&gx, &gy, &gz);
+        
+        // Simple mock angles for now (in real life use Madgwick or Mahony)
+        float current_pitch = ay * 90.0f; // Mock
+        float current_roll = ax * 90.0f; // Mock
+        float current_yaw = gz; // Rate
+        
+        float out_pitch = pid_update(&pid_pitch, 0.0f, current_pitch, 0.002f);
+        float out_roll = pid_update(&pid_roll, 0.0f, current_roll, 0.002f);
+        float out_yaw = pid_update(&pid_yaw, 0.0f, current_yaw, 0.002f);
+        
+        // Quad X mixing
+        float base_throttle = 1000.0f; // Mock throttle
+        
+        int m1 = (int)(base_throttle - out_pitch + out_roll + out_yaw); // NW
+        int m2 = (int)(base_throttle - out_pitch - out_roll - out_yaw); // NE
+        int m3 = (int)(base_throttle + out_pitch - out_roll + out_yaw); // SE
+        int m4 = (int)(base_throttle + out_pitch + out_roll - out_yaw); // SW
+        
+        // Constrain outputs
+        if(m1 < 0) m1 = 0; if(m1 > 8191) m1 = 8191;
+        if(m2 < 0) m2 = 0; if(m2 > 8191) m2 = 8191;
+        if(m3 < 0) m3 = 0; if(m3 > 8191) m3 = 8191;
+        if(m4 < 0) m4 = 0; if(m4 > 8191) m4 = 8191;
+        
+        set_motor_duty(0, m1);
+        set_motor_duty(1, m2);
+        set_motor_duty(2, m3);
+        set_motor_duty(3, m4);
+        
+        vTaskDelayUntil(&xLastWakeTime, xFrequency);
+    }
+}
+
+void app_main(void) {
+    ESP_LOGI(TAG, "Starting FC_ESP32 Flight Controller...");
+    init_motor_pwm();
+    init_mpu6500_spi();
+    battery_adc_init();
+    optflow_uart_init();
+    exp_uart_init();
+    i2c_master_init();
+    
+    xTaskCreate(pid_task, "pid_task", 4096, NULL, 5, NULL);
+}

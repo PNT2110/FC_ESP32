@@ -1,0 +1,9 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+UART1_RX islands 2
+Copper bounds: [(0, 0, (90.499, 93.679, 92.501, 94.581)), (1, 0, (84.349, 94.039, 86.151, 95.841)), (1, 1, (84.349, 94.039, 86.151, 95.841))]
+Accessible grid points: [np.int64(738), np.int64(2464)]
+Added 33 segments; cost 6.64766594028869
+UART1_RX islands 1
+Copper bounds: [(0, 0, (84.349, 93.679, 92.501, 97.091)), (0, 1, (84.349, 94.039, 86.151, 95.841))]

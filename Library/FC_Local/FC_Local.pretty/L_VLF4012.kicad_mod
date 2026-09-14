@@ -1,0 +1,78 @@
+(footprint "L_VLF4012"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "90bb46ba-d94e-445d-9802-e5e120377ae8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "96c51e00-885b-464f-b85f-2b2d1751501f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e1199583-4e0b-4607-8271-1316e1fdd217")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "af879ed3-e689-4a2e-b815-5d8103ba113f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" smd roundrect
+		(at -1.6 0)
+		(size 1.2 3.7)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.2)
+		(thermal_bridge_angle 45)
+		(uuid "f0a494f4-2083-45a7-95d5-88b11188ce60")
+	)
+	(pad "2" smd roundrect
+		(at 1.6 0)
+		(size 1.2 3.7)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.2)
+		(thermal_bridge_angle 45)
+		(uuid "d8669cbe-3ef7-4257-b9fe-023d6aa6333a")
+	)
+	(embedded_fonts no)
+	(model "/usr/share/kicad/3dmodels/Inductor_SMD.3dshapes/L_APV_ANR4012.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,49 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+{
+  "passed": true,
+  "failures": [],
+  "motor_pads": [
+    {
+      "reference": "J4",
+      "position_mm": [
+        73.26066,
+        73.26066
+      ],
+      "inward_shift_mm": 1.499999757066645
+    },
+    {
+      "reference": "J5",
+      "position_mm": [
+        126.739339,
+        73.26066
+      ],
+      "inward_shift_mm": 1.5000004641735911
+    },
+    {
+      "reference": "J6",
+      "position_mm": [
+        126.739339,
+        126.739339
+      ],
+      "inward_shift_mm": 1.5000011712802037
+    },
+    {
+      "reference": "J7",
+      "position_mm": [
+        73.26066,
+        126.739339
+      ],
+      "inward_shift_mm": 1.5000004641735911
+    }
+  ],
+  "j2_orientation_deg": 90.0,
+  "netclass_widths_mm": {
+    "Default": 0.18,
+    "LogicPower": 0.4,
+    "MotorPower": 0.8,
+    "Battery": 1.2
+  },
+  "narrow_tracks": []
+}

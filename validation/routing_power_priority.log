@@ -1,0 +1,79 @@
+2026-09-14 13:19:48.070 INFO   Freerouting v2.4.1 (build-date: 2026-09-03)
+2026-09-14 13:19:49.589 INFO   [DF2B1A\D7FA0B] Loading board file 'FC_ESP32.dsn'...
+2026-09-14 13:19:49.695 INFO   [DF2B1A\D7FA0B] Job 'DF2B1A\D7FA0B' started at 2026-09-14T06:19:49.695038293Z.
+2026-09-14 13:19:49.810 INFO   [DF2B1A\D7FA0B] Fanout stage started on board '479ee0b820d88f187607d60d817db6aa' with 218 of 255 SMD pins needing fanout (24 already connected, 13 netless).
+2026-09-14 13:19:52.525 INFO   [DF2B1A\D7FA0B] Fanout pass #1 on board '6c2867615c833eb586744089ccba8fb5' completed in 2.67 seconds with 189 SMD pins fanouted, 2 not routed, 0 insert errors, +67 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-09-14 13:19:53.982 INFO   [DF2B1A\D7FA0B] Fanout pass #2 on board '722f554e750b0da62f23425f25ea75bc' completed in 1.44 seconds with 53 SMD pins fanouted, 3 not routed, 0 insert errors, +19 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-09-14 13:19:54.678 INFO   [DF2B1A\D7FA0B] Fanout pass #3 on board 'ee188a60a2826b41d662adb6742e2598' completed in 0.68 seconds with 28 SMD pins fanouted, 3 not routed, 0 insert errors, +7 extra vias (0 SMD pins still to check in pass, ripup costs=300).
+2026-09-14 13:19:55.149 INFO   [DF2B1A\D7FA0B] Fanout pass #4 on board '3ccc751ed136d3c365ab24d1462a2fd0' completed in 0.46 seconds with 16 SMD pins fanouted, 5 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=400).
+2026-09-14 13:19:55.616 INFO   [DF2B1A\D7FA0B] Fanout pass #5 on board 'f90387dac9a8fc1cba7ba5767536d68f' completed in 0.45 seconds with 10 SMD pins fanouted, 5 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=500).
+2026-09-14 13:19:56.018 INFO   [DF2B1A\D7FA0B] Fanout pass #6 on board 'bd21affbbd470ecd1ff393e47f16f6bb' completed in 0.39 seconds with 9 SMD pins fanouted, 5 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=600).
+2026-09-14 13:19:56.402 INFO   [DF2B1A\D7FA0B] Fanout pass #7 on board '87438ef4fbfa3bb3409d348b20572071' completed in 0.37 seconds with 9 SMD pins fanouted, 5 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=700).
+2026-09-14 13:19:56.812 INFO   [DF2B1A\D7FA0B] Fanout pass #8 on board '4a8c23830999c6a7dd80812712d1b462' completed in 0.40 seconds with 9 SMD pins fanouted, 5 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=800).
+2026-09-14 13:19:57.219 INFO   [DF2B1A\D7FA0B] Fanout pass #9 on board 'fd4745f43bd6cfe296b1ce4cffdf06e0' completed in 0.39 seconds with 9 SMD pins fanouted, 5 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=900).
+2026-09-14 13:19:57.219 INFO   Fanout stopped after 9 passes: no progress for 3 consecutive passes.
+2026-09-14 13:19:57.260 INFO   [DF2B1A\D7FA0B] Fanout stage completed: started with 242 total SMD pins, completed in 7.43 seconds, escaped pins: 207/242 (85.5%), using 7.33 total CPU seconds, 44.46 GB total allocated, and 376.8 MB peak heap usage.
+2026-09-14 13:19:57.284 INFO   [DF2B1A\D7FA0B] Auto-routing stage started on board 'fd4745f43bd6cfe296b1ce4cffdf06e0' for 89 unrouted items.
+2026-09-14 13:20:09.936 INFO   [DF2B1A\D7FA0B] Auto-routing pass #1 on board 'fd4745f43bd6cfe296b1ce4cffdf06e0' was completed in 12.42 seconds with score 614.35 (57 unrouted and 64 violations), using 19.63 CPU seconds and the job allocated 125.03 GB of memory so far.
+2026-09-14 13:20:21.261 INFO   [DF2B1A\D7FA0B] Auto-routing pass #2 on board 'cea27bf63e25d01d767e06eff185f581' was completed in 11.10 seconds with score 697.23 (42 unrouted and 64 violations), using 30.43 CPU seconds and the job allocated 194.47 GB of memory so far.
+2026-09-14 13:20:29.241 INFO   [DF2B1A\D7FA0B] Auto-routing pass #3 on board 'e0d95ae8be686fc147fb01a112a2e4e4' was completed in 7.71 seconds with score 719.33 (38 unrouted and 64 violations), using 38.32 CPU seconds and the job allocated 245.46 GB of memory so far.
+2026-09-14 13:20:38.658 INFO   [DF2B1A\D7FA0B] Auto-routing pass #4 on board '83056f8161e963a139dd8fd22fcdda28' was completed in 9.16 seconds with score 763.52 (30 unrouted and 64 violations), using 47.16 CPU seconds and the job allocated 301.69 GB of memory so far.
+2026-09-14 13:20:47.284 INFO   [DF2B1A\D7FA0B] Auto-routing pass #5 on board 'c7d1bee74481d6dc2d3f20538030ca9a' was completed in 8.31 seconds with score 758.00 (31 unrouted and 64 violations), using 56.01 CPU seconds and the job allocated 357.51 GB of memory so far.
+2026-09-14 13:20:55.083 INFO   [DF2B1A\D7FA0B] Auto-routing pass #6 on board '9760e185b8c5ef40938672f3bd888a81' was completed in 7.51 seconds with score 763.52 (30 unrouted and 64 violations), using 63.89 CPU seconds and the job allocated 410.04 GB of memory so far.
+2026-09-14 13:21:02.961 INFO   [DF2B1A\D7FA0B] Auto-routing pass #7 on board '2ca4f1461fb533e7e8af2d6fbb5dcec2' was completed in 7.56 seconds with score 791.15 (25 unrouted and 64 violations), using 71.77 CPU seconds and the job allocated 459.37 GB of memory so far.
+2026-09-14 13:21:11.050 INFO   [DF2B1A\D7FA0B] Auto-routing pass #8 on board '0b50f7eeec4e9e222c9e4a4c995c381b' was completed in 7.77 seconds with score 791.15 (25 unrouted and 64 violations), using 79.66 CPU seconds and the job allocated 509.76 GB of memory so far.
+2026-09-14 13:21:18.905 INFO   [DF2B1A\D7FA0B] Auto-routing pass #9 on board '0b50f7eeec4e9e222c9e4a4c995c381b' was completed in 7.68 seconds with score 735.90 (35 unrouted and 64 violations), using 87.53 CPU seconds and the job allocated 560.11 GB of memory so far.
+2026-09-14 13:21:28.977 INFO   [DF2B1A\D7FA0B] Auto-routing pass #10 on board '43e60c496de189cccb27adfc1da57d2a' was completed in 9.76 seconds with score 824.30 (19 unrouted and 64 violations), using 97.41 CPU seconds and the job allocated 619.97 GB of memory so far.
+2026-09-14 13:21:36.803 INFO   [DF2B1A\D7FA0B] Auto-routing pass #11 on board '4bb5ad3796b0d0904e58c3f247a6c211' was completed in 7.49 seconds with score 824.30 (19 unrouted and 64 violations), using 105.30 CPU seconds and the job allocated 667.99 GB of memory so far.
+2026-09-14 13:21:43.405 INFO   [DF2B1A\D7FA0B] Auto-routing pass #12 on board 'd55ea88fd8d99100e46dc4884c02c815' was completed in 6.23 seconds with score 857.44 (13 unrouted and 64 violations), using 111.22 CPU seconds and the job allocated 702.24 GB of memory so far.
+2026-09-14 13:21:47.111 INFO   [DF2B1A\D7FA0B] Auto-routing pass #13 on board 'ea18eb84864378935a1aa27d606686df' was completed in 3.32 seconds with score 840.87 (16 unrouted and 64 violations), using 115.17 CPU seconds and the job allocated 728.94 GB of memory so far.
+2026-09-14 13:21:53.468 INFO   [DF2B1A\D7FA0B] Auto-routing pass #14 on board 'fa8f3a5431c424d4f69ec6f764f3b5aa' was completed in 5.98 seconds with score 807.72 (22 unrouted and 64 violations), using 121.09 CPU seconds and the job allocated 768.47 GB of memory so far.
+2026-09-14 13:22:01.209 INFO   [DF2B1A\D7FA0B] Auto-routing pass #15 on board '0e6fb129d565c8f071785dfdd1d31008' was completed in 7.43 seconds with score 824.30 (19 unrouted and 64 violations), using 128.99 CPU seconds and the job allocated 815.53 GB of memory so far.
+2026-09-14 13:22:09.550 INFO   [DF2B1A\D7FA0B] Auto-routing pass #16 on board '841517bcecb75552ab1dfa6a7b0ea7b0' was completed in 7.76 seconds with score 857.44 (13 unrouted and 64 violations), using 136.89 CPU seconds and the job allocated 863.33 GB of memory so far.
+2026-09-14 13:22:14.056 INFO   [DF2B1A\D7FA0B] Auto-routing pass #17 on board 'fc1a6aeff32aa7f0c776f682f1a94ac5' was completed in 4.10 seconds with score 862.97 (12 unrouted and 64 violations), using 141.82 CPU seconds and the job allocated 894.66 GB of memory so far.
+2026-09-14 13:22:20.673 INFO   [DF2B1A\D7FA0B] Auto-routing pass #18 on board '9eebac6fe5df89b359c1fb76c8b2bf7b' was completed in 6.22 seconds with score 862.97 (12 unrouted and 64 violations), using 147.74 CPU seconds and the job allocated 929.26 GB of memory so far.
+2026-09-14 13:22:27.359 INFO   [DF2B1A\D7FA0B] Auto-routing pass #19 on board '0be8183de6b7579bc0c7ac815d144e71' was completed in 6.31 seconds with score 874.02 (10 unrouted and 64 violations), using 154.63 CPU seconds and the job allocated 973.01 GB of memory so far.
+2026-09-14 13:22:33.491 INFO   [DF2B1A\D7FA0B] Auto-routing pass #20 on board '49e314e5a0da3978bdcac9b299be0e63' was completed in 5.72 seconds with score 874.02 (10 unrouted and 64 violations), using 160.55 CPU seconds and the job allocated 1006.95 GB of memory so far.
+2026-09-14 13:22:37.608 INFO   [DF2B1A\D7FA0B] Auto-routing pass #21 on board '720d84014f8d38c678f65054c91aa0f0' was completed in 3.73 seconds with score 879.54 (9 unrouted and 64 violations), using 164.50 CPU seconds and the job allocated 1036.04 GB of memory so far.
+2026-09-14 13:22:43.811 INFO   [DF2B1A\D7FA0B] Auto-routing pass #22 on board '928617333126ab5980cfc02c656b3137' was completed in 5.81 seconds with score 862.97 (12 unrouted and 64 violations), using 171.39 CPU seconds and the job allocated 1077.99 GB of memory so far.
+2026-09-14 13:22:47.659 INFO   [DF2B1A\D7FA0B] Auto-routing pass #23 on board 'f721401a44c84902f7103c11766da25e' was completed in 3.49 seconds with score 896.12 (6 unrouted and 64 violations), using 174.34 CPU seconds and the job allocated 1099.02 GB of memory so far.
+2026-09-14 13:22:50.612 INFO   [DF2B1A\D7FA0B] Auto-routing pass #24 on board 'acc506f39d985aead3d3a37194a427a1' was completed in 2.55 seconds with score 896.12 (6 unrouted and 64 violations), using 177.30 CPU seconds and the job allocated 1117.91 GB of memory so far.
+2026-09-14 13:22:53.020 INFO   [DF2B1A\D7FA0B] Auto-routing pass #25 on board 'acc506f39d985aead3d3a37194a427a1' was completed in 2.17 seconds with score 890.59 (7 unrouted and 64 violations), using 180.24 CPU seconds and the job allocated 1136.68 GB of memory so far.
+2026-09-14 13:22:55.277 INFO   [DF2B1A\D7FA0B] Auto-routing pass #26 on board '3e25c343479c7155f60e12fa8e001e13' was completed in 1.86 seconds with score 868.49 (11 unrouted and 64 violations), using 182.21 CPU seconds and the job allocated 1150.68 GB of memory so far.
+2026-09-14 13:23:01.234 INFO   [DF2B1A\D7FA0B] Auto-routing pass #27 on board '46bb10c98cf4210afe0251f38fc54351' was completed in 5.60 seconds with score 874.02 (10 unrouted and 64 violations), using 188.12 CPU seconds and the job allocated 1192.51 GB of memory so far.
+2026-09-14 13:23:06.771 INFO   [DF2B1A\D7FA0B] Auto-routing pass #28 on board 'acc506f39d985aead3d3a37194a427a1' was completed in 0.00 seconds with score 896.12 (6 unrouted and 64 violations), using 194.03 CPU seconds and the job allocated 1233.16 GB of memory so far.
+2026-09-14 13:23:09.133 INFO   [DF2B1A\D7FA0B] Auto-routing pass #29 on board 'acc506f39d985aead3d3a37194a427a1' was completed in 2.15 seconds with score 890.59 (7 unrouted and 64 violations), using 196.00 CPU seconds and the job allocated 1245.41 GB of memory so far.
+2026-09-14 13:23:11.466 INFO   [DF2B1A\D7FA0B] Auto-routing pass #30 on board 'f3d3e7b9cb2276ff0d75eee875c9ac39' was completed in 1.92 seconds with score 868.49 (11 unrouted and 64 violations), using 197.97 CPU seconds and the job allocated 1258.44 GB of memory so far.
+2026-09-14 13:23:17.980 INFO   [DF2B1A\D7FA0B] Auto-routing pass #31 on board '36f4daf69adbffd68e6d9170baad05c3' was completed in 6.14 seconds with score 874.02 (10 unrouted and 64 violations), using 204.88 CPU seconds and the job allocated 1304.82 GB of memory so far.
+2026-09-14 13:23:23.787 INFO   [DF2B1A\D7FA0B] Auto-routing pass #32 on board 'acc506f39d985aead3d3a37194a427a1' was completed in 0.00 seconds with score 896.12 (6 unrouted and 64 violations), using 210.80 CPU seconds and the job allocated 1343.55 GB of memory so far.
+2026-09-14 13:23:26.120 INFO   [DF2B1A\D7FA0B] Auto-routing pass #33 on board 'acc506f39d985aead3d3a37194a427a1' was completed in 2.12 seconds with score 890.59 (7 unrouted and 64 violations), using 212.76 CPU seconds and the job allocated 1355.96 GB of memory so far.
+2026-09-14 13:23:26.171 INFO   [DF2B1A\D7FA0B] The router's best score (896.12) has not improved by more than 0.5 points since pass #23. Stopping the auto-router after 33 passes (6 items still unconnected).
+The following connections could not be routed -- please review your design (e.g. check pad clearances, trace width rules, and available routing space):
+  Net 'VBAT' (4 unrouted connections):
+    - via  ->  J6-1
+    - via  ->  J7-1
+    - via  ->  R3-1
+    - via  ->  J3-1
+  Net 'BOOST_FB' (1 unrouted connection):
+    - U6-4  ->  R12-2
+  Net 'UART1_RX' (1 unrouted connection):
+    - U1-8  ->  J9-4
+  Net 'PWM4' (1 unrouted connection):
+    - U1-9  ->  R21-1
+2026-09-14 13:23:26.929 INFO   [DF2B1A\D7FA0B] Auto-routing stage completed: started with 173 unrouted nets, completed in 217.00 seconds, final score: 896.12 (6 unrouted and 64 violations), using 213.75 total CPU seconds, 1363.21 GB total allocated, and 619.3 MB peak heap usage.
+2026-09-14 13:23:27.081 INFO   [DF2B1A\D7FA0B] Optimization stage started on board '4aa0dc2b3d10998217683785fe6ff708' with score 780.10 (27 unrouted and 64 violations).
+2026-09-14 13:23:48.118 INFO   [DF2B1A\D7FA0B] Stopping optimization pass #1 early after 50 consecutive items could not be improved.
+2026-09-14 13:23:48.269 INFO   [DF2B1A\D7FA0B] Optimizer pass #1 on board 'e8dfa33de4eab024f449ba580f89c508' was completed in 20.73 seconds with the score of 780.10 (27 unrouted and 64 violations).
+2026-09-14 13:23:48.406 INFO   [DF2B1A\D7FA0B] Stopping optimizer because the improvement in this pass (0.0001%) is below the threshold (1.00%).
+2026-09-14 13:23:48.544 INFO   [DF2B1A\D7FA0B] Optimization stage completed: started with score 780.10 (27 unrouted and 64 violations), completed in 21.33 seconds, final score: 780.10 (27 unrouted and 64 violations), using 21.07 total CPU seconds, 186.11 GB total allocated, and 261.5 MB peak heap usage.
+2026-09-14 13:23:48.556 INFO   [DF2B1A\D7FA0B] Job 'DF2B1A\D7FA0B' finished with state: COMPLETED (elapsed: 3 minutes 58.86 seconds, finished at UTC: 2026-09-14T06:23:48.555968017Z).
+2026-09-14 13:23:48.942 INFO   Saving output file '/home/pnt/FC_ESP32/FC_ESP32/FC_ESP32.ses' (SES)...
+2026-09-14 13:23:48.944 INFO   Successfully saved output file '/home/pnt/FC_ESP32/FC_ESP32/FC_ESP32.ses' (79173 bytes).
+
+╔══════════════════════════════════════════════════════════════════╗
+║           Thank you for using Freerouting!                       ║
+║                                                                  ║
+║  If you would like to support the project, please visit          ║
+║  https://www.freerouting.app/donate.html                         ║
+║  Every contribution helps keep this project open and active!     ║
+╚══════════════════════════════════════════════════════════════════╝

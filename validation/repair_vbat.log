@@ -1,0 +1,13 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+VBAT islands 3
+Copper bounds: [(0, 0, (127.82, 126.468, 128.422, 127.07)), (1, 0, (125.538, 127.138, 127.94, 129.14)), (2, 0, (124.338, 70.928, 126.34, 74.462)), (0, 0, (119.649, 121.067, 125.173, 125.126)), (2, 0, (117.324, 73.149, 122.576, 78.751)), (2, 0, (106.749, 110.699, 110.326, 116.601)), (2, 0, (104.559, 87.587, 106.323, 96.722)), (2, 0, (88.369, 90.284, 90.049, 92.171)), (2, 0, (75.574, 112.824, 84.349, 123.501)), (2, 0, (77.249, 80.554, 80.103, 82.676)), (2, 0, (75.849, 125.499, 76.926, 126.726)), (2, 0, (70.956, 73.011, 74.462, 75.662)), (2, 0, (71.087, 69.508, 73.267, 70.71)), (2, 0, (70.86, 125.538, 72.862, 129.102)), (0, 1, (123.971, 121.067, 128.722, 127.37)), (2, 1, (70.956, 69.508, 125.94, 91.186)), (2, 1, (83.147, 95.52, 109.167, 119.374)), (2, 1, (71.26, 122.149, 79.048, 129.102))]
+Accessible grid points: [np.int64(6901), np.int64(1769), np.int64(84126)]
+Traceback (most recent call last):
+  File "/home/pnt/FC_ESP32/tools/route_remaining.py", line 136, in <module>
+    if not route(args.net,args.width):break
+           ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pnt/FC_ESP32/tools/route_remaining.py", line 106, in route
+    raise RuntimeError('No path '+net)
+RuntimeError: No path VBAT

@@ -1,0 +1,22 @@
+menu "FC ESP-NOW receiver"
+config FC_TX_MAC
+    string "Transmitter STA MAC (12 hex digits, no separators)"
+    default ""
+config FC_PMK
+    string "ESP-NOW PMK (32 hex digits)"
+    default ""
+config FC_LMK
+    string "Peer LMK (32 hex digits; same on transmitter)"
+    default ""
+config FC_RADIO_CHANNEL
+    int "Radio channel"
+    range 1 11
+    default 6
+config FC_ENABLE_MOTORS
+    bool "Enable motor outputs (requires bench validation and PID tuning)"
+    default n
+    help
+        Leave disabled until sensor axes, motor order/rotation, voltage readings,
+        radio failsafe and current/thermal behavior have been checked with props
+        removed. The default gains have not been flight-tested.
+endmenu

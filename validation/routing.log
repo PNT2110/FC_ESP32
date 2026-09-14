@@ -1,0 +1,80 @@
+2026-09-14 11:55:23.604 INFO   Freerouting v2.4.1 (build-date: 2026-09-03)
+2026-09-14 11:55:25.120 INFO   [438D78\CFFC10] Loading board file 'FC_ESP32.dsn'...
+2026-09-14 11:55:25.223 INFO   [438D78\CFFC10] Job '438D78\CFFC10' started at 2026-09-14T04:55:25.223625684Z.
+2026-09-14 11:55:25.301 INFO   [438D78\CFFC10] Fanout stage started on board '0cf808013305923a830e969f79b1cc67' with 218 of 255 SMD pins needing fanout (24 already connected, 13 netless).
+2026-09-14 11:55:27.778 INFO   [438D78\CFFC10] Fanout pass #1 on board '99551ccf3d1bafd1c1d71f16f7aab4e4' completed in 2.44 seconds with 195 SMD pins fanouted, 7 not routed, 0 insert errors, +80 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-09-14 11:55:28.854 INFO   [438D78\CFFC10] Fanout pass #2 on board '738bbd5c8c93001068efb6df146897f2' completed in 1.06 seconds with 53 SMD pins fanouted, 7 not routed, 0 insert errors, +12 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-09-14 11:55:29.505 INFO   [438D78\CFFC10] Fanout pass #3 on board 'fc89afa88191d1de049cadf73974606b' completed in 0.64 seconds with 29 SMD pins fanouted, 7 not routed, 0 insert errors, +8 extra vias (0 SMD pins still to check in pass, ripup costs=300).
+2026-09-14 11:55:29.980 INFO   [438D78\CFFC10] Fanout pass #4 on board 'd22b72ec8842df100fb74c3ee4cf1985' completed in 0.46 seconds with 18 SMD pins fanouted, 8 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=400).
+2026-09-14 11:55:30.517 INFO   [438D78\CFFC10] Fanout pass #5 on board '3b72467c96b91ae37a5d5132e51ff82a' completed in 0.53 seconds with 22 SMD pins fanouted, 8 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=500).
+2026-09-14 11:55:30.964 INFO   [438D78\CFFC10] Fanout pass #6 on board '0c6f1413ea3a51d561f77a50d5a3a428' completed in 0.44 seconds with 18 SMD pins fanouted, 8 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=600).
+2026-09-14 11:55:31.596 INFO   [438D78\CFFC10] Fanout pass #7 on board 'eeb631cc38b1d781d018c02daf83b9e3' completed in 0.62 seconds with 18 SMD pins fanouted, 8 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=700).
+2026-09-14 11:55:32.112 INFO   [438D78\CFFC10] Fanout pass #8 on board '3c50ee0490b1a6556fd1214f2608c170' completed in 0.50 seconds with 16 SMD pins fanouted, 8 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=800).
+2026-09-14 11:55:32.470 INFO   [438D78\CFFC10] Fanout pass #9 on board 'dd66b98fddfa16cb1b74c939aed0020b' completed in 0.34 seconds with 13 SMD pins fanouted, 8 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=900).
+2026-09-14 11:55:32.818 INFO   [438D78\CFFC10] Fanout pass #10 on board 'fd7128a72d808d34f97ff372bc3dd7dc' completed in 0.34 seconds with 13 SMD pins fanouted, 8 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1000).
+2026-09-14 11:55:33.185 INFO   [438D78\CFFC10] Fanout pass #11 on board '2f72d9a88caf2496190f4d9e4379959b' completed in 0.36 seconds with 13 SMD pins fanouted, 8 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1100).
+2026-09-14 11:55:33.537 INFO   [438D78\CFFC10] Fanout pass #12 on board 'c92b9fdc76ada970bc1729e80eb2fe63' completed in 0.34 seconds with 13 SMD pins fanouted, 8 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1200).
+2026-09-14 11:55:33.537 INFO   Fanout stopped after 12 passes: no progress for 3 consecutive passes.
+2026-09-14 11:55:33.570 INFO   [438D78\CFFC10] Fanout stage completed: started with 242 total SMD pins, completed in 8.25 seconds, escaped pins: 207/242 (85.5%), using 8.13 total CPU seconds, 49.33 GB total allocated, and 319.6 MB peak heap usage.
+2026-09-14 11:55:33.585 INFO   [438D78\CFFC10] Auto-routing stage started on board 'c92b9fdc76ada970bc1729e80eb2fe63' for 91 unrouted items.
+2026-09-14 11:55:43.569 INFO   [438D78\CFFC10] Auto-routing pass #1 on board 'c92b9fdc76ada970bc1729e80eb2fe63' was completed in 9.80 seconds with score 691.70 (49 unrouted and 34 violations), using 17.68 CPU seconds and the job allocated 109.16 GB of memory so far.
+2026-09-14 11:55:53.601 INFO   [438D78\CFFC10] Auto-routing pass #2 on board 'e0573bef17a670541a1f681544a2777d' was completed in 9.85 seconds with score 791.15 (31 unrouted and 34 violations), using 27.52 CPU seconds and the job allocated 166.84 GB of memory so far.
+2026-09-14 11:56:01.419 INFO   [438D78\CFFC10] Auto-routing pass #3 on board 'c283f8a03b61ef8b4fb60f173f28b100' was completed in 7.59 seconds with score 829.82 (24 unrouted and 34 violations), using 35.39 CPU seconds and the job allocated 212.47 GB of memory so far.
+2026-09-14 11:56:10.239 INFO   [438D78\CFFC10] Auto-routing pass #4 on board '0d057d182333a9c36e1721a4db43ade5' was completed in 8.59 seconds with score 857.45 (19 unrouted and 34 violations), using 44.24 CPU seconds and the job allocated 269.12 GB of memory so far.
+2026-09-14 11:56:16.083 INFO   [438D78\CFFC10] Auto-routing pass #5 on board '646239a896d4455a2670ea3fb6659092' was completed in 5.56 seconds with score 885.07 (14 unrouted and 34 violations), using 49.18 CPU seconds and the job allocated 297.47 GB of memory so far.
+2026-09-14 11:56:21.917 INFO   [438D78\CFFC10] Auto-routing pass #6 on board '646fcf324c5dd54157515f630eb6d217' was completed in 5.54 seconds with score 868.50 (17 unrouted and 34 violations), using 55.08 CPU seconds and the job allocated 332.67 GB of memory so far.
+2026-09-14 11:56:28.593 INFO   [438D78\CFFC10] Auto-routing pass #7 on board 'aad6997f6557baa611340a5508d08b5b' was completed in 6.33 seconds with score 890.59 (13 unrouted and 34 violations), using 61.97 CPU seconds and the job allocated 372.83 GB of memory so far.
+2026-09-14 11:56:33.850 INFO   [438D78\CFFC10] Auto-routing pass #8 on board '6f41b6f98f37790c0fc5153b6a2ab13f' was completed in 4.96 seconds with score 896.12 (12 unrouted and 34 violations), using 66.90 CPU seconds and the job allocated 401.24 GB of memory so far.
+2026-09-14 11:56:38.179 INFO   [438D78\CFFC10] Auto-routing pass #9 on board '3df3f5c81b60c1c631e168f57d912f12' was completed in 4.03 seconds with score 901.64 (11 unrouted and 34 violations), using 70.84 CPU seconds and the job allocated 423.95 GB of memory so far.
+2026-09-14 11:56:42.567 INFO   [438D78\CFFC10] Auto-routing pass #10 on board '2e5c29dc5a24e1f89567be5c2269b5c9' was completed in 4.12 seconds with score 912.69 (9 unrouted and 34 violations), using 75.77 CPU seconds and the job allocated 453.90 GB of memory so far.
+2026-09-14 11:56:46.562 INFO   [438D78\CFFC10] Auto-routing pass #11 on board '2bccc43696307d61742d2b284a38f975' was completed in 3.69 seconds with score 907.17 (10 unrouted and 34 violations), using 79.66 CPU seconds and the job allocated 476.58 GB of memory so far.
+2026-09-14 11:56:50.887 INFO   [438D78\CFFC10] Auto-routing pass #12 on board '2bccc43696307d61742d2b284a38f975' was completed in 0.00 seconds with score 912.69 (9 unrouted and 34 violations), using 83.61 CPU seconds and the job allocated 499.64 GB of memory so far.
+2026-09-14 11:56:55.789 INFO   [438D78\CFFC10] Auto-routing pass #13 on board '2bccc43696307d61742d2b284a38f975' was completed in 4.74 seconds with score 901.64 (11 unrouted and 34 violations), using 88.54 CPU seconds and the job allocated 527.12 GB of memory so far.
+2026-09-14 11:57:00.475 INFO   [438D78\CFFC10] Auto-routing pass #14 on board 'c8466d8ca7d2a1e743659ee9c9cd1f1e' was completed in 4.38 seconds with score 912.69 (9 unrouted and 34 violations), using 93.48 CPU seconds and the job allocated 555.70 GB of memory so far.
+2026-09-14 11:57:06.366 INFO   [438D78\CFFC10] Auto-routing pass #15 on board 'f0c533ce3d0a7c6f53d9fdc749973b59' was completed in 5.42 seconds with score 862.97 (18 unrouted and 34 violations), using 99.42 CPU seconds and the job allocated 588.19 GB of memory so far.
+2026-09-14 11:57:13.887 INFO   [438D78\CFFC10] Auto-routing pass #16 on board 'f0c533ce3d0a7c6f53d9fdc749973b59' was completed in 0.00 seconds with score 912.69 (9 unrouted and 34 violations), using 106.34 CPU seconds and the job allocated 628.72 GB of memory so far.
+2026-09-14 11:57:19.467 INFO   [438D78\CFFC10] Auto-routing pass #17 on board 'f0c533ce3d0a7c6f53d9fdc749973b59' was completed in 5.40 seconds with score 862.97 (18 unrouted and 34 violations), using 112.26 CPU seconds and the job allocated 660.95 GB of memory so far.
+2026-09-14 11:57:24.920 INFO   [438D78\CFFC10] Auto-routing pass #18 on board 'e94262cdafd5a285a2e51d8f54512ba1' was completed in 5.22 seconds with score 907.17 (10 unrouted and 34 violations), using 117.20 CPU seconds and the job allocated 691.72 GB of memory so far.
+2026-09-14 11:57:30.730 INFO   [438D78\CFFC10] Auto-routing pass #19 on board '0c027788c4f19d34a704fb42c1f882fa' was completed in 5.55 seconds with score 901.64 (11 unrouted and 34 violations), using 123.14 CPU seconds and the job allocated 725.72 GB of memory so far.
+2026-09-14 11:57:37.985 INFO   [438D78\CFFC10] Auto-routing pass #20 on board 'bbf6bf8cfa66dd0e9682db941de634f1' was completed in 7.01 seconds with score 923.74 (7 unrouted and 34 violations), using 130.05 CPU seconds and the job allocated 770.63 GB of memory so far.
+2026-09-14 11:57:42.740 INFO   [438D78\CFFC10] Auto-routing pass #21 on board 'fc1f7e485ad3b9023e21faf1611e928b' was completed in 4.46 seconds with score 923.74 (7 unrouted and 34 violations), using 134.99 CPU seconds and the job allocated 799.05 GB of memory so far.
+2026-09-14 11:57:45.058 INFO   [438D78\CFFC10] Auto-routing pass #22 on board 'e1359f27087a226efc30061cfc8bfee8' was completed in 2.01 seconds with score 929.27 (6 unrouted and 34 violations), using 136.96 CPU seconds and the job allocated 812.61 GB of memory so far.
+2026-09-14 11:57:48.493 INFO   [438D78\CFFC10] Auto-routing pass #23 on board '4ecebc650ac2a747f94f11b1bdec9f3e' was completed in 3.14 seconds with score 923.74 (7 unrouted and 34 violations), using 140.91 CPU seconds and the job allocated 838.88 GB of memory so far.
+2026-09-14 11:57:51.037 INFO   [438D78\CFFC10] Auto-routing pass #24 on board '4ecebc650ac2a747f94f11b1bdec9f3e' was completed in 0.00 seconds with score 929.27 (6 unrouted and 34 violations), using 142.89 CPU seconds and the job allocated 852.09 GB of memory so far.
+2026-09-14 11:57:54.150 INFO   [438D78\CFFC10] Auto-routing pass #25 on board '4ecebc650ac2a747f94f11b1bdec9f3e' was completed in 2.95 seconds with score 923.74 (7 unrouted and 34 violations), using 145.84 CPU seconds and the job allocated 869.55 GB of memory so far.
+2026-09-14 11:57:57.877 INFO   [438D78\CFFC10] Auto-routing pass #26 on board '420ff6831875bd093476c77a6f7cb967' was completed in 3.42 seconds with score 929.27 (6 unrouted and 34 violations), using 149.79 CPU seconds and the job allocated 894.78 GB of memory so far.
+2026-09-14 11:58:01.293 INFO   [438D78\CFFC10] Auto-routing pass #27 on board 'caf53610c614e827491299fe8495844c' was completed in 3.11 seconds with score 923.74 (7 unrouted and 34 violations), using 153.75 CPU seconds and the job allocated 919.00 GB of memory so far.
+2026-09-14 11:58:04.948 INFO   [438D78\CFFC10] Auto-routing pass #28 on board '4ecebc650ac2a747f94f11b1bdec9f3e' was completed in 0.00 seconds with score 929.27 (6 unrouted and 34 violations), using 156.71 CPU seconds and the job allocated 937.21 GB of memory so far.
+2026-09-14 11:58:07.996 INFO   [438D78\CFFC10] Auto-routing pass #29 on board '4ecebc650ac2a747f94f11b1bdec9f3e' was completed in 2.89 seconds with score 923.74 (7 unrouted and 34 violations), using 159.66 CPU seconds and the job allocated 955.23 GB of memory so far.
+2026-09-14 11:58:11.868 INFO   [438D78\CFFC10] Auto-routing pass #30 on board '33cad4dbdaaf5cfa53394d814b63b6a9' was completed in 3.55 seconds with score 929.27 (6 unrouted and 34 violations), using 163.62 CPU seconds and the job allocated 980.17 GB of memory so far.
+2026-09-14 11:58:15.451 INFO   [438D78\CFFC10] Auto-routing pass #31 on board '5d958b48fb8c9f3ed53788e06d130bf5' was completed in 3.27 seconds with score 923.74 (7 unrouted and 34 violations), using 167.58 CPU seconds and the job allocated 1003.77 GB of memory so far.
+2026-09-14 11:58:19.135 INFO   [438D78\CFFC10] Auto-routing pass #32 on board '4ecebc650ac2a747f94f11b1bdec9f3e' was completed in 0.00 seconds with score 929.27 (6 unrouted and 34 violations), using 170.54 CPU seconds and the job allocated 1022.25 GB of memory so far.
+2026-09-14 11:58:19.166 INFO   [438D78\CFFC10] The router's best score (929.27) has not improved by more than 0.5 points since pass #22. Stopping the auto-router after 32 passes (6 items still unconnected).
+The following connections could not be routed -- please review your design (e.g. check pad clearances, trace width rules, and available routing space):
+  Net 'VBAT' (2 unrouted connections):
+    - D4-1  ->  C24-1
+    - C23-1  ->  C19-1
+  Net 'GND' (2 unrouted connections):
+    - R4-2  ->  C3-2
+    - Q1-2  ->  R16-2
+  Net 'VBAT_ADC' (1 unrouted connection):
+    - R4-1  ->  C4-1
+  Net 'GATE3' (1 unrouted connection):
+    - R20-1  ->  Q3-1
+2026-09-14 11:58:19.451 INFO   [438D78\CFFC10] Auto-routing stage completed: started with 177 unrouted nets, completed in 174.04 seconds, final score: 929.27 (6 unrouted and 34 violations), using 171.53 total CPU seconds, 1029.42 GB total allocated, and 734.4 MB peak heap usage.
+2026-09-14 11:58:19.597 INFO   [438D78\CFFC10] Optimization stage started on board '544699b2013129fcaddcec36a813abb1' with score 912.69 (9 unrouted and 34 violations).
+2026-09-14 11:58:32.043 INFO   [438D78\CFFC10] Stopping optimization pass #1 early after 50 consecutive items could not be improved.
+2026-09-14 11:58:32.196 INFO   [438D78\CFFC10] Optimizer pass #1 on board '5eecd8404b585ce89c1729064cfa8377' was completed in 12.15 seconds with the score of 912.69 (9 unrouted and 34 violations).
+2026-09-14 11:58:32.337 INFO   [438D78\CFFC10] Stopping optimizer because the improvement in this pass (0.0001%) is below the threshold (1.00%).
+2026-09-14 11:58:32.497 INFO   [438D78\CFFC10] Optimization stage completed: started with score 912.69 (9 unrouted and 34 violations), completed in 12.74 seconds, final score: 912.69 (9 unrouted and 34 violations), using 12.61 total CPU seconds, 115.46 GB total allocated, and 718.2 MB peak heap usage.
+2026-09-14 11:58:32.508 INFO   [438D78\CFFC10] Job '438D78\CFFC10' finished with state: COMPLETED (elapsed: 3 minutes 7.28 seconds, finished at UTC: 2026-09-14T04:58:32.508507590Z).
+2026-09-14 11:58:32.955 INFO   Saving output file '/home/pnt/FC_ESP32/FC_ESP32/FC_ESP32.ses' (SES)...
+2026-09-14 11:58:32.956 INFO   Successfully saved output file '/home/pnt/FC_ESP32/FC_ESP32/FC_ESP32.ses' (77543 bytes).
+
+╔══════════════════════════════════════════════════════════════════╗
+║           Thank you for using Freerouting!                       ║
+║                                                                  ║
+║  If you would like to support the project, please visit          ║
+║  https://www.freerouting.app/donate.html                         ║
+║  Every contribution helps keep this project open and active!     ║
+╚══════════════════════════════════════════════════════════════════╝

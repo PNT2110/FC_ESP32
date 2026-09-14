@@ -1,0 +1,7 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+VBAT_ADC islands 2
+Accessible grid points: [np.int64(2064), np.int64(122)]
+Added 37 segments; cost 6.966295090390212
+VBAT_ADC islands 1

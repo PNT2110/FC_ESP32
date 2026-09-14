@@ -1,0 +1,9 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+M1_NEG islands 2
+Copper bounds: [(0, 0, (77.249, 76.324, 79.703, 78.446)), (0, 0, (72.06, 69.43, 76.051, 74.951)), (1, 0, (72.274, 68.024, 73.742, 69.298)), (0, 1, (74.949, 72.997, 79.703, 77.786))]
+Accessible grid points: [np.int64(6253), np.int64(422)]
+Added 3 segments; cost 0.3328427124746191
+M1_NEG islands 1
+Copper bounds: [(0, 0, (77.249, 76.324, 79.703, 78.446)), (0, 0, (72.06, 68.024, 76.051, 74.951)), (0, 1, (74.949, 72.997, 79.703, 77.786))]
