@@ -1,0 +1,34 @@
+Reference,Value,Footprint,Datasheet,Library,Status
+U1,ESP32-WROOM-32 (8MB),FC_Local:ESP32,https://documentation.espressif.com/esp32-wroom-32_datasheet_en.html,Library/ESP32-WROOM-32_8MB_/ESP32-WROOM-32_8MB_.kicad_sym,Verify purchased flash variant; local PDF available
+U2,MPU-6500,FC_Local:MPU6500,https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6500-Register-Map2.pdf,Library/MPU-6500/MPU-6500.kicad_sym,Datasheet and exposed-pad assembly still require confirmation
+U3,CH340C,FC_Local:CH340C,https://www.wch-ic.com/downloads/CH340DS1_PDF.html,Library/CH340C/CH340C.kicad_sym,Confirmed against local datasheet
+U4,USBLC6-2SC6,FC_Local:SOT-23-6,https://www.st.com/resource/en/datasheet/usblc6-2.pdf,/usr/share/kicad/symbols/Power_Protection.kicad_sym,Confirm exact SOT-23-6 pin-compatible part
+U5,TPS63001DRCR,FC_Local:Texas_DRC0010J,https://www.ti.com/lit/ds/symlink/tps63001.pdf,/usr/share/kicad/symbols/Regulator_Switching.kicad_sym,Confirmed package/pin mapping; verify sourcing
+U6,TPS61070DDCR,FC_Local:SOT-23-6,https://www.ti.com/lit/ds/symlink/tps61070.pdf,Datasheet-derived local symbol,Confirm exact DDCR footprint and source
+L1,2.2uH VLF4012-2R2M1R5,FC_Local:L_VLF4012,https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_mld_vlf-e.pdf,Library/FC_Local/FC_Local.pretty/L_VLF4012.kicad_mod,Confirm exact manufacturer part / Isat / Irms / DCR
+L2,4.7uH >=1A shielded,FC_Local:L_4x4,https://www.coilcraft.com/getmedia/3b3e9a0d-85f6-4eb1-8e9d-2a7d6f6ad6a2/lps4012.pdf,Library/FC_Local/FC_Local.pretty/L_4x4.kicad_mod,Missing exact orderable part; do not order until selected
+D1-D6,SS16,FC_Local:SS16,https://www.diodes.com/assets/Datasheets/SS12-SS16.pdf,Library/SS16/SS16.kicad_sym,Confirmed electrical class; verify vendor suffix
+Q1-Q4,AO3400,FC_Local:AO3400,https://www.aosmd.com/sites/default/files/res/datasheets/AO3400.pdf,Library/AO3400/AO3400.kicad_sym,Confirmed against local datasheet
+Q5-Q6,MMBT3904,FC_Local:MMBT3904,https://www.diodes.com/assets/Datasheets/MMBT3904.pdf,Library/MMBT3904/MMBT3904.kicad_sym,Confirm vendor pinout before assembly
+J1,USB4105-GF-A,FC_Local:USB_C,https://gct.co/files/drawings/usb4105.pdf,Library/2345986-1/2345986-1.kicad_sym,Check exact GCT/TE ordering discrepancy in source files
+J2,MTF-01P SH1.0,FC_Local:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal,https://www.jst-mfg.com/product/pdf/eng/eSH.pdf,Library/FC_Local/FC_Local.pretty/JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.kicad_mod,Confirm cable orientation and sensor mating part
+J3,BAT 1S,FC_Local:Battery_Wire_Pads,,Library/FC_Local/FC_Local.pretty/Battery_Wire_Pads.kicad_mod,Custom wire pads; no standalone component datasheet
+J4-J7,M1-M4 + / -,FC_Local:Motor_Wire_Pads,,Library/FC_Local/FC_Local.pretty/Motor_Wire_Pads.kicad_mod,Custom wire pads; no standalone component datasheet
+J8-J9,I2C/UART1,FC_Local:Header_1x04_P2.54mm,,Library/FC_Local/FC_Local.pretty/Header_1x04_P2.54mm.kicad_mod,Generic header; select mating/header manufacturer
+"C1,C17",22uF 10V X5R,FC_Local:C_0805_2012Metric,https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf,/usr/share/kicad/symbols/Device.kicad_sym,Value/voltage class only; exact MLCC part missing
+"C2,C4-C5,C7,C9,C15,C18",100nF,FC_Local:C_0402_1005Metric,https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf,/usr/share/kicad/symbols/Device.kicad_sym,Value only; exact MLCC part missing
+"C3,C8",1uF,FC_Local:C_0603_1608Metric,https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf,/usr/share/kicad/symbols/Device.kicad_sym,Value only; exact MLCC part missing
+C6,10nF,FC_Local:C_0402_1005Metric,https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf,/usr/share/kicad/symbols/Device.kicad_sym,Value only; exact MLCC part missing
+C11,1uF 10V,FC_Local:C_0603_1608Metric,https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf,/usr/share/kicad/symbols/Device.kicad_sym,Value only; exact MLCC part missing
+"C12-C13",10uF 10V X5R,FC_Local:C_0805_2012Metric,https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf,/usr/share/kicad/symbols/Device.kicad_sym,Value/voltage class only; exact MLCC part missing
+C19,47uF 10V X5R,FC_Local:C_1206_3216Metric,https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf,/usr/share/kicad/symbols/Device.kicad_sym,Value/voltage class only; exact MLCC part missing
+"C21-C24",100nF 10V,FC_Local:C_0603_1608Metric,https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf,/usr/share/kicad/symbols/Device.kicad_sym,Value/voltage class only; exact MLCC part missing
+"R1-R2,R6,R9-R10",10k,FC_Local:R_0402_1005Metric,https://www.vishay.com/docs/20035/crcwce3.pdf,/usr/share/kicad/symbols/Device.kicad_sym,Value/tolerance only; exact resistor part missing
+R3-R4,100k 1%,FC_Local:R_0402_1005Metric,https://www.vishay.com/docs/20035/crcwce3.pdf,/usr/share/kicad/symbols/Device.kicad_sym,Value/tolerance only; exact resistor part missing
+R5,10R,FC_Local:R_0402_1005Metric,https://www.vishay.com/docs/20035/crcwce3.pdf,/usr/share/kicad/symbols/Device.kicad_sym,Value only; exact resistor part missing
+R7-R8,5.1k 1%,FC_Local:R_0402_1005Metric,https://www.vishay.com/docs/20035/crcwce3.pdf,/usr/share/kicad/symbols/Device.kicad_sym,USB CC value; exact resistor part missing
+"R11,R15,R17,R19,R21",100R,FC_Local:R_0402_1005Metric,https://www.vishay.com/docs/20035/crcwce3.pdf,/usr/share/kicad/symbols/Device.kicad_sym,Value only; exact resistor part missing
+R12,1.8M 1%,FC_Local:R_0402_1005Metric,https://www.vishay.com/docs/20035/crcwce3.pdf,/usr/share/kicad/symbols/Device.kicad_sym,Boost feedback value; exact resistor part missing
+R13,200k 1%,FC_Local:R_0402_1005Metric,https://www.vishay.com/docs/20035/crcwce3.pdf,/usr/share/kicad/symbols/Device.kicad_sym,Boost feedback value; exact resistor part missing
+"R16,R18,R20,R22",100k,FC_Local:R_0402_1005Metric,https://www.vishay.com/docs/20035/crcwce3.pdf,/usr/share/kicad/symbols/Device.kicad_sym,Value only; exact resistor part missing
+R23-R24,4.7k,FC_Local:R_0402_1005Metric,https://www.vishay.com/docs/20035/crcwce3.pdf,/usr/share/kicad/symbols/Device.kicad_sym,I2C pull-up value; exact resistor part missing

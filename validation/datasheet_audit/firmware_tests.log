@@ -1,0 +1,3 @@
+MPU6500 host regression tests passed
+ESP-NOW protocol and arming/failsafe tests passed
+Controller calibration, arming, output limits and fault tests passed

@@ -380,10 +380,19 @@ def finish_fp_artwork(fp):
                 item.SetLayer(pcb.F_Fab)
 
 def finish_artwork(b):
-    for item in b.GetDrawings():
-        if isinstance(item,pcb.PCB_TEXT) and item.GetText() in ('FC ESP32 / A','1S ONLY','BAT+  BAT-','USB'):
-            item.SetLayer(pcb.B_SilkS);item.SetMirrored(True);item.SetTextSize(vec(.8,.8))
-    for fp in b.GetFootprints():finish_fp_artwork(fp)
+    for item in list(b.GetDrawings()):
+        if isinstance(item,pcb.PCB_TEXT) and item.GetText() == 'FC ESP32 / A':
+            item.SetText('PNT')
+            item.SetTextSize(vec(2,2))
+            item.SetTextThickness(mm(.3))
+            item.SetLayer(pcb.B_SilkS)
+            item.SetMirrored(True)
+    for fp in b.GetFootprints():
+        finish_fp_artwork(fp)
+        for field in fp.GetFields():
+            if field.GetLayer()==pcb.B_SilkS:field.SetVisible(False)
+        for item in list(fp.GraphicalItems()):
+            if isinstance(item,pcb.PCB_TEXT) and item.GetLayer()==pcb.B_SilkS:fp.Remove(item)
 
 def pcb_board():
     b=pcb.BOARD(); b.SetCopperLayerCount(2); b.GetDesignSettings().SetBoardThickness(mm(.8))
@@ -413,7 +422,7 @@ def pcb_board():
         h=pcb.FOOTPRINT(b);h.SetReference('H'+str(i));h.SetPosition(vec(x,y));h.SetAttributes(pcb.FP_BOARD_ONLY|pcb.FP_EXCLUDE_FROM_BOM|pcb.FP_EXCLUDE_FROM_POS_FILES)
         p=pcb.PAD(h);p.SetAttribute(pcb.PAD_ATTRIB_NPTH);p.SetShape(pcb.PAD_SHAPE_CIRCLE);p.SetSize(vec(8.6,8.6));p.SetDrillSize(vec(8.6,8.6));p.SetPosition(vec(x,y));p.SetLayerSet(layers(pcb.F_Cu,pcb.B_Cu,pcb.F_Mask,pcb.B_Mask));h.Add(p);h.Reference().SetVisible(False);h.Value().SetVisible(False);b.Add(h)
         circle=pcb.PCB_SHAPE();circle.SetShape(pcb.SHAPE_T_CIRCLE);circle.SetCenter(vec(x,y));circle.SetEnd(vec(x+20,y));circle.SetLayer(pcb.Dwgs_User);circle.SetWidth(mm(.1));b.Add(circle)
-    for text,x,y,size in [('FC ESP32 / A',100,111,.8),('1S ONLY',110.5,110,.65),('BAT+  BAT-',110.5,114,.65),('USB',100,117,.65)]:
+    for text,x,y,size in [('PNT',100,111,.8),('1S ONLY',110.5,110,.65),('BAT+  BAT-',110.5,114,.65),('USB',100,117,.65)]:
         t=pcb.PCB_TEXT(b);t.SetText(text);t.SetPosition(vec(x,y));t.SetTextSize(vec(size,size));t.SetTextThickness(mm(.12));t.SetLayer(pcb.F_SilkS);b.Add(t)
     finish_artwork(b)
     # No ground pour until after routing. Antenna keepout comes from the supplied footprint.

@@ -6,7 +6,7 @@
 	(property "Reference" ""
 		(at 0 0 0)
 		(layer "F.SilkS")
-		(uuid "9dc67ee5-3faa-4b59-ba03-9d663ad84374")
+		(uuid "3e9f87f8-fc7a-49ee-a647-8489b9e521b8")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16,7 +16,7 @@
 	(property "Value" ""
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "6402c4fa-b3b1-41b0-92d9-66ba24a60f87")
+		(uuid "b90062f0-3ae6-49cb-9dcd-2304b245799b")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -27,7 +27,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d6c3b5a2-d325-4e4b-ad62-215d6e43015f")
+		(uuid "34ea8021-17e1-4690-9703-c7929c0f69f0")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -38,7 +38,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "fffc25e0-29b2-4547-8e06-47d80008f10c")
+		(uuid "7a3f90f6-ff3f-48f7-8b80-092e109c043f")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -55,7 +55,7 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "804c8d0f-10c8-4829-96cb-96dac1bbb4f5")
+		(uuid "aa1570c3-84fb-45b5-96a7-a4e9625e8970")
 	)
 	(fp_line
 		(start -5.33 1.52)
@@ -65,7 +65,7 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "d8857fd4-bdc7-439a-b4f3-38f8942405b1")
+		(uuid "92fbc537-5b56-4c0b-a6d5-938d3768f16f")
 	)
 	(fp_line
 		(start 5.33 -1.52)
@@ -75,7 +75,7 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "a796986b-c929-4056-8b16-a61d0fd67b04")
+		(uuid "b9f153c6-9219-410b-baae-5d748cd8164c")
 	)
 	(fp_line
 		(start 5.33 1.52)
@@ -85,7 +85,7 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "be47ebea-a32d-47d1-93a2-6936964063d1")
+		(uuid "3e8e338d-8f40-4deb-9601-d6fa325968db")
 	)
 	(pad "1" thru_hole roundrect
 		(at -3.81 0)
@@ -95,7 +95,7 @@
 		(remove_unused_layers no)
 		(roundrect_rratio 0.2)
 		(thermal_bridge_angle 45)
-		(uuid "3601472c-9dab-4a42-bdec-0184e68c25bc")
+		(uuid "eeb003ab-68fb-4f8f-b7ae-b0b38337ade3")
 	)
 	(pad "2" thru_hole roundrect
 		(at -1.27 0)
@@ -105,7 +105,7 @@
 		(remove_unused_layers no)
 		(roundrect_rratio 0.2)
 		(thermal_bridge_angle 45)
-		(uuid "a77592f6-6149-440d-b24b-17b845eeda5c")
+		(uuid "3f7682ec-7f77-4e60-9eba-fd7683e6f2d4")
 	)
 	(pad "3" thru_hole roundrect
 		(at 1.27 0)
@@ -115,7 +115,7 @@
 		(remove_unused_layers no)
 		(roundrect_rratio 0.2)
 		(thermal_bridge_angle 45)
-		(uuid "1050e5cc-9915-41d9-b63b-897cb6d6b2bd")
+		(uuid "9c6cb9c4-fc49-4280-91fb-e8e15b5ad1be")
 	)
 	(pad "4" thru_hole roundrect
 		(at 3.81 0)
@@ -125,7 +125,7 @@
 		(remove_unused_layers no)
 		(roundrect_rratio 0.2)
 		(thermal_bridge_angle 45)
-		(uuid "c8d11b55-7c70-4579-a6b0-2e8204222295")
+		(uuid "0562b577-c5c9-4796-8730-3a62979c0d21")
 	)
 	(embedded_fonts no)
 	(model "/usr/share/kicad/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step"

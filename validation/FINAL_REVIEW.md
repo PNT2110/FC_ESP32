@@ -1,5 +1,7 @@
 # Kiểm tra PCB cuối — 2026-09-14
 
+> Bổ sung từ lượt review datasheet: đã phát hiện track B.Cu dưới anten mà rule DRC hiện tại không cấm, cùng các rủi ro nguồn/firmware. Xem `../BAO_CAO_KIEM_TRA_MACH.md`. Kết quả sạch bên dưới chỉ xác nhận kết nối theo bộ rule hiện tại, không xác nhận thiết kế đạt toàn bộ datasheet hoặc chắc chắn hoạt động.
+
 ## Kết quả
 
 PCB chính: `../FC_ESP32/FC_ESP32.kicad_pcb`. Bản dự phòng: `final_routed.kicad_pcb`.

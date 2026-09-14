@@ -1,0 +1,31 @@
+{
+  "generated_utc": "2026-09-14T16:53:41.724059+00:00",
+  "read_only_hardware_review": true,
+  "erc_drc_pass": true,
+  "independent_antenna_pass": false,
+  "flight_proven": false,
+  "hardware_readiness": "NOT APPROVED: see BAO_CAO_KIEM_TRA_MACH.md",
+  "report_sha256": "a170811041e9edeea3f7b0613f46374321b23cd0528ffad1ca6a6ec013da2626",
+  "artifacts": {
+    "mmbt3904.png": "14fd565bc654ad29e99b739215a30e4efa0ca0965bb4fd6da6324114d8b953cc",
+    "drc_current.json": "b1200b099abed7aceee605fa4617a7a8c1fc5fed9b424fa2b6986a9ae1d7c910",
+    "render_top.log": "aa9c732c7ff06fc8aabf90f9962b2daf5ed525f51ed849df4225237a202fe021",
+    "top_3d.png": "5f2458fba0c3bfef9c53fc60551d230bfe305d465d946893309e54d40f9e98f7",
+    "erc_drc.log": "f843b7b759e7641961307063d5c8e9d9d26d38efe3895fdb8c2dc4a9dcacce51",
+    "erc_current.json": "eec55ff91357314a0a01449e4ce8e61ad51a704679873979d451567e833cab8a",
+    "audit.json": "b6084ec1635ecf8d55ddaa3e1746a81fd90f2c31c71f019e5a14a8aa2d48befe",
+    "antenna_audit.json": "f2a2ca4688b0d534740adea30b7b620951c1f16035bc7a2291b5f492ad60d135",
+    "bottom_3d.png": "06dc1d456e9eedca0635714098c9fbe1ef6dd9e5496d1fc512be88dafa9e63da",
+    "pin_audit.csv": "02f20af51259d051c0c6061bfb89acb22144671b5083248b030813539f556654",
+    "validation_summary.json": "3203f53c86139a7d517245d898da8c8319bea4624bc1250acff51348b3a8c8a2",
+    "usb4105.png": "54c2ddf27278dd6467e94cad427712398ff4f23691b3805614474df9e7aa9c6f",
+    "geometry.json": "a12613abdab227704733fff0f062b93ae79ced21ed0cd5a50c91c9c2c52e1957",
+    "render_bottom.log": "8d0b6f0684d67c469b6459808edaca3cff18da7e4f678c143d3a9d524aa0048e",
+    "invariants.log": "6d6d2b7318227b8c948a78c7ffa3299d1f4cefd4a577300525779d6097521144",
+    "pin_check.log": "00b19e6d1a36b63afb0a1023af6fb510c761b3df95762d2d3a63d66ed60d5500",
+    "ao3400.png": "c7464ee91467a8aa2cdba4a69b506fa4862d40fbe35484d030fc6ab437cc6137",
+    "invariants.json": "1ac7be693be28605412a7703c6cf21cf21b06cc81bf73bcf3655ae327b415531",
+    "firmware_tests.log": "92aa8f5cd26f41d7da9aaed2dd42007dd986fce0e7b948688a00f5605d6d61d4",
+    "LOG_KIEM_TRA.md": "dee30469c4668902922b70f1a547653cedbab548b80e0cdd7ea7d9206aea7751"
+  }
+}

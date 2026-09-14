@@ -9,6 +9,8 @@ import collections, csv, hashlib, json, math, re
 from pathlib import Path
 import xml.etree.ElementTree as ET
 import pcbnew as p
+from shapely.geometry import Point, LineString, box
+from shapely.ops import unary_union
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'validation/datasheet_audit'
@@ -65,12 +67,25 @@ positions={ref:[p.ToMM(f.GetPosition().x),p.ToMM(f.GetPosition().y)] for ref,f i
 geometry={'net_copper':{net:{'total_segment_length_mm':length,'widths_mm':sorted(widths[net])} for net,length in sorted(totals.items())},'component_centers_mm':positions,
  'center_distances_mm':{f'{a}-{z}':math.dist(positions[a],positions[z]) for a,z in [('U5','L1'),('U5','C12'),('U5','C13'),('U6','L2'),('U6','C17'),('U6','R12'),('U6','R13'),('J1','U4')]}}
 (OUT/'geometry.json').write_text(json.dumps(geometry,indent=2))
+antenna=box(91,77.75,109,84.05)  # U1 footprint's actual antenna rectangle.
+hits=[];overlaps=[]
+for t in board.GetTracks():
+ if isinstance(t,p.PCB_VIA):
+  g=Point(p.ToMM(t.GetPosition().x),p.ToMM(t.GetPosition().y)).buffer(p.ToMM(t.GetWidth(p.F_Cu))/2)
+  layer='F.Cu+B.Cu'
+ else:
+  g=LineString([(p.ToMM(v.x),p.ToMM(v.y)) for v in (t.GetStart(),t.GetEnd())]).buffer(p.ToMM(t.GetWidth())/2)
+  layer=board.GetLayerName(t.GetLayer())
+ cut=g.intersection(antenna)
+ if cut.area>1e-6:
+  overlaps.append(cut);hits.append({'net':t.GetNetname(),'layer':layer,'uuid':t.m_Uuid.AsString(),'intersection_area_mm2':cut.area})
+(OUT/'antenna_audit.json').write_text(json.dumps({'passed':not hits,'antenna_bounds_mm':list(antenna.bounds),'overlap_union_area_mm2':unary_union(overlaps).area,'track_via_hits':hits,'note':'Existing U1 rule areas forbid tracks on F.Cu but allow B.Cu tracks; clean DRC does not prove all-layer antenna clearance.'},indent=2))
 fw=(ROOT/'firmware/main/main.c').read_text()
 pin_macros={'MOTOR1_PIN':25,'MOTOR2_PIN':26,'MOTOR3_PIN':27,'MOTOR4_PIN':33,'MPU_MISO_PIN':19,'MPU_MOSI_PIN':23,'MPU_CLK_PIN':18,'MPU_CS_PIN':21,'MPU_INT_PIN':34,'OPTFLOW_TX_PIN':17,'OPTFLOW_RX_PIN':16,'I2C_MASTER_SDA_IO':4,'I2C_MASTER_SCL_IO':22,'EXP_TX_PIN':14,'EXP_RX_PIN':32}
 for name,number in pin_macros.items():
  match=re.search(r'#define\s+'+name+r'\s+(?:GPIO_NUM_)?(\d+)',fw)
  if not match or int(match[1])!=number:errors.append(['firmware',name,number])
-sources=[*ROOT.glob('FC_ESP32/*.kicad_sch'),ROOT/'FC_ESP32/FC_ESP32.kicad_pcb',ROOT/'FC_ESP32/FC_ESP32.kicad_pro',ROOT/'FC_ESP32/design.json',*ROOT.glob('firmware/main/*.[ch]'),ROOT/'firmware/main/Kconfig.projbuild',ROOT/'firmware/sdkconfig.defaults',*ROOT.glob('data_sheet/*.pdf')]
-result={'connectivity_pass':not errors,'independently_checked_pad_instances':checked,'all_pad_instances_logged':len(rows),'errors':errors,'explicit_uncertainties':['MPU6500 exposed pad 25 is not a numbered signal in the local datasheet; grounded in design, assembly guidance still required.','Pin connectivity does not prove power integrity, assembly fit, motor current or stable flight.'],'sha256':{str(path.relative_to(ROOT)):hashlib.sha256(path.read_bytes()).hexdigest() for path in sources}}
+sources=[Path(__file__),*ROOT.glob('FC_ESP32/*.kicad_sch'),ROOT/'FC_ESP32/FC_ESP32.kicad_pcb',ROOT/'FC_ESP32/FC_ESP32.kicad_pro',ROOT/'FC_ESP32/design.json',*ROOT.glob('firmware/main/*.[ch]'),ROOT/'firmware/main/Kconfig.projbuild',ROOT/'firmware/sdkconfig.defaults',*ROOT.glob('data_sheet/*.pdf')]
+result={'connectivity_pass':not errors,'antenna_pass':not hits,'automated_checks_pass':not errors and not hits,'independently_checked_pad_instances':checked,'all_pad_instances_logged':len(rows),'errors':errors,'explicit_uncertainties':['MPU6500 exposed pad 25 is not a numbered signal in the local datasheet; grounded in design, assembly guidance still required.','Pin connectivity does not prove power integrity, assembly fit, motor current or stable flight.'],'sha256':{str(path.relative_to(ROOT)):hashlib.sha256(path.read_bytes()).hexdigest() for path in sources}}
 (OUT/'audit.json').write_text(json.dumps(result,indent=2));print(json.dumps({k:v for k,v in result.items() if k!='sha256'},indent=2))
-raise SystemExit(bool(errors))
+raise SystemExit(bool(errors or hits))

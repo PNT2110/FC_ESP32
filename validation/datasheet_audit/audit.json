@@ -1,5 +1,7 @@
 {
   "connectivity_pass": true,
+  "antenna_pass": false,
+  "automated_checks_pass": false,
   "independently_checked_pad_instances": 135,
   "all_pad_instances_logged": 279,
   "errors": [],
@@ -8,6 +10,7 @@
     "Pin connectivity does not prove power integrity, assembly fit, motor current or stable flight."
   ],
   "sha256": {
+    "tools/review_design.py": "15ddf2ba7d4de1b493eea73871dd342ff7e23f8079d1ccf1b3ec94068c213b38",
     "FC_ESP32/motors.kicad_sch": "a8f219983686f223102f79755ab42e527210bb9b8880e7e11316e49cf243edf0",
     "FC_ESP32/imu.kicad_sch": "499dfb604a3a40b821398491ebd47bc96a4803b83dd9cdb5658b5a324dde2690",
     "FC_ESP32/FC_ESP32.kicad_sch": "34471bfa7beb6e48f7029c002f8a30da592bda2b257ee02c03e9a20e643bc8df",

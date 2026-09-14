@@ -1,5 +1,7 @@
 # Bàn giao dự án FC_ESP32 cho AI tiếp theo
 
+> Rà soát datasheet mới nhất phát hiện lỗi track VBAT/PWM1 trên B.Cu dưới anten, các rủi ro nguồn và chức năng firmware chưa hoàn thiện. Trạng thái chi tiết có trong `BAO_CAO_KIEM_TRA_MACH.md`; kiểm tra anten độc lập đang FAIL dù DRC=0. Ưu tiên báo cáo này hơn các kết luận cũ bên dưới.
+
 > Cập nhật sau khi người dùng cho phép tiếp tục: PCB chính đã nối đủ và đạt ERC/DRC/parity 0 lỗi trên KiCad 10.0.6. Xem `validation/FINAL_REVIEW.md` để biết trạng thái mới nhất. Nội dung bên dưới là lịch sử bàn giao trước khi sửa xong C3; không dùng các lỗi còn thiếu bên dưới làm trạng thái hiện tại.
 
 Tiếp tục dự án KiCad 10 tại `/home/pnt/FC_ESP32`. Đọc `AGENTS.md` và kiểm tra trạng thái file thực tế trước khi sửa. Không xem dự án là hoàn tất khi còn lỗi kết nối.

@@ -1,0 +1,151 @@
+{
+  "passed": false,
+  "antenna_bounds_mm": [
+    91.0,
+    77.75,
+    109.0,
+    84.05
+  ],
+  "overlap_union_area_mm2": 2.8227750769891577,
+  "track_via_hits": [
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "0915f903-41fd-497d-97ed-c08b31269bc1",
+      "intersection_area_mm2": 0.40911993971973404
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "18a33a6d-1dda-4446-a333-ce40d4d163c6",
+      "intersection_area_mm2": 0.13341171657121825
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "1ba812e0-3343-4359-b1c4-de8101a5294a",
+      "intersection_area_mm2": 0.3492958872111743
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "42664143-afc7-4add-b7f1-8fe005a43fb6",
+      "intersection_area_mm2": 0.08118247985358851
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "4acd6147-f373-4bd5-be89-018dfe8d0d07",
+      "intersection_area_mm2": 0.16044525445868343
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "60c5c1dc-aa73-4d99-a554-80e90648d0f9",
+      "intersection_area_mm2": 0.015892436800729517
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "6e3bfb84-103f-48ac-8d1c-13e9cf72efef",
+      "intersection_area_mm2": 0.17045655528606715
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "70435e8c-797e-4bd0-8531-759e98a7a887",
+      "intersection_area_mm2": 0.4521055338778912
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "768b382f-ce6c-439b-9b3d-41b3e00834b3",
+      "intersection_area_mm2": 0.12343928539063424
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "7c25d9f9-f80a-4438-ac4f-90cbe4f8c35a",
+      "intersection_area_mm2": 0.020892436800730788
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "7eff24e9-a70c-4abb-9197-1282e98ae23e",
+      "intersection_area_mm2": 0.30874604203666217
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "7f0057b6-3bd0-4792-ac79-886142743d7a",
+      "intersection_area_mm2": 0.22149934046052164
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "80381871-669e-4b2a-8710-952f7ce65eca",
+      "intersection_area_mm2": 0.2757980713495822
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "84028e52-05dc-48e0-9910-478e7f40e2b2",
+      "intersection_area_mm2": 0.33269737149511014
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "889a3bfc-d1d9-4f48-a30b-d57fd268cbdd",
+      "intersection_area_mm2": 0.2354972869201186
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "9ed84ba4-5f01-479e-8b7d-55cf644f1ae1",
+      "intersection_area_mm2": 0.08868247985358708
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "bb8c1804-8a2f-43bf-98b3-1afc832ae090",
+      "intersection_area_mm2": 0.39163432033664464
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "c628b722-dd07-468e-baca-667a05407637",
+      "intersection_area_mm2": 0.04967528539221572
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "c86a83d9-3cff-471c-a13f-c3c9096f6eaf",
+      "intersection_area_mm2": 0.04467528539221487
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "e0143245-03ee-4535-bc81-8937e70f8d66",
+      "intersection_area_mm2": 0.18264858025854033
+    },
+    {
+      "net": "VBAT",
+      "layer": "B.Cu",
+      "uuid": "e3eaddc9-1772-40b6-8650-58ef0a13bda3",
+      "intersection_area_mm2": 1.9976191571467825
+    },
+    {
+      "net": "PWM1",
+      "layer": "B.Cu",
+      "uuid": "82c5540c-7432-413c-a3e2-ad7dfc8bd635",
+      "intersection_area_mm2": 0.18374083804724803
+    },
+    {
+      "net": "PWM1",
+      "layer": "B.Cu",
+      "uuid": "cb01c464-386a-4033-bec9-e89d3ab5b249",
+      "intersection_area_mm2": 0.5492650213867319
+    }
+  ],
+  "note": "Existing U1 rule areas forbid tracks on F.Cu but allow B.Cu tracks; clean DRC does not prove all-layer antenna clearance."
+}

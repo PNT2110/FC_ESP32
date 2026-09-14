@@ -1,6 +1,6 @@
 {
   "kicad_version": "10.0.6",
-  "date": "2026-09-15T00:18:31",
+  "date": "2026-09-14T23:46:26",
   "erc_violations": 0,
   "drc_violations": 0,
   "unconnected_items": 0,
@@ -11,7 +11,7 @@
   "manufacturing_release": false,
   "note": "DRC/ERC alone do not validate component ratings, current capacity, sensor cable orientation or flight behavior.",
   "sha256": {
-    "FC_ESP32/FC_ESP32.kicad_pcb": "2e0de5cdc7416be03504045d042c0f7fdd4643f368e0c9072a78d24b8052146e",
+    "FC_ESP32/FC_ESP32.kicad_pcb": "7e4604d96eec04e8e92991f9adc387bfba455110b0886fc08c5ae4e01238253c",
     "FC_ESP32/FC_ESP32.kicad_pro": "ac194b65ddac59915b1f823bf6c2e2f266a74d8b58fbbcc7cb650826c1cdad15",
     "FC_ESP32/FC_ESP32.kicad_sch": "34471bfa7beb6e48f7029c002f8a30da592bda2b257ee02c03e9a20e643bc8df",
     "FC_ESP32/imu.kicad_sch": "499dfb604a3a40b821398491ebd47bc96a4803b83dd9cdb5658b5a324dde2690",
@@ -19,7 +19,7 @@
     "FC_ESP32/motors.kicad_sch": "a8f219983686f223102f79755ab42e527210bb9b8880e7e11316e49cf243edf0",
     "FC_ESP32/power.kicad_sch": "5a3e47b56d7c2f0d99d66ca9d061318014c4425ded1670516b1bf05562575cb1",
     "FC_ESP32/usb.kicad_sch": "51af5f19b18c78e5c18828a3968acd4a2332334ee677c1d733d537426899f3bb",
-    "tools/build_fc.py": "85016ab00065f9af0411e4afadc7aa9c3b98bfc9a028c106764f0c9e2e781a6a",
+    "tools/build_fc.py": "9dd0ab23c9971abe79f2cb6cb262d88398740107be68668eee9f5eaab576aa76",
     "tools/place_fc.py": "93d93832afb52c69605d371f212fa11781a8a55fab78e5eac99aa61251b0bea1"
   }
 }

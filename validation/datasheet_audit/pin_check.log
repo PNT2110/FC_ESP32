@@ -3,6 +3,8 @@
 ./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
 {
   "connectivity_pass": true,
+  "antenna_pass": false,
+  "automated_checks_pass": false,
   "independently_checked_pad_instances": 135,
   "all_pad_instances_logged": 279,
   "errors": [],

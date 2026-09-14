@@ -21,6 +21,12 @@ An ESP32-WROOM-32 based flight controller designed for 1S brushed quadcopters.
 
 ## Current status
 
+The subsequent datasheet review found B.Cu tracks inside the ESP32 antenna region,
+power-layout concerns and incomplete flight features despite clean ERC/DRC.
+See `BAO_CAO_KIEM_TRA_MACH.md` and `validation/datasheet_audit/LOG_KIEM_TRA.md`.
+The independent antenna check fails; do not interpret the routing checks below as
+proof that the design is ready to operate or manufacture.
+
 PCB routing and final ERC/DRC/parity checks passed on 2026-09-14 (KiCad 10.0.6):
 zero violations and zero unconnected items. Motor solder pads moved 1.5 mm inward;
 J2 faces outward. See `validation/FINAL_REVIEW.md` and `validation/final_3d.png`.
