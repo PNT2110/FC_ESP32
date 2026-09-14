@@ -3,7 +3,7 @@
 import math
 import numpy as np
 import pcbnew as p
-from shapely.geometry import Point,LineString,box
+from shapely.geometry import Point,LineString,Polygon,box
 from shapely.affinity import rotate
 from shapely.ops import unary_union
 from shapely import contains_xy
@@ -37,7 +37,19 @@ def items():
         result.append((t.GetNetname(),ls,g))
     return result
 def route(net,width):
-    data=items();same=[unary_union([g for name,ls,g in data if name==net and i in ls]).buffer(.001) for i in range(2)]
+    data=items()
+    if net=='GND':
+        p.ZONE_FILLER(b).Fill(b.Zones())
+        for zone in b.Zones():
+            if zone.GetNetname()!=net:continue
+            for i,ly in enumerate((p.F_Cu,p.B_Cu)):
+                if not zone.IsOnLayer(ly):continue
+                polys=zone.GetFilledPolysList(ly)
+                def ring(outline):return [xy(outline.CPoint(j)) for j in range(outline.PointCount())]
+                for j in range(polys.OutlineCount()):
+                    g=Polygon(ring(polys.COutline(j)),[ring(polys.CHole(j,k)) for k in range(polys.HoleCount(j))])
+                    data.append((net,[i],g))
+    same=[unary_union([g for name,ls,g in data if name==net and i in ls]).buffer(.001) for i in range(2)]
     pieces=[]
     for i,g in enumerate(same):
         if g.is_empty:continue
@@ -70,6 +82,11 @@ def route(net,width):
         masks.append(mask&access)
     sizes=[np.count_nonzero(a) for a in masks];print('Accessible grid points:',sizes,flush=True);main=int(np.argmax(sizes))
     if getattr(args,'source_group',None) is not None:main=args.source_group
+    if getattr(args,'source_ref',None):
+        fp=b.FindFootprintByReference(args.source_ref)
+        pad=next(pd for pd in fp.Pads() if pd.GetNetname()==net)
+        point=Point(xy(pad.GetPosition()))
+        main=next(int(labels[j]) for j,(i,g) in enumerate(pieces) if g.intersects(point) and pad.IsOnLayer((p.F_Cu,p.B_Cu)[i]))
     source=ids[masks[main]];target=np.zeros_like(clear)
     for j,m in enumerate(masks):
         if j!=main:target|=m
@@ -131,6 +148,7 @@ if __name__ == '__main__':
     parser.add_argument('net')
     parser.add_argument('--width',type=float,default=.18)
     parser.add_argument('--source-group',type=int)
+    parser.add_argument('--source-ref')
     parser.add_argument('--sense-branch',action='store_true')
     args=parser.parse_args()
     if args.net=='VBAT' and args.width<1.2 and not (args.sense_branch and args.width>=.4 and args.source_group is not None):parser.error('VBAT requires 1.2 mm')
