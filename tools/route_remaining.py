@@ -38,7 +38,7 @@ def items():
     return result
 def route(net,width):
     data=items()
-    if net=='GND':
+    if net=='GND' and not getattr(args,'ignore_zones',False):
         p.ZONE_FILLER(b).Fill(b.Zones())
         for zone in b.Zones():
             if zone.GetNetname()!=net:continue
@@ -149,6 +149,7 @@ if __name__ == '__main__':
     parser.add_argument('--width',type=float,default=.18)
     parser.add_argument('--source-group',type=int)
     parser.add_argument('--source-ref')
+    parser.add_argument('--ignore-zones',action='store_true')
     parser.add_argument('--sense-branch',action='store_true')
     args=parser.parse_args()
     if args.net=='VBAT' and args.width<1.2 and not (args.sense_branch and args.width>=.4 and args.source_group is not None):parser.error('VBAT requires 1.2 mm')

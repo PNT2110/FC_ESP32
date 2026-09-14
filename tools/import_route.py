@@ -18,6 +18,9 @@ def worker():
             fp=b.FindFootprintByReference(str(place[1]));assert fp
             assert abs(p.ToMM(fp.GetPosition().x)-float(place[2])/scale)<.001
             assert abs(p.ToMM(fp.GetPosition().y)+float(place[3])/scale)<.001
+            assert str(place[4])==('back' if fp.IsFlipped() else 'front'), f'SES side mismatch: {place[1]}'
+            delta=(fp.GetOrientationDegrees()-float(place[5])+180)%360-180
+            assert abs(delta)<.001, f'SES orientation mismatch: {place[1]}'
     # Validate placement before removing any existing copper. Save only on success.
     temporary = board_path.with_name('route_import.tmp.kicad_pcb')
     tree=sx.loads(board_path.read_text())
