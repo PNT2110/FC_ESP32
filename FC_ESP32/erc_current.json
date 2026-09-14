@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/erc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-09-15T00:18:28",
+    "date": "2026-09-15T02:43:17",
     "ignored_checks": [
         {
             "description": "Global label only appears once in the schematic",
@@ -29,31 +29,6 @@
         {
             "path": "/",
             "uuid_path": "/66c77950-f666-53dc-975a-70bcd0f9045b",
-            "violations": []
-        },
-        {
-            "path": "/ESP32 and battery measurement/",
-            "uuid_path": "/66c77950-f666-53dc-975a-70bcd0f9045b/ca07774a-6629-53db-9400-506c57cbc3c8",
-            "violations": []
-        },
-        {
-            "path": "/MPU6500 SPI and optical flow/",
-            "uuid_path": "/66c77950-f666-53dc-975a-70bcd0f9045b/ce7cb099-29d6-533a-b629-369a55496226",
-            "violations": []
-        },
-        {
-            "path": "/USB-C programming and auto-reset/",
-            "uuid_path": "/66c77950-f666-53dc-975a-70bcd0f9045b/b5a55bf2-df74-585a-975e-c67a58a432eb",
-            "violations": []
-        },
-        {
-            "path": "/1S power distribution/",
-            "uuid_path": "/66c77950-f666-53dc-975a-70bcd0f9045b/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5",
-            "violations": []
-        },
-        {
-            "path": "/Four brushed motor drivers/",
-            "uuid_path": "/66c77950-f666-53dc-975a-70bcd0f9045b/4c50d56c-dab3-5718-84fa-150decac0854",
             "violations": []
         }
     ],

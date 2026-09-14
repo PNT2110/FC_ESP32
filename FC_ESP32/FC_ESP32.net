@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/pnt/FC_ESP32/FC_ESP32/FC_ESP32.kicad_sch</source>
-    <date>2026-09-14T12:25:50</date>
+    <date>2026-09-15T02:42:51</date>
     <tool>Eeschema 10.0.6-10.0.6~ubuntu26.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -11,96 +11,6 @@
         <rev>A-prototype</rev>
         <date/>
         <source>FC_ESP32.kicad_sch</source>
-        <comment number="1" value=""/>
-        <comment number="2" value=""/>
-        <comment number="3" value=""/>
-        <comment number="4" value=""/>
-        <comment number="5" value=""/>
-        <comment number="6" value=""/>
-        <comment number="7" value=""/>
-        <comment number="8" value=""/>
-        <comment number="9" value=""/>
-      </title_block>
-    </sheet>
-    <sheet number="2" name="/ESP32 and battery measurement/" tstamps="/ca07774a-6629-53db-9400-506c57cbc3c8/">
-      <title_block>
-        <title>ESP32 and battery measurement</title>
-        <company/>
-        <rev>A-prototype</rev>
-        <date/>
-        <source>mcu.kicad_sch</source>
-        <comment number="1" value=""/>
-        <comment number="2" value=""/>
-        <comment number="3" value=""/>
-        <comment number="4" value=""/>
-        <comment number="5" value=""/>
-        <comment number="6" value=""/>
-        <comment number="7" value=""/>
-        <comment number="8" value=""/>
-        <comment number="9" value=""/>
-      </title_block>
-    </sheet>
-    <sheet number="3" name="/MPU6500 SPI and optical flow/" tstamps="/ce7cb099-29d6-533a-b629-369a55496226/">
-      <title_block>
-        <title>MPU6500 SPI and optical flow</title>
-        <company/>
-        <rev>A-prototype</rev>
-        <date/>
-        <source>imu.kicad_sch</source>
-        <comment number="1" value=""/>
-        <comment number="2" value=""/>
-        <comment number="3" value=""/>
-        <comment number="4" value=""/>
-        <comment number="5" value=""/>
-        <comment number="6" value=""/>
-        <comment number="7" value=""/>
-        <comment number="8" value=""/>
-        <comment number="9" value=""/>
-      </title_block>
-    </sheet>
-    <sheet number="4" name="/USB-C programming and auto-reset/" tstamps="/b5a55bf2-df74-585a-975e-c67a58a432eb/">
-      <title_block>
-        <title>USB-C programming and auto-reset</title>
-        <company/>
-        <rev>A-prototype</rev>
-        <date/>
-        <source>usb.kicad_sch</source>
-        <comment number="1" value=""/>
-        <comment number="2" value=""/>
-        <comment number="3" value=""/>
-        <comment number="4" value=""/>
-        <comment number="5" value=""/>
-        <comment number="6" value=""/>
-        <comment number="7" value=""/>
-        <comment number="8" value=""/>
-        <comment number="9" value=""/>
-      </title_block>
-    </sheet>
-    <sheet number="5" name="/1S power distribution/" tstamps="/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5/">
-      <title_block>
-        <title>1S power distribution</title>
-        <company/>
-        <rev>A-prototype</rev>
-        <date/>
-        <source>power.kicad_sch</source>
-        <comment number="1" value=""/>
-        <comment number="2" value=""/>
-        <comment number="3" value=""/>
-        <comment number="4" value=""/>
-        <comment number="5" value=""/>
-        <comment number="6" value=""/>
-        <comment number="7" value=""/>
-        <comment number="8" value=""/>
-        <comment number="9" value=""/>
-      </title_block>
-    </sheet>
-    <sheet number="6" name="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/">
-      <title_block>
-        <title>Four brushed motor drivers</title>
-        <company/>
-        <rev>A-prototype</rev>
-        <date/>
-        <source>motors.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -123,11 +33,11 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="ESP32 and battery measurement"/>
-      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/ESP32 and battery measurement/" tstamps="/ca07774a-6629-53db-9400-506c57cbc3c8/"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>6ee3019a-f3d5-5916-a106-4b4943f93c20</tstamps>
       <units>
         <unit name="A">
@@ -147,11 +57,11 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="ESP32 and battery measurement"/>
-      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/ESP32 and battery measurement/" tstamps="/ca07774a-6629-53db-9400-506c57cbc3c8/"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>5c6d651d-fffa-546a-ba25-2a26713dc466</tstamps>
       <units>
         <unit name="A">
@@ -171,11 +81,11 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="ESP32 and battery measurement"/>
-      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/ESP32 and battery measurement/" tstamps="/ca07774a-6629-53db-9400-506c57cbc3c8/"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>bbab7da0-83b8-51c9-b5fe-e323d5c0aecf</tstamps>
       <units>
         <unit name="A">
@@ -195,12 +105,713 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="ESP32 and battery measurement"/>
-      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/ESP32 and battery measurement/" tstamps="/ca07774a-6629-53db-9400-506c57cbc3c8/"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>8adeecd6-9a1a-565f-9e91-571c79579617</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <footprint>FC_Local:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e9eac104-6d91-5227-8df3-5d24e2c32891</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>10nF</value>
+      <footprint>FC_Local:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7893be30-11e1-53f2-aaf2-bc2bcc1de770</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>100nF</value>
+      <footprint>FC_Local:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b42595ac-9d5a-557b-a90b-5413c4656dd5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>1uF</value>
+      <footprint>FC_Local:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>63ca3f16-ccce-5a3e-9d21-bd75c1d0b37b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>100nF</value>
+      <footprint>FC_Local:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4ca7e863-9659-5ff9-a5fb-b0a61311ebe1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>1uF 10V</value>
+      <footprint>FC_Local:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1de3fd25-af34-54a3-9bb3-c657a6c9a5b0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>10uF 10V X5R</value>
+      <footprint>FC_Local:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>60739533-e3aa-5be0-8877-558f85777849</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>10uF 10V X5R</value>
+      <footprint>FC_Local:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>756d104c-e90b-537c-9ea1-ded5fcf67305</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>100nF</value>
+      <footprint>FC_Local:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b3ae872c-38dc-5438-9fd3-e357ab92150b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>22uF 10V X5R</value>
+      <footprint>FC_Local:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>101f876f-d44e-5abf-8c0c-333c224622d4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C18">
+      <value>100nF</value>
+      <footprint>FC_Local:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5a6ca38a-967a-5e2d-94d2-c54d91338fea</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C19">
+      <value>47uF 10V X5R</value>
+      <footprint>FC_Local:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>56f662fc-7fc5-5f56-a76e-4bd3490b5c15</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C21">
+      <value>100nF 10V</value>
+      <footprint>FC_Local:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4a9697c0-59de-5850-b7c9-f663c68d4572</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C22">
+      <value>100nF 10V</value>
+      <footprint>FC_Local:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dfb4b442-0f24-52e5-85d8-fe7ad91ff5d8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C23">
+      <value>100nF 10V</value>
+      <footprint>FC_Local:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a178a8fa-7192-5f7c-bba6-6a570ff9b676</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C24">
+      <value>100nF 10V</value>
+      <footprint>FC_Local:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>47132974-983d-5abe-89bf-6e737c0a482d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>SS16</value>
+      <footprint>FC_Local:SS16</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:SS16</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="SS16" description="1A, 60V, Planar Schottky"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dd78090f-408e-548b-af8b-328d7f7d3bc5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>SS16</value>
+      <footprint>FC_Local:SS16</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:SS16</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="SS16" description="1A, 60V, Planar Schottky"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d03251f8-7c83-5caa-8198-fbb126ebdd6a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D3">
+      <value>SS16</value>
+      <footprint>FC_Local:SS16</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:SS16</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="SS16" description="1A, 60V, Planar Schottky"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f77faa6a-50c2-5a7a-87cb-72cd2615d3f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D4">
+      <value>SS16</value>
+      <footprint>FC_Local:SS16</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:SS16</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="SS16" description="1A, 60V, Planar Schottky"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b3ec36da-1b5d-57f6-9b49-2a48ecb23e9e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D5">
+      <value>SS16</value>
+      <footprint>FC_Local:SS16</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:SS16</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="SS16" description="1A, 60V, Planar Schottky"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>997089e3-addb-5f2a-bf11-088a75d6e618</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D6">
+      <value>SS16</value>
+      <footprint>FC_Local:SS16</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:SS16</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="SS16" description="1A, 60V, Planar Schottky"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>81c0681b-3825-5cd3-a79c-712687bbd8b0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>USB4105-GF-A</value>
+      <footprint>FC_Local:USB_C</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:USB_C</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="USB_C" description="USB 2.0-only 16P Type-C Receptacle connector"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="usb universal serial bus type-C USB2.0"/>
+      <property name="ki_fp_filters" value="USB*C*Receptacle*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9a04d0aa-e17d-5613-ad69-89b3f7bf51bd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="SH"/>
+            <pin num="B1"/>
+            <pin num="B12"/>
+            <pin num="A1"/>
+            <pin num="A12"/>
+            <pin num="A9"/>
+            <pin num="B4"/>
+            <pin num="B9"/>
+            <pin num="A4"/>
+            <pin num="A5"/>
+            <pin num="B5"/>
+            <pin num="A7"/>
+            <pin num="B7"/>
+            <pin num="A6"/>
+            <pin num="B6"/>
+            <pin num="A8"/>
+            <pin num="B8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>MTF-01P SH1.0</value>
+      <footprint>FC_Local:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="Conn4" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f1ae49fc-2a95-5ce7-b6dc-854c4c040014</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>BAT 1S</value>
+      <footprint>FC_Local:Battery_Wire_Pads</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:Battery_Wire_Pads</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="Conn2" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0400d22c-65b6-5532-8518-25f5f784b9f5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J4">
+      <value>M1 + / -</value>
+      <footprint>FC_Local:Motor_Wire_Pads</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:Motor_Wire_Pads</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="Conn2" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00491ca6-c35d-5282-9c07-af6ce171dc78</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J5">
+      <value>M2 + / -</value>
+      <footprint>FC_Local:Motor_Wire_Pads</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:Motor_Wire_Pads</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="Conn2" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5a8d3c51-904a-5479-948a-da630abec57d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J6">
+      <value>M3 + / -</value>
+      <footprint>FC_Local:Motor_Wire_Pads</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:Motor_Wire_Pads</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="Conn2" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d694288d-1ffd-587c-a43e-13bdd464435b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J7">
+      <value>M4 + / -</value>
+      <footprint>FC_Local:Motor_Wire_Pads</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:Motor_Wire_Pads</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="Conn2" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c60d6186-33c8-58e3-8d80-330da56d8034</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -219,11 +830,11 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="Conn4" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value="ESP32 and battery measurement"/>
-      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
       <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
-      <sheetpath names="/ESP32 and battery measurement/" tstamps="/ca07774a-6629-53db-9400-506c57cbc3c8/"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>75c64c4f-3c1d-5c12-8009-7636b0dc3a47</tstamps>
       <units>
         <unit name="A">
@@ -245,11 +856,11 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="Conn4" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value="ESP32 and battery measurement"/>
-      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
       <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
-      <sheetpath names="/ESP32 and battery measurement/" tstamps="/ca07774a-6629-53db-9400-506c57cbc3c8/"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>adcb6c8c-39b2-55dd-aaf2-b1372fabdd1e</tstamps>
       <units>
         <unit name="A">
@@ -258,6 +869,192 @@
             <pin num="2"/>
             <pin num="3"/>
             <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>2.2uH VLF4012-2R2M1R5</value>
+      <footprint>FC_Local:L_VLF4012</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:L_VLF4012</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="L" description="Inductor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>52804509-60ec-5abc-9d90-d6f8249fc4ea</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L2">
+      <value>4.7uH &gt;=1A shielded</value>
+      <footprint>FC_Local:L_4x4</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:L_4x4</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="L" description="Inductor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8aae7433-525a-58f4-834a-8a9f13a17712</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>AO3400</value>
+      <footprint>FC_Local:AO3400</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:AO3400</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="AO3400" description="N-Channel 30 V 5.8A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5b7a3710-b77b-56da-945c-701022729203</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q2">
+      <value>AO3400</value>
+      <footprint>FC_Local:AO3400</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:AO3400</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="AO3400" description="N-Channel 30 V 5.8A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>34a3e9d9-6b8c-5f0c-a98c-0dca69b177d5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q3">
+      <value>AO3400</value>
+      <footprint>FC_Local:AO3400</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:AO3400</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="AO3400" description="N-Channel 30 V 5.8A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>92d4d5b1-7ae5-5b43-a406-9dcc4f8f88b8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q4">
+      <value>AO3400</value>
+      <footprint>FC_Local:AO3400</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:AO3400</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="AO3400" description="N-Channel 30 V 5.8A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8953694f-dc98-5853-a0e8-c1138c7759e9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q5">
+      <value>MMBT3904</value>
+      <footprint>FC_Local:MMBT3904</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:MMBT3904</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="MMBT3904" description="BJT, SOT-23, 40V, 200mA, NPN, 0.35W, 150°C"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bb34071a-2770-5353-810b-881f0418d893</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q6">
+      <value>MMBT3904</value>
+      <footprint>FC_Local:MMBT3904</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:MMBT3904</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="MMBT3904" description="BJT, SOT-23, 40V, 200mA, NPN, 0.35W, 150°C"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3eb60846-cfdb-5504-b50f-049b961781d8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
           </pins>
         </unit>
       </units>
@@ -271,11 +1068,11 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="ESP32 and battery measurement"/>
-      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/ESP32 and battery measurement/" tstamps="/ca07774a-6629-53db-9400-506c57cbc3c8/"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>888913d2-f4a4-5eda-b303-63ac01b54fd6</tstamps>
       <units>
         <unit name="A">
@@ -295,11 +1092,11 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="ESP32 and battery measurement"/>
-      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/ESP32 and battery measurement/" tstamps="/ca07774a-6629-53db-9400-506c57cbc3c8/"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>41390c08-ea2f-5f06-b562-85c82a734db8</tstamps>
       <units>
         <unit name="A">
@@ -319,11 +1116,11 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="ESP32 and battery measurement"/>
-      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/ESP32 and battery measurement/" tstamps="/ca07774a-6629-53db-9400-506c57cbc3c8/"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>6695888e-7c52-532d-8c2f-c7fc838a2894</tstamps>
       <units>
         <unit name="A">
@@ -343,12 +1140,420 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="ESP32 and battery measurement"/>
-      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/ESP32 and battery measurement/" tstamps="/ca07774a-6629-53db-9400-506c57cbc3c8/"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>4fb7592e-67bd-56cc-bc9d-66e216a53811</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>10R</value>
+      <footprint>FC_Local:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="R" description="Resistor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dff187db-9212-5cab-9cb3-70c96a566d41</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>FC_Local:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="R" description="Resistor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e0b29c5c-ea07-5d07-8dd3-e5edca694cd4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>5.1k 1%</value>
+      <footprint>FC_Local:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="R" description="Resistor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>34bf83b7-f43f-5c07-922f-814088eecd6a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>5.1k 1%</value>
+      <footprint>FC_Local:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="R" description="Resistor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e652b815-21cb-5b1c-b327-1ae92b727d86</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>FC_Local:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="R" description="Resistor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cac7a090-454c-55b9-b27c-ec6c4572387c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>10k</value>
+      <footprint>FC_Local:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="R" description="Resistor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f518ad0d-cf94-5fec-b0a2-38259ad82e7c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>100R</value>
+      <footprint>FC_Local:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="R" description="Resistor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5d544984-1495-57f6-9e9b-d2178b24588b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>1.8M 1%</value>
+      <footprint>FC_Local:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="R" description="Resistor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>92a68341-45b2-5acd-8453-798c11ddd400</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>200k 1%</value>
+      <footprint>FC_Local:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="R" description="Resistor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>98d40c03-caf7-593e-a623-d800e3fd9b83</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>100R</value>
+      <footprint>FC_Local:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="R" description="Resistor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>156a1c39-a80f-5224-9261-fdcef47b38f1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>100k</value>
+      <footprint>FC_Local:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="R" description="Resistor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>568e0e16-a045-587f-8fd3-ea09a3d76261</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>100R</value>
+      <footprint>FC_Local:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="R" description="Resistor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2231a861-ed14-5421-97a9-4c906fba77fe</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R18">
+      <value>100k</value>
+      <footprint>FC_Local:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="R" description="Resistor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>348f26e1-2397-511a-a75e-677c11fd2e0c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R19">
+      <value>100R</value>
+      <footprint>FC_Local:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="R" description="Resistor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a9d41a50-025a-54da-8d28-f75ec05c3f70</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R20">
+      <value>100k</value>
+      <footprint>FC_Local:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="R" description="Resistor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a292f71c-6ca6-5f8f-b9c4-e95209cd5838</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R21">
+      <value>100R</value>
+      <footprint>FC_Local:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="R" description="Resistor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bf4042ac-e08c-5047-84fc-4f9d6f3b0158</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R22">
+      <value>100k</value>
+      <footprint>FC_Local:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="FC_Local" part="R" description="Resistor"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e297a2c8-f7ce-597d-89df-db7d54daead5</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -367,11 +1572,11 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="ESP32 and battery measurement"/>
-      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/ESP32 and battery measurement/" tstamps="/ca07774a-6629-53db-9400-506c57cbc3c8/"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>5149a271-ecda-5a2a-8127-23da042edbb1</tstamps>
       <units>
         <unit name="A">
@@ -391,11 +1596,11 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="ESP32 and battery measurement"/>
-      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/ESP32 and battery measurement/" tstamps="/ca07774a-6629-53db-9400-506c57cbc3c8/"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>a44c13e1-9e96-5517-b66a-af5fc8320753</tstamps>
       <units>
         <unit name="A">
@@ -415,9 +1620,9 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="ESP32" description="Bluetooth, WiFi 802.11b/g/n, Bluetooth v4.2 +EDR, Class 1, 2 and 3 Transceiver Module 2.4GHz ~ 2.5GHz Antenna Not Included, U.FL Surface Mount"/>
-      <property name="Sheetname" value="ESP32 and battery measurement"/>
-      <property name="Sheetfile" value="mcu.kicad_sch"/>
-      <sheetpath names="/ESP32 and battery measurement/" tstamps="/ca07774a-6629-53db-9400-506c57cbc3c8/"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>b11c6bc9-f954-5ffb-914a-3254ca224448</tstamps>
       <units>
         <unit name="A">
@@ -464,200 +1669,6 @@
         </unit>
       </units>
     </comp>
-    <comp ref="C5">
-      <value>100nF</value>
-      <footprint>FC_Local:C_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="MPU6500 SPI and optical flow"/>
-      <property name="Sheetfile" value="imu.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/MPU6500 SPI and optical flow/" tstamps="/ce7cb099-29d6-533a-b629-369a55496226/"/>
-      <tstamps>e9eac104-6d91-5227-8df3-5d24e2c32891</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C6">
-      <value>10nF</value>
-      <footprint>FC_Local:C_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="MPU6500 SPI and optical flow"/>
-      <property name="Sheetfile" value="imu.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/MPU6500 SPI and optical flow/" tstamps="/ce7cb099-29d6-533a-b629-369a55496226/"/>
-      <tstamps>7893be30-11e1-53f2-aaf2-bc2bcc1de770</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C7">
-      <value>100nF</value>
-      <footprint>FC_Local:C_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="MPU6500 SPI and optical flow"/>
-      <property name="Sheetfile" value="imu.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/MPU6500 SPI and optical flow/" tstamps="/ce7cb099-29d6-533a-b629-369a55496226/"/>
-      <tstamps>b42595ac-9d5a-557b-a90b-5413c4656dd5</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C8">
-      <value>1uF</value>
-      <footprint>FC_Local:C_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="MPU6500 SPI and optical flow"/>
-      <property name="Sheetfile" value="imu.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/MPU6500 SPI and optical flow/" tstamps="/ce7cb099-29d6-533a-b629-369a55496226/"/>
-      <tstamps>63ca3f16-ccce-5a3e-9d21-bd75c1d0b37b</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C18">
-      <value>100nF</value>
-      <footprint>FC_Local:C_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="MPU6500 SPI and optical flow"/>
-      <property name="Sheetfile" value="imu.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/MPU6500 SPI and optical flow/" tstamps="/ce7cb099-29d6-533a-b629-369a55496226/"/>
-      <tstamps>5a6ca38a-967a-5e2d-94d2-c54d91338fea</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J2">
-      <value>MTF-01P SH1.0</value>
-      <footprint>FC_Local:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="Conn4" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value="MPU6500 SPI and optical flow"/>
-      <property name="Sheetfile" value="imu.kicad_sch"/>
-      <property name="ki_keywords" value="connector"/>
-      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
-      <sheetpath names="/MPU6500 SPI and optical flow/" tstamps="/ce7cb099-29d6-533a-b629-369a55496226/"/>
-      <tstamps>f1ae49fc-2a95-5ce7-b6dc-854c4c040014</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-            <pin num="3"/>
-            <pin num="4"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R5">
-      <value>10R</value>
-      <footprint>FC_Local:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="MPU6500 SPI and optical flow"/>
-      <property name="Sheetfile" value="imu.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/MPU6500 SPI and optical flow/" tstamps="/ce7cb099-29d6-533a-b629-369a55496226/"/>
-      <tstamps>dff187db-9212-5cab-9cb3-70c96a566d41</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R6">
-      <value>10k</value>
-      <footprint>FC_Local:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="MPU6500 SPI and optical flow"/>
-      <property name="Sheetfile" value="imu.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/MPU6500 SPI and optical flow/" tstamps="/ce7cb099-29d6-533a-b629-369a55496226/"/>
-      <tstamps>e0b29c5c-ea07-5d07-8dd3-e5edca694cd4</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="U2">
       <value>MPU-6500</value>
       <footprint>FC_Local:MPU6500</footprint>
@@ -667,9 +1678,9 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="MPU6500" description="MotionTracking Device Digital Output 1.8V 24-Pin QFN EP T/R"/>
-      <property name="Sheetname" value="MPU6500 SPI and optical flow"/>
-      <property name="Sheetfile" value="imu.kicad_sch"/>
-      <sheetpath names="/MPU6500 SPI and optical flow/" tstamps="/ce7cb099-29d6-533a-b629-369a55496226/"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>4c7b0d68-711a-5013-9a6d-ef09b278b984</tstamps>
       <units>
         <unit name="A">
@@ -693,235 +1704,6 @@
         </unit>
       </units>
     </comp>
-    <comp ref="C9">
-      <value>100nF</value>
-      <footprint>FC_Local:C_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="USB-C programming and auto-reset"/>
-      <property name="Sheetfile" value="usb.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/USB-C programming and auto-reset/" tstamps="/b5a55bf2-df74-585a-975e-c67a58a432eb/"/>
-      <tstamps>4ca7e863-9659-5ff9-a5fb-b0a61311ebe1</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C11">
-      <value>1uF 10V</value>
-      <footprint>FC_Local:C_0603_1608Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="USB-C programming and auto-reset"/>
-      <property name="Sheetfile" value="usb.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/USB-C programming and auto-reset/" tstamps="/b5a55bf2-df74-585a-975e-c67a58a432eb/"/>
-      <tstamps>1de3fd25-af34-54a3-9bb3-c657a6c9a5b0</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J1">
-      <value>USB4105-GF-A</value>
-      <footprint>FC_Local:USB_C</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:USB_C</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="USB_C" description="USB 2.0-only 16P Type-C Receptacle connector"/>
-      <property name="Sheetname" value="USB-C programming and auto-reset"/>
-      <property name="Sheetfile" value="usb.kicad_sch"/>
-      <property name="ki_keywords" value="usb universal serial bus type-C USB2.0"/>
-      <property name="ki_fp_filters" value="USB*C*Receptacle*"/>
-      <sheetpath names="/USB-C programming and auto-reset/" tstamps="/b5a55bf2-df74-585a-975e-c67a58a432eb/"/>
-      <tstamps>9a04d0aa-e17d-5613-ad69-89b3f7bf51bd</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="SH"/>
-            <pin num="B1"/>
-            <pin num="B12"/>
-            <pin num="A1"/>
-            <pin num="A12"/>
-            <pin num="A9"/>
-            <pin num="B4"/>
-            <pin num="B9"/>
-            <pin num="A4"/>
-            <pin num="A5"/>
-            <pin num="B5"/>
-            <pin num="A7"/>
-            <pin num="B7"/>
-            <pin num="A6"/>
-            <pin num="B6"/>
-            <pin num="A8"/>
-            <pin num="B8"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="Q5">
-      <value>MMBT3904</value>
-      <footprint>FC_Local:MMBT3904</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:MMBT3904</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="MMBT3904" description="BJT, SOT-23, 40V, 200mA, NPN, 0.35W, 150°C"/>
-      <property name="Sheetname" value="USB-C programming and auto-reset"/>
-      <property name="Sheetfile" value="usb.kicad_sch"/>
-      <sheetpath names="/USB-C programming and auto-reset/" tstamps="/b5a55bf2-df74-585a-975e-c67a58a432eb/"/>
-      <tstamps>bb34071a-2770-5353-810b-881f0418d893</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="3"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="Q6">
-      <value>MMBT3904</value>
-      <footprint>FC_Local:MMBT3904</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:MMBT3904</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="MMBT3904" description="BJT, SOT-23, 40V, 200mA, NPN, 0.35W, 150°C"/>
-      <property name="Sheetname" value="USB-C programming and auto-reset"/>
-      <property name="Sheetfile" value="usb.kicad_sch"/>
-      <sheetpath names="/USB-C programming and auto-reset/" tstamps="/b5a55bf2-df74-585a-975e-c67a58a432eb/"/>
-      <tstamps>3eb60846-cfdb-5504-b50f-049b961781d8</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="3"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R7">
-      <value>5.1k 1%</value>
-      <footprint>FC_Local:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="USB-C programming and auto-reset"/>
-      <property name="Sheetfile" value="usb.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/USB-C programming and auto-reset/" tstamps="/b5a55bf2-df74-585a-975e-c67a58a432eb/"/>
-      <tstamps>34bf83b7-f43f-5c07-922f-814088eecd6a</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R8">
-      <value>5.1k 1%</value>
-      <footprint>FC_Local:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="USB-C programming and auto-reset"/>
-      <property name="Sheetfile" value="usb.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/USB-C programming and auto-reset/" tstamps="/b5a55bf2-df74-585a-975e-c67a58a432eb/"/>
-      <tstamps>e652b815-21cb-5b1c-b327-1ae92b727d86</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R9">
-      <value>10k</value>
-      <footprint>FC_Local:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="USB-C programming and auto-reset"/>
-      <property name="Sheetfile" value="usb.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/USB-C programming and auto-reset/" tstamps="/b5a55bf2-df74-585a-975e-c67a58a432eb/"/>
-      <tstamps>cac7a090-454c-55b9-b27c-ec6c4572387c</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R10">
-      <value>10k</value>
-      <footprint>FC_Local:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="USB-C programming and auto-reset"/>
-      <property name="Sheetfile" value="usb.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/USB-C programming and auto-reset/" tstamps="/b5a55bf2-df74-585a-975e-c67a58a432eb/"/>
-      <tstamps>f518ad0d-cf94-5fec-b0a2-38259ad82e7c</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="U3">
       <value>CH340C</value>
       <footprint>FC_Local:CH340C</footprint>
@@ -931,9 +1713,9 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="CH340C" description="USB to serial chip CH340"/>
-      <property name="Sheetname" value="USB-C programming and auto-reset"/>
-      <property name="Sheetfile" value="usb.kicad_sch"/>
-      <sheetpath names="/USB-C programming and auto-reset/" tstamps="/b5a55bf2-df74-585a-975e-c67a58a432eb/"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>a62c82a2-b329-571c-b7c5-ccca33ebf8db</tstamps>
       <units>
         <unit name="A">
@@ -967,11 +1749,11 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="USBLC6" description="Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"/>
-      <property name="Sheetname" value="USB-C programming and auto-reset"/>
-      <property name="Sheetfile" value="usb.kicad_sch"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
       <property name="ki_keywords" value="usb ethernet video"/>
       <property name="ki_fp_filters" value="SOT?23*"/>
-      <sheetpath names="/USB-C programming and auto-reset/" tstamps="/b5a55bf2-df74-585a-975e-c67a58a432eb/"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>5d6f5b74-9217-5bd2-a281-70a09305a843</tstamps>
       <units>
         <unit name="A">
@@ -986,314 +1768,6 @@
         </unit>
       </units>
     </comp>
-    <comp ref="C12">
-      <value>10uF 10V X5R</value>
-      <footprint>FC_Local:C_0805_2012Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="1S power distribution"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/1S power distribution/" tstamps="/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5/"/>
-      <tstamps>60739533-e3aa-5be0-8877-558f85777849</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C13">
-      <value>10uF 10V X5R</value>
-      <footprint>FC_Local:C_0805_2012Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="1S power distribution"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/1S power distribution/" tstamps="/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5/"/>
-      <tstamps>756d104c-e90b-537c-9ea1-ded5fcf67305</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C15">
-      <value>100nF</value>
-      <footprint>FC_Local:C_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="1S power distribution"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/1S power distribution/" tstamps="/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5/"/>
-      <tstamps>b3ae872c-38dc-5438-9fd3-e357ab92150b</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C17">
-      <value>22uF 10V X5R</value>
-      <footprint>FC_Local:C_0805_2012Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="1S power distribution"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/1S power distribution/" tstamps="/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5/"/>
-      <tstamps>101f876f-d44e-5abf-8c0c-333c224622d4</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C19">
-      <value>47uF 10V X5R</value>
-      <footprint>FC_Local:C_1206_3216Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:C_1206_3216Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="1S power distribution"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/1S power distribution/" tstamps="/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5/"/>
-      <tstamps>56f662fc-7fc5-5f56-a76e-4bd3490b5c15</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="D5">
-      <value>SS16</value>
-      <footprint>FC_Local:SS16</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:SS16</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="SS16" description="1A, 60V, Planar Schottky"/>
-      <property name="Sheetname" value="1S power distribution"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <sheetpath names="/1S power distribution/" tstamps="/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5/"/>
-      <tstamps>997089e3-addb-5f2a-bf11-088a75d6e618</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="2"/>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="D6">
-      <value>SS16</value>
-      <footprint>FC_Local:SS16</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:SS16</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="SS16" description="1A, 60V, Planar Schottky"/>
-      <property name="Sheetname" value="1S power distribution"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <sheetpath names="/1S power distribution/" tstamps="/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5/"/>
-      <tstamps>81c0681b-3825-5cd3-a79c-712687bbd8b0</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="2"/>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J3">
-      <value>BAT 1S</value>
-      <footprint>FC_Local:Battery_Wire_Pads</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:Battery_Wire_Pads</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="Conn2" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value="1S power distribution"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_keywords" value="connector"/>
-      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
-      <sheetpath names="/1S power distribution/" tstamps="/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5/"/>
-      <tstamps>0400d22c-65b6-5532-8518-25f5f784b9f5</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="L1">
-      <value>2.2uH VLF4012-2R2M1R5</value>
-      <footprint>FC_Local:L_VLF4012</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:L_VLF4012</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="L" description="Inductor"/>
-      <property name="Sheetname" value="1S power distribution"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
-      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
-      <sheetpath names="/1S power distribution/" tstamps="/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5/"/>
-      <tstamps>52804509-60ec-5abc-9d90-d6f8249fc4ea</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="L2">
-      <value>4.7uH &gt;=1A shielded</value>
-      <footprint>FC_Local:L_4x4</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:L_4x4</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="L" description="Inductor"/>
-      <property name="Sheetname" value="1S power distribution"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
-      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
-      <sheetpath names="/1S power distribution/" tstamps="/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5/"/>
-      <tstamps>8aae7433-525a-58f4-834a-8a9f13a17712</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R11">
-      <value>100R</value>
-      <footprint>FC_Local:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="1S power distribution"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/1S power distribution/" tstamps="/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5/"/>
-      <tstamps>5d544984-1495-57f6-9e9b-d2178b24588b</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R12">
-      <value>1.8M 1%</value>
-      <footprint>FC_Local:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="1S power distribution"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/1S power distribution/" tstamps="/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5/"/>
-      <tstamps>92a68341-45b2-5acd-8453-798c11ddd400</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R13">
-      <value>200k 1%</value>
-      <footprint>FC_Local:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="1S power distribution"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/1S power distribution/" tstamps="/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5/"/>
-      <tstamps>98d40c03-caf7-593e-a623-d800e3fd9b83</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="U5">
       <value>TPS63001DRCR</value>
       <footprint>FC_Local:Texas_DRC0010J</footprint>
@@ -1303,11 +1777,11 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="TPS63001" description="Buck-Boost Converter, 1.8-5.5V Input Voltage, 1.7A Switch Current, 3.3V Output Voltage, VSON-10"/>
-      <property name="Sheetname" value="1S power distribution"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
       <property name="ki_keywords" value="Buck-Boost fixed 3.3V converter"/>
       <property name="ki_fp_filters" value="Texas*DRC0010J*"/>
-      <sheetpath names="/1S power distribution/" tstamps="/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5/"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>7d9ead9d-d182-5d30-811d-c556677aedb4</tstamps>
       <units>
         <unit name="A">
@@ -1336,9 +1810,9 @@
         <field name="Description"/>
       </fields>
       <libsource lib="FC_Local" part="TPS61070" description=""/>
-      <property name="Sheetname" value="1S power distribution"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <sheetpath names="/1S power distribution/" tstamps="/e3c4ef4b-b8b4-5780-a1fd-bd739410c5c5/"/>
+      <property name="Sheetname" value="FC_ESP32"/>
+      <property name="Sheetfile" value="FC_ESP32.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
       <tstamps>391f2c29-bb24-58e7-a4b2-35cb115e5f60</tstamps>
       <units>
         <unit name="A">
@@ -1349,570 +1823,6 @@
             <pin num="1"/>
             <pin num="5"/>
             <pin num="4"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C21">
-      <value>100nF 10V</value>
-      <footprint>FC_Local:C_0603_1608Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>4a9697c0-59de-5850-b7c9-f663c68d4572</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C22">
-      <value>100nF 10V</value>
-      <footprint>FC_Local:C_0603_1608Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>dfb4b442-0f24-52e5-85d8-fe7ad91ff5d8</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C23">
-      <value>100nF 10V</value>
-      <footprint>FC_Local:C_0603_1608Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>a178a8fa-7192-5f7c-bba6-6a570ff9b676</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C24">
-      <value>100nF 10V</value>
-      <footprint>FC_Local:C_0603_1608Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>47132974-983d-5abe-89bf-6e737c0a482d</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="D1">
-      <value>SS16</value>
-      <footprint>FC_Local:SS16</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:SS16</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="SS16" description="1A, 60V, Planar Schottky"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>dd78090f-408e-548b-af8b-328d7f7d3bc5</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="2"/>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="D2">
-      <value>SS16</value>
-      <footprint>FC_Local:SS16</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:SS16</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="SS16" description="1A, 60V, Planar Schottky"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>d03251f8-7c83-5caa-8198-fbb126ebdd6a</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="2"/>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="D3">
-      <value>SS16</value>
-      <footprint>FC_Local:SS16</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:SS16</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="SS16" description="1A, 60V, Planar Schottky"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>f77faa6a-50c2-5a7a-87cb-72cd2615d3f7</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="2"/>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="D4">
-      <value>SS16</value>
-      <footprint>FC_Local:SS16</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:SS16</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="SS16" description="1A, 60V, Planar Schottky"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>b3ec36da-1b5d-57f6-9b49-2a48ecb23e9e</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="2"/>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J4">
-      <value>M1 + / -</value>
-      <footprint>FC_Local:Motor_Wire_Pads</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:Motor_Wire_Pads</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="Conn2" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <property name="ki_keywords" value="connector"/>
-      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>00491ca6-c35d-5282-9c07-af6ce171dc78</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J5">
-      <value>M2 + / -</value>
-      <footprint>FC_Local:Motor_Wire_Pads</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:Motor_Wire_Pads</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="Conn2" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <property name="ki_keywords" value="connector"/>
-      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>5a8d3c51-904a-5479-948a-da630abec57d</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J6">
-      <value>M3 + / -</value>
-      <footprint>FC_Local:Motor_Wire_Pads</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:Motor_Wire_Pads</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="Conn2" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <property name="ki_keywords" value="connector"/>
-      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>d694288d-1ffd-587c-a43e-13bdd464435b</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J7">
-      <value>M4 + / -</value>
-      <footprint>FC_Local:Motor_Wire_Pads</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:Motor_Wire_Pads</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="Conn2" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <property name="ki_keywords" value="connector"/>
-      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>c60d6186-33c8-58e3-8d80-330da56d8034</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="Q1">
-      <value>AO3400</value>
-      <footprint>FC_Local:AO3400</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:AO3400</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="AO3400" description="N-Channel 30 V 5.8A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>5b7a3710-b77b-56da-945c-701022729203</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="3"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="Q2">
-      <value>AO3400</value>
-      <footprint>FC_Local:AO3400</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:AO3400</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="AO3400" description="N-Channel 30 V 5.8A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>34a3e9d9-6b8c-5f0c-a98c-0dca69b177d5</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="3"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="Q3">
-      <value>AO3400</value>
-      <footprint>FC_Local:AO3400</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:AO3400</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="AO3400" description="N-Channel 30 V 5.8A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>92d4d5b1-7ae5-5b43-a406-9dcc4f8f88b8</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="3"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="Q4">
-      <value>AO3400</value>
-      <footprint>FC_Local:AO3400</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:AO3400</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="AO3400" description="N-Channel 30 V 5.8A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>8953694f-dc98-5853-a0e8-c1138c7759e9</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="3"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R15">
-      <value>100R</value>
-      <footprint>FC_Local:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>156a1c39-a80f-5224-9261-fdcef47b38f1</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R16">
-      <value>100k</value>
-      <footprint>FC_Local:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>568e0e16-a045-587f-8fd3-ea09a3d76261</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R17">
-      <value>100R</value>
-      <footprint>FC_Local:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>2231a861-ed14-5421-97a9-4c906fba77fe</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R18">
-      <value>100k</value>
-      <footprint>FC_Local:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>348f26e1-2397-511a-a75e-677c11fd2e0c</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R19">
-      <value>100R</value>
-      <footprint>FC_Local:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>a9d41a50-025a-54da-8d28-f75ec05c3f70</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R20">
-      <value>100k</value>
-      <footprint>FC_Local:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>a292f71c-6ca6-5f8f-b9c4-e95209cd5838</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R21">
-      <value>100R</value>
-      <footprint>FC_Local:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>bf4042ac-e08c-5047-84fc-4f9d6f3b0158</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R22">
-      <value>100k</value>
-      <footprint>FC_Local:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">FC_Local:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="FC_Local" part="R" description="Resistor"/>
-      <property name="Sheetname" value="Four brushed motor drivers"/>
-      <property name="Sheetfile" value="motors.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Four brushed motor drivers/" tstamps="/4c50d56c-dab3-5718-84fa-150decac0854/"/>
-      <tstamps>e297a2c8-f7ce-597d-89df-db7d54daead5</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
           </pins>
         </unit>
       </units>

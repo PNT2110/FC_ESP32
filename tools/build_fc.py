@@ -316,53 +316,59 @@ def save_symbols():
     (OUT/'fp-lib-table').write_text('(fp_lib_table (version 7) (lib (name "FC_Local") (type "KiCad") (uri "${KIPRJMOD}/../Library/FC_Local/FC_Local.pretty") (options "") (descr "Project-local footprints")))\n')
 
 def schematic():
+    # Single-page schematic: all components on the root sheet FC_ESP32.kicad_sch.
+    # Net connectivity, references, values, footprints and UUIDs are unchanged;
+    # only the previous 5-sheet hierarchy is removed. Spatial blocks preserve
+    # the old grouping for readability on a single large sheet.
     rootid=uid('root')
-    pages=['mcu','imu','usb','power','motors']
-    titles=['ESP32 and battery measurement','MPU6500 SPI and optical flow','USB-C programming and auto-reset','1S power distribution','Four brushed motor drivers']
-    root=[f'(kicad_sch (version 20250114) (generator "eeschema") (uuid {rootid}) (paper "A4") (title_block (title "FC ESP32 - 1S brushed quad") (rev "A-prototype")) (lib_symbols)']
-    for i,(page,title) in enumerate(zip(pages,titles)):
-        sid=uid('sheet/'+page); x=25+(i%2)*130; y=45+(i//2)*47
-        root.append(f'(sheet (at {x} {y}) (size 110 32) (stroke (width 0.254) (type default)) (fill (color 0 0 0 0)) (uuid {sid}) (property "Sheetname" {q(title)} (at {x} {y-2} 0) (effects (font (size 1.27 1.27)) (justify left bottom))) (property "Sheetfile" "{page}.kicad_sch" (at {x} {y+33} 0) (effects (font (size 1.27 1.27)) (justify left top))) (instances (project "FC_ESP32" (path "/{rootid}" (page "{i+2}")))))')
-        cs=[c for c in COMP if c['page']==page]
-        used=sorted({c['sym'] for c in cs})
-        if page=='power':used.append('PWR_FLAG')
-        defs=[]
-        for name in used:
-            a=copy.deepcopy(SYMS[name]); a[1]='FC_Local:'+name; defs.append(dump(a))
-        out=[f'(kicad_sch (version 20250114) (generator "eeschema") (uuid {uid(page)}) (paper "A3") (title_block (title {q(title)}) (rev "A-prototype")) (lib_symbols '+ '\n'.join(defs)+')']
-        for j,c in enumerate(cs):
-            cols,dx,dy=(3,111.76,63.5) if page in ('mcu','imu') else (4,93.98,40.64 if page=='motors' else 55.88)
-            x=50.8+(j%cols)*dx; y=50.8+(j//cols)*dy
-            pp=pins(c['sym']); maxy=max(float(child(p,'at')[2]) for p in pp)
-            top=y-maxy-7
-            tx,ty,just=(x+3.81,y-1.27,'(justify left)') if c['sym'] in ('R','C','L') else (x,top,'')
-            out.append(f'(symbol (lib_id "FC_Local:{c["sym"]}") (at {x} {y} 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid {c["uuid"]}) (property "Reference" {q(c["ref"])} (at {tx} {ty} 0) (effects (font (size 1.27 1.27)) {just})) (property "Value" {q(c["value"])} (at {tx} {ty+2.54} 0) (effects (font (size 1.0 1.0)) {just})) (property "Footprint" "FC_Local:{c["fp"]}" (at {x} {y} 0) (effects (font (size 1 1)) hide)) (instances (project "FC_ESP32" (path "/{rootid}/{sid}" (reference {q(c["ref"])}) (unit 1)))))')
-            seen={}
-            for p in pp:
-                num=str(child(p,'number')[1]); at=child(p,'at'); px=x+float(at[1]); py=y-float(at[2]); a=float(at[3]); net=c['nets'].get(num)
-                pos=(px,py)
-                if pos in seen:
-                    if seen[pos]!=net: raise ValueError((c['ref'],num,'stacked pin conflict'))
-                    continue
-                seen[pos]=net
-                if net:
-                    # Wires extend outwards from the symbol, with global labels at their ends.
-                    rad=math.radians(a); ex=round(px-5.08*math.cos(rad),6); ey=round(py+5.08*math.sin(rad),6)
-                    la=int(a)%360
-                    justify='right' if la==0 else 'left'
-                    out.append(f'(wire (pts (xy {px} {py}) (xy {ex} {ey})) (stroke (width 0) (type default)) (uuid {uid(c["ref"]+num+"wire")}))')
-                    out.append(f'(global_label {q(net)} (shape input) (at {ex} {ey} {la}) (effects (font (size 0.9 0.9)) (justify {justify})) (uuid {uid(c["ref"]+num+"label")}))')
-                else:
-                    out.append(f'(no_connect (at {px} {py}) (uuid {uid(c["ref"]+num+"nc")}))')
-        if page=='power':
-            for k,net in enumerate(['GND','VBUS','VSYS','VINA','+3V3_IMU','VBAT']):
-                x=25.4+k*50.8;y=269.24; ref='#FLG0'+str(k+1)
-                out.append(f'(symbol (lib_id "FC_Local:PWR_FLAG") (at {x} {y} 0) (unit 1) (in_bom no) (on_board yes) (uuid {uid(ref)}) (property "Reference" {q(ref)} (at {x} {y} 0) (effects (font (size 1 1)) hide)) (property "Value" "PWR_FLAG" (at {x} {y-5.08} 0) (effects (font (size 1 1)))) (instances (project "FC_ESP32" (path "/{rootid}/{sid}" (reference {q(ref)}) (unit 1)))))')
-                out.append(f'(global_label {q(net)} (shape input) (at {x} {y} 0) (effects (font (size 1 1)) (justify right)) (uuid {uid(ref+"label")}))')
-        out.append('(embedded_fonts no))')
-        (OUT/(page+'.kicad_sch')).write_text('\n'.join(out)+'\n')
-    root.append(f'(sheet_instances (path "/" (page "1"))) (embedded_fonts no))')
-    (OUT/'FC_ESP32.kicad_sch').write_text('\n'.join(root)+'\n')
+    # Grid-aligned, non-overlapping single-page blocks. All offsets are
+    # multiples of 1.27 mm so ERC stays off-grid clean like the old pages.
+    blocks={'mcu':(0,40.64),'imu':(431.8,40.64),'usb':(863.6,40.64),'power':(0,431.8),'motors':(431.8,431.8)}
+    used=sorted({c['sym'] for c in COMP}); used.append('PWR_FLAG')
+    defs=[]
+    for name in used:
+        a=copy.deepcopy(SYMS[name]); a[1]='FC_Local:'+name; defs.append(dump(a))
+    out=[f'(kicad_sch (version 20250114) (generator "eeschema") (uuid {rootid}) (paper "A0") (title_block (title "FC ESP32 - 1S brushed quad") (rev "A-prototype")) (lib_symbols '+ '\n'.join(defs)+')']
+    counters={}
+    for c in COMP:
+        page=c['page']; j=counters.get(page,0); counters[page]=j+1
+        cols,dx,dy=(3,111.76,63.5) if page in ('mcu','imu') else (4,93.98,40.64 if page=='motors' else 55.88)
+        ox,oy=blocks[page]
+        x=ox+50.8+(j%cols)*dx; y=oy+50.8+(j//cols)*dy
+        pp=pins(c['sym']); maxy=max(float(child(p,'at')[2]) for p in pp)
+        top=y-maxy-7
+        tx,ty,just=(x+3.81,y-1.27,'(justify left)') if c['sym'] in ('R','C','L') else (x,top,'')
+        out.append(f'(symbol (lib_id "FC_Local:{c["sym"]}") (at {x} {y} 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid {c["uuid"]}) (property "Reference" {q(c["ref"])} (at {tx} {ty} 0) (effects (font (size 1.27 1.27)) {just})) (property "Value" {q(c["value"])} (at {tx} {ty+2.54} 0) (effects (font (size 1.0 1.0)) {just})) (property "Footprint" "FC_Local:{c["fp"]}" (at {x} {y} 0) (effects (font (size 1 1)) hide)) (instances (project "FC_ESP32" (path "/{rootid}" (reference {q(c["ref"])}) (unit 1)))))')
+        seen={}
+        for p in pp:
+            num=str(child(p,'number')[1]); at=child(p,'at'); px=x+float(at[1]); py=y-float(at[2]); a=float(at[3]); net=c['nets'].get(num)
+            pos=(px,py)
+            if pos in seen:
+                if seen[pos]!=net: raise ValueError((c['ref'],num,'stacked pin conflict'))
+                continue
+            seen[pos]=net
+            if net:
+                rad=math.radians(a); ex=round(px-5.08*math.cos(rad),6); ey=round(py+5.08*math.sin(rad),6)
+                la=int(a)%360
+                justify='right' if la==0 else 'left'
+                out.append(f'(wire (pts (xy {px} {py}) (xy {ex} {ey})) (stroke (width 0) (type default)) (uuid {uid(c["ref"]+num+"wire")}))')
+                out.append(f'(global_label {q(net)} (shape input) (at {ex} {ey} {la}) (effects (font (size 0.9 0.9)) (justify {justify})) (uuid {uid(c["ref"]+num+"label")}))')
+            else:
+                out.append(f'(no_connect (at {px} {py}) (uuid {uid(c["ref"]+num+"nc")}))')
+    for k,net in enumerate(['GND','VBUS','VSYS','VINA','+3V3_IMU','VBAT']):
+        x=25.4+k*203.2;y=12.7; ref='#FLG0'+str(k+1)
+        out.append(f'(symbol (lib_id "FC_Local:PWR_FLAG") (at {x} {y} 0) (unit 1) (in_bom no) (on_board yes) (uuid {uid(ref)}) (property "Reference" {q(ref)} (at {x} {y} 0) (effects (font (size 1 1)) hide)) (property "Value" "PWR_FLAG" (at {x} {y-5.08} 0) (effects (font (size 1 1)))) (instances (project "FC_ESP32" (path "/{rootid}" (reference {q(ref)}) (unit 1)))))')
+        out.append(f'(global_label {q(net)} (shape input) (at {x} {y} 0) (effects (font (size 1 1)) (justify right)) (uuid {uid(ref+"label")}))')
+    # Readability-only section titles. Plain (text) nodes verified to load in
+    # kicad-cli netlist export; gr_text/gr_line break this schema version.
+    titles=[('POWER RAILS',25.4,5.08),('MCU / BATTERY SENSE',25.4,30.48),('IMU + FLOW (MPU6500 / J2)',457.2,30.48),('USB / CH340C + AUTO-RESET',889,30.48),('POWER 1S (TPS63001 / TPS61070)',25.4,421.64),('MOTORS x4 (AO3400 + SS16)',457.2,421.64)]
+    for title,x,y in titles:
+        out.append(f'(text {q(title)} (at {x} {y} 0) (effects (font (size 4 4))))')
+    out.append('(sheet_instances (path "/" (page "1"))) (embedded_fonts no))')
+    (OUT/'FC_ESP32.kicad_sch').write_text('\n'.join(out)+'\n')
+    for legacy in ('mcu','imu','usb','power','motors'):
+        p=OUT/(legacy+'.kicad_sch')
+        if p.exists(): p.unlink()
 
 def shape_board():
     # Extended arms +1.75cm per requested (1.5-2cm): motors pushed radially outward from center
@@ -404,7 +410,7 @@ def pcb_board():
     for c in COMP:
         fp=pcb.FootprintLoad(str(PRETTY),c['fp']); fp.SetReference(c['ref']); fp.SetValue(c['value']); fp.SetUuid(pcb.KIID(c['uuid']))
         fp.SetFPID(pcb.LIB_ID('FC_Local',c['fp']))
-        fp.SetPath(pcb.KIID_PATH('/'+uid('root')+'/'+uid('sheet/'+c['page'])+'/'+c['uuid']))
+        fp.SetPath(pcb.KIID_PATH('/'+uid('root')+'/'+c['uuid']))
         b.Add(fp)
         fp.SetPosition(vec(c['x'],c['y'])); fp.SetOrientationDegrees(c['angle'])
         if c['side']=='B': fp.Flip(fp.GetPosition(),pcb.FLIP_DIRECTION_LEFT_RIGHT)
@@ -470,4 +476,4 @@ if __name__=='__main__':
             component[field] = placement[component['ref']][field]
     project()  # pcbnew may save cached defaults while placing; write rules last.
     bom()
-    print(f'Created {len(COMP)} components and five schematic sheets in {OUT}')
+    print(f'Created {len(COMP)} components on one schematic sheet in {OUT}')
