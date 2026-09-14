@@ -1,0 +1,1748 @@
+                              Product           Sample &         Technical         Tools &           Support &
+                              Folder            Buy              Documents         Software          Community
+
+
+
+                                                                                  TPS61070, TPS61071, TPS61072, TPS61073
+                                                                                               SLVS510E – JULY 2006 – REVISED MARCH 2015
+
+           TPS6107x 90% Efficient Synchronous Boost Converter With 600-mA Switch
+1 Features                                                             3 Description
+1•   90% Efficient Synchronous Boost Converter                         The TPS6107x devices provide a power supply
+                                                                       solution for products powered by either a one-cell,
+     – 75-mA Output Current at 3.3 V From 0.9-V                        two-cell, or three-cell alkaline, NiCd or NiMH, or one-
+        Input                                                          cell Li-ion or Li-polymer battery. Output currents can
+     – 150-mA Output Current at 3.3 V From 1.8-V                       go as high as 75 mA while using a single-cell
+        Input                                                          alkaline, and discharge it down to 0.9 V. It can also
+•    Device Quiescent Current: 19 µA (Typ)                             be used for generating 5 V at 200 mA from a 3.3-V
+                                                                       rail or a Li-ion battery. The boost converter is based
+•    Input Voltage Range: 0.9 V to 5.5 V                               on a fixed frequency, pulse-width-modulation (PWM)
+•    Adjustable Output Voltage Up to 5.5 V                             controller using a synchronous rectifier to obtain
+•    Power-Save Mode Version Available for                             maximum efficiency. At low load currents the
+     Improved Efficiency at Low Output Power                           TPS61070 and TPS61073 enter the power-save
+                                                                       mode to maintain a high efficiency over a wide load
+•    Load Disconnect During Shutdown                                   current range. The power-save mode is disabled in
+•    Overtemperature Protection                                        the TPS61071 and TPS61072, forcing the converters
+•    Small 6-Pin Thin SOT23 Package                                    to operate at a fixed switching frequency. The
+                                                                       maximum peak current in the boost switch is typically
+2 Applications                                                         limited to a value of 600 mA.
+
+•    All One-Cell, Two-Cell, and Three-Cell Alkaline,                  The TPS6107x output voltage is programmed by an
+     NiCd or NiMH or Single-Cell Li                                    external resistor divider. The converter can be
+                                                                       disabled to minimize battery drain. During shutdown,
+     Battery-Powered Products
+                                                                       the load is completely disconnected from the battery.
+•    Portable Audio Players                                            The device is packaged in a 6-pin thin SOT23
+•    PDAs                                                              package (DDC).
+•    Cellular Phones
+                                                                                              Device Information(1)
+•    Personal Medical Products
+                                                                             PART NUMBER           PACKAGE          BODY SIZE (NOM)
+•    White LED Lighting                                                 TPS61070
+                                                                        TPS61071
+                                                                                               SOT (6)             2.90 mm x 1.60 mm
+                                                                        TPS61072
+                                                                        TPS61073
+                                                                        (1) For all available packages, see the orderable addendum at
+                                                                            the end of the datasheet.
+
+
+4 Typical Application Circuit
+                                                  L1
+                                                                     VOUT                          VO
+                                                4.7 µH     SW
+                                                                                           C2      3.3 V Up To
+                                                                                 R1
+                                                                                           10 µF   100 mA
+                                                           VBAT         FB
+                          0.9-V To VO                                            R2
+                                           C1               EN
+                                        10 µF
+                                                            GND
+
+                                                              TPS61070
+
+
+
+
+1
+
+
+
+
+       An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,
+       intellectual property matters and other important disclaimers. PRODUCTION DATA.
+TPS61070, TPS61071, TPS61072, TPS61073
+SLVS510E – JULY 2006 – REVISED MARCH 2015                                                                                                                             www.ti.com
+
+
+                                                                           Table of Contents
+    1    Features .................................................................. 1              10.3 Feature Description................................................. 9
+    2    Applications ........................................................... 1                 10.4 Device Functional Modes...................................... 11
+    3    Description ............................................................. 1          11 Application and Implementation........................ 12
+    4    Typical Application Circuit ................................... 1                          11.1 Application Information.......................................... 12
+                                                                                                    11.2 Typical Application ................................................ 12
+    5    Revision History..................................................... 2
+                                                                                                    11.3 System Examples ................................................. 17
+    6    Device Comparison Table..................................... 3
+                                                                                              12 Power Supply Recommendations ..................... 19
+    7    Pin Configuration and Functions ......................... 3
+                                                                                              13 Layout................................................................... 19
+    8    Specifications......................................................... 4
+                                                                                                    13.1 Layout Guidelines ................................................. 19
+         8.1    Absolute Maximum Ratings ...................................... 4
+                                                                                                    13.2 Layout Example .................................................... 19
+         8.2    ESD Ratings.............................................................. 4
+                                                                                                    13.3 Thermal Considerations ........................................ 20
+         8.3    Recommended Operating Conditions....................... 4
+         8.4    Thermal Information .................................................. 4      14 Device and Documentation Support ................. 21
+                                                                                                    14.1    Device Support...................................................... 21
+         8.5    Electrical Characteristics........................................... 5
+                                                                                                    14.2    Related Links ........................................................ 21
+         8.6    Typical Characteristics .............................................. 6
+                                                                                                    14.3    Trademarks ........................................................... 21
+    9 Parameter Measurement Information .................. 8
+                                                                                                    14.4    Electrostatic Discharge Caution ............................ 21
+    10 Detailed Description ............................................. 9
+                                                                                                    14.5    Glossary ................................................................ 21
+         10.1 Overview ................................................................. 9
+                                                                                              15 Mechanical, Packaging, and Orderable
+         10.2 Functional Block Diagram ....................................... 9
+                                                                                                 Information ........................................................... 21
+
+
+
+5 Revision History
+Changes from Revision D (December 2014) to Revision E                                                                                                                          Page
+
+•    Changed the Device Options Table To: Device Comparison Table and included the Part Number column ........................ 3
+
+
+Changes from Revision C (March 2009) to Revision D                                                                                                                             Page
+
+•    Added ESD Ratings table, Feature Description section, Device Functional Modes, Application and Implementation
+     section, Power Supply Recommendations section, Layout section, Device and Documentation Support section, and
+     Mechanical, Packaging, and Orderable Information section .................................................................................................. 1
+
+
+
+
+2        Submit Documentation Feedback                                                                         Copyright © 2006–2015, Texas Instruments Incorporated
+
+                                               Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+                                                                                          TPS61070, TPS61071, TPS61072, TPS61073
+www.ti.com                                                                                            SLVS510E – JULY 2006 – REVISED MARCH 2015
+
+
+6 Device Comparison Table
+                           OUTPUT VOLTAGE                                                                              EN THRESHOLD
+   PART NUMBER                                          POWER-SAVE MODE         OPERATING FREQUENCY
+                               DC/DC                                                                                REFERENCE VOLTAGE
+     TPS61070DDC               Adjustable                    Enabled                       1200 kHz                         VBAT
+     TPS61071DDC               Adjustable                    Disabled                      1200 kHz                         VBAT
+     TPS61072DDC               Adjustable                    Disabled                      600 kHz                          VBAT
+     TPS61073DDC               Adjustable                    Enabled                       1200 kHz                       1.8 V Logic
+
+
+7 Pin Configuration and Functions
+
+                                                                      DDC Package
+                                                                        6 Pins
+                                                                       Top View
+                                                                VBAT VOUT           FB
+
+
+
+                                                                  6        5        4
+
+                                                                        ABC
+                                                                  1        2        3
+
+
+
+                                                                SW       GND    EN
+
+                                                                  Pin Functions
+             PIN
+                                   I/O                                                   DESCRIPTION
+NAME                 NO.
+EN                     3            I       Enable input (1/VBAT enabled, 0/GND disabled)
+FB                     4            I       Voltage feedback for programming the output voltage
+GND                    2           —        IC ground connection for logic and power
+SW                     1            I       Boost and rectifying switch input
+VBAT                   6            I       Supply voltage
+VOUT                   5           O        Boost converter output
+
+
+
+
+Copyright © 2006–2015, Texas Instruments Incorporated                                                   Submit Documentation Feedback        3
+                                         Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+TPS61070, TPS61071, TPS61072, TPS61073
+SLVS510E – JULY 2006 – REVISED MARCH 2015                                                                                              www.ti.com
+
+
+8 Specifications
+8.1 Absolute Maximum Ratings
+over operating free-air temperature range (unless otherwise noted) (1)
+                                                                                                          MIN             MAX            UNIT
+Input voltage on SW, VOUT, VBAT, EN, FB                                                                    -0.3            7               V
+Operating virtual junction temperature, TJ                                                                 -40            150             °C
+Storage temperature, Tstg                                                                                  -65            150             °C
+
+(1)   Stresses beyond those listed under Absolute Maximum Ratings may cause permanent damage to the device. These are stress ratings
+      only, and functional operation of the device at these or any other conditions beyond those indicated under Recommended Operating
+      Conditions is not implied. Exposure to absolute-maximum-rated conditions for extended periods may affect device reliability.
+
+8.2 ESD Ratings
+                                                                                                                         VALUE           UNIT
+                                         Human-body model (HBM), per ANSI/ESDA/JEDEC JS-001 (1)                          ±2000
+V(ESD)      Electrostatic discharge      Charged-device model (CDM), per JEDEC specification JESD22-                                       V
+                                                                                                                         ±750
+                                         C101 (2)
+
+(1)   JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process. Manufacturing with
+      less than 500-V HBM is possible with the necessary precautions.
+(2)   JEDEC document JEP157 states that 250-V CDM allows safe manufacturing with a standard ESD control process. Manufacturing with
+      less than 250-V CDM is possible with the necessary precautions.
+
+8.3 Recommended Operating Conditions
+                                                                                                        MIN         NOM        MAX       UNIT
+Supply voltage at VBAT, VI (TPS61070, TPS61071, TPS61072)                                                0.9                     5.5       V
+Supply voltage at VBAT, VI (TPS61073)                                                                    2.3                     5.5       V
+Operating free air temperature range, TA                                                                 -40                     85       °C
+Operating virtual junction temperature range, TJ                                                         -40                     125      °C
+
+
+8.4 Thermal Information
+                                                                                                            TPS6107x
+                                         THERMAL METRIC (1)                                                       DDC                  UNIT
+                                                                                                               6 PINS
+RθJA              Junction-to-ambient thermal resistance                                                         139.1
+RθJC(top)         Junction-to-case (top) thermal resistance                                                       34.8
+RθJB              Junction-to-board thermal resistance                                                            42.5
+                                                                                                                                       °C/W
+ψJT               Junction-to-top characterization parameter                                                      1.4
+ψJB               Junction-to-board characterization parameter                                                    40.7
+RθJC(bot)         Junction-to-case (bottom) thermal resistance                                                    n/a
+
+(1)   For more information about traditional and new thermal metrics, see the IC Package Thermal Metrics application report, SPRA953.
+
+
+
+
+4        Submit Documentation Feedback                                                    Copyright © 2006–2015, Texas Instruments Incorporated
+
+                                      Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+                                                                                        TPS61070, TPS61071, TPS61072, TPS61073
+www.ti.com                                                                                        SLVS510E – JULY 2006 – REVISED MARCH 2015
+
+
+8.5 Electrical Characteristics
+over recommended free-air temperature range and over recommended input voltage range (typical at an ambient temperature
+range of 25°C) (unless otherwise noted)
+                   PARAMETER                                        TEST CONDITIONS                  MIN        TYP       MAX       UNIT
+DC/DC STAGE
+             Minimum input voltage range for start-
+             up                                     RL = 270 Ω                                                   1.1        1.2
+             (TPS61070, TPS61071, TPS61072)
+             Minimum input voltage range for start-
+                                                    RL = 270 Ω                                                              2.3
+VI           up (TPS61073)                                                                                                           V
+             Input voltage range, after start-up
+                                                        TA = 25°C                                     0.9                   5.5
+             (TPS61070, TPS61071, TPS61072)
+             Input voltage range, after start-up
+                                                                                                      2.3                   5.5
+             (TPS61073)
+             Output voltage range (TPS61070,
+                                                                                                      1.8                   5.5
+VO           TPS61071, TPS61072)                                                                                                     V
+             Output voltage range (TPS61073)                                                          2.3                   5.5
+V(FB)        Feedback voltage                                                                        495         500        505     mV
+             Oscillator frequency (TPS61070,
+                                                                                                     960        1200      1440
+f            TPS61071, TPS61073)                                                                                                    kHz
+             Oscillator frequency (TPS61072)                                                         480         600        720
+I(SW)        Switch current limit                       VOUT= 3.3 V                                  500         600        700     mA
+             Start-up current limit                                                                         0.5 × ISW               mA
+             Boost switch-on resistance                 VOUT= 3.3 V                                              480                mΩ
+             Rectifying switch-on resistance            VOUT= 3.3 V                                              600                mΩ
+             Total accuracy (including line and
+                                                                                                                            3%
+             load regulation)
+             Line regulation                                                                                                1%
+             Load regulation                                                                                                1%
+             Quiescent current            VBAT                                                                   0.5          1     µA
+                                                        IO = 0 mA, V(EN) = VBAT = 1.2 V,
+             (TPS61070, TPS61071,
+                                          VOUT          VOUT = 3.3 V, TA = 25°C                                   19         30     µA
+             TPS61072)
+             Quiescent current            VBAT          IO = 0 mA, V(EN) = 1.8 V, VBAT = 2.4 V,                    1        1.5     µA
+             (TPS61073)                   VOUT          VOUT = 5 V, TA = 25°C                                     30         50     µA
+             Shutdown current (TPS61070,
+                                                        V(EN) = 0 V, VBAT = 1.2 V, TA = 25°C                    0.05        0.5     µA
+             TPS61071, TPS61072)
+             Shutdown current (TPS61073)                V(EN) = 0 V, VBAT = 3.6 V, TA = 25°C                    0.05        1.5     µA
+CONTROL STAGE
+V(UVLO)      Undervoltage lockout threshold             V(BAT) voltage decreasing                                0.8                 V
+             EN input low voltage                                                                                          0.2 ×
+VIL          (TPS61070, TPS61071, TPS61072)                                                                               VBAT       V
+             EN input low voltage (TPS61073)                                                                                0.4
+             EN input high voltage                                                                  0.8 ×
+VIH          (TPS61070, TPS61071, TPS61072)                                                        VBAT                              V
+             EN input high voltage (TPS61073)                                                         1.2
+             EN input current
+                                                        Clamped on GND or VBAT                                  0.01        0.1     µA
+             (TPS61070, TPS61071, TPS61072)
+             EN input current (TPS61073)                Clamped on GND or VBAT                                  0.01        0.3     µA
+             Overtemperature protection                                                                          140                 °C
+             Overtemperature hysteresis                                                                           20                 °C
+
+
+
+
+Copyright © 2006–2015, Texas Instruments Incorporated                                               Submit Documentation Feedback          5
+                                      Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+TPS61070, TPS61071, TPS61072, TPS61073
+SLVS510E – JULY 2006 – REVISED MARCH 2015                                                                                                                                               www.ti.com
+
+
+8.6 Typical Characteristics
+
+8.6.1 Table of Graphs
+                                                                                                                                                                                 FIGURE
+Maximum output current                                                                    vs Input voltage                                                                       Figure 1
+                                                                                          vs Output current                                                                      Figure 2
+                                                                                          vs Output current                                                                      Figure 3
+Efficiency                                                                                vs Output current                                                                      Figure 4
+                                                                                          vs Input voltage                                                                       Figure 5
+                                                                                          vs Input voltage                                                                       Figure 6
+                                                                                          vs Output current                                                                      Figure 7
+Output voltage
+                                                                                          vs Output current                                                                      Figure 8
+No load supply current into VOUT                                                          vs Input voltage                                                                       Figure 9
+
+                                        600                                                                                     100
+                                                                                                                                      TPS61070                        VBAT = 1.2 V
+                                        550                                                                                     90    VO = 1.8 V
+                                        500
+
+
+
+
+          Maximum Output Current − mA
+                                                                                                                                80
+                                        450                              VO = 3.3 V
+                                                                                                                                70
+                                        400
+
+
+
+
+                                                                                                              Efficiency − %
+                                                                                          VO = 5 V                              60
+                                        350
+                                                    VO = 1.8 V                                                                                                       VBAT = 0.9 V
+                                        300                                                                                     50
+
+                                        250                                                                                     40
+                                        200
+                                                                                                                                30
+                                        150
+                                                                                                                                20                              TPS61071
+                                        100                                                                                                                     VO = 1.8 V
+                                                                                                                                10
+                                         50
+                                          0                                                                                      0
+                                           0.9     1.3 1.7 2.1 2.5 2.9 3.3 3.7 4.1 4.5 4.9                                       0.01        0.10          1         10         100         1k
+                                                                VI − Input Voltage − V                                                              IO − Output Current − mA
+                                        Figure 1. Maximum Output Current vs Input Voltage                                                Figure 2. Efficiency vs Output Current
+                                        100                                                                                     100
+                                                                                                                                      TPS61070
+                                                 TPS61070
+                                         90                                                                                      90   VO = 5 V
+                                                 VO = 3.3 V
+
+                                         80                                                                                      80
+
+                                         70                                                                                      70
+                                                                                                                                                      VBAT = 1.2 V
+
+
+
+
+     Efficiency − %                                                                                            Efficiency − %
+                                         60                                                                                      60                                   VBAT = 1.8 V
+
+                                                                                                                                                                      VBAT = 2.4 V
+                                         50                                                                                      50
+                                                                           VBAT = 0.9 V                                                                                      VBAT = 3.6 V
+                                         40                                                                                      40
+                                                                             VBAT = 1.8 V
+                                         30                                                                                      30
+                                                                                  VBAT = 2.4 V
+                                         20                                                                                      20                            TPS61071
+                                                                     TPS61071                                                                                  VO = 5 V
+                                         10                          VO = 3.3 V                                                  10
+
+                                          0                                                                                       0
+                                          0.01        0.10           1        10       100           1k                           0.01        0.10          1         10      100           1k
+                                                              IO − Output Current − mA                                                               IO − Output Current − mA
+                                                 Figure 3. Efficiency vs Output Current                                                  Figure 4. Efficiency vs Output Current
+
+
+
+
+6                                  Submit Documentation Feedback                                                                           Copyright © 2006–2015, Texas Instruments Incorporated
+
+                                                                       Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+                                                                                                                                                                                       TPS61070, TPS61071, TPS61072, TPS61073
+www.ti.com                                                                                                                                                                                             SLVS510E – JULY 2006 – REVISED MARCH 2015
+
+                                100                                                                                                                                              100       TPS61070
+                                           TPS61070                                                                                                                               95       VO = 5 V
+                                 95
+                                           VO = 3.3 V
+                                 90                                                                                                                                               90         IO = 5 mA
+
+                                 85                                                                                                                                               85
+
+
+
+
+       Efficiency − %                                                                                                                                         Efficiency − %
+                                                                                                                                                                                                             IO = 10 mA
+                                 80                         IO = 5 mA                                                                                                             80
+
+                                 75                 IO = 50 mA                                                                                                                    75
+
+                                 70                      IO = 100 mA                                                                                                              70
+                                                                                                                                                                                                 IO = 60 mA
+                                 65                                                                             TPS61071                                                          65
+                                                                                                                VO = 3.3 V
+                                 60                                                                                                                                               60                         IO = 5 mA
+
+                                                                                                                                                                                  55                                                     TPS61071
+                                 55
+                                                                                                                                                                                                                                         VO = 5 V
+                                 50                                                                                                                                               50
+                                  0.9 1.1 1.3 1.5 1.7 1.9 2.1 2.3 2.5 2.7 2.9 3.1 3.3                                                                                                  0.9       1.4   1.9        2.4     2.9   3.4      3.9   4.4   4.9
+                                                          VI − Input Voltage − V                                                                                                                             VI − Input Voltage − V
+
+                                            Figure 5. Efficiency vs Input Voltage                                                                                                            Figure 6. Efficiency vs Input Voltage
+                                3.35                                                                                                                                             5.1
+                                                                                                                                                                                             VBAT = 3.6 V
+                                           VBAT = 2.4 V                                                            TPS61070
+                                                                                                                   VO = 3.3 V                                                                                           TPS61070
+                                                                                                                                                                                5.05                                    VO = 5 V
+
+
+
+
+      VO − Output Voltage − V                                                                                                                         VO − Output Voltage − V
+                                3.30                                                                                                                                               5
+
+
+                                                                                                                                                                                4.95
+
+
+                                3.25                                                                                                                                             4.9                                                  TPS61071
+                                                                                                                                                                                                                                      VO = 5 V
+
+                                                                                                                                                                                4.85
+                                                                                                                   TPS61071
+                                                                                                                   VO = 3.3 V
+                                3.20                                                                                                                                             4.8
+                                       1                   10              100                                                     1000                                                1                     10                    100               1000
+                                                        IO − Output Current − mA                                                                                                                       IO − Output Current − mA
+                                       Figure 7. Output Voltage vs Output Current                                                                                                      Figure 8. Output Voltage vs Output Current
+                                                                                                                 22
+
+                                                                                                                                                                       TA = 855C
+
+
+
+
+                                                                        No Load Supply Current Into VOUT − µA
+                                                                                                                 20
+
+
+                                                                                                                                                                       TA = 255C
+                                                                                                                 18
+
+
+                                                                                                                 16                                              TA = −405C
+
+
+
+                                                                                                                 14
+
+
+                                                                                                                 12
+                                                                                                                         VO = 3.3 V
+                                                                                                                         VI = 0.9 V to 5.5 V
+                                                                                                                 10
+                                                                                                                   0.9       1.5           2.5         3.5                                 4.5         5.5
+                                                                                                                                          VI − Input Voltage − V
+                                                                       Figure 9. No Load Supply Current Into VOUT vs Input Voltage
+
+
+
+
+Copyright © 2006–2015, Texas Instruments Incorporated                                                                                                                                                    Submit Documentation Feedback                      7
+                                                                 Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+TPS61070, TPS61071, TPS61072, TPS61073
+SLVS510E – JULY 2006 – REVISED MARCH 2015                                                                                www.ti.com
+
+
+9 Parameter Measurement Information
+                                                L1
+                                                                                          VCC
+                                                           SW      VOUT
+                                                                                    C2    Boost Output
+                                                                            R1
+                                                           VBAT      FB
+                          Power                C1                           R2
+                                                           EN
+                          Supply
+                                                           GND
+
+                                                             TPS6107x
+
+                          List of Components:
+                          U1 = TPS61070DDC
+                          L1 = 4.7 µH Wurth Elektronik 744031004
+                          C1 = 2 x 4.7 µF, 0603, X7R/X5R Ceramic
+                          C2 = 4 x 4.7 µF, 0603, X7R/X5R Ceramic
+
+                                     Figure 10. Parameter Measurement Schematic
+
+
+
+
+8      Submit Documentation Feedback                                             Copyright © 2006–2015, Texas Instruments Incorporated
+
+                                   Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+                                                                                  TPS61070, TPS61071, TPS61072, TPS61073
+www.ti.com                                                                                    SLVS510E – JULY 2006 – REVISED MARCH 2015
+
+
+10 Detailed Description
+
+10.1 Overview
+The TPS6107x devices provide a power supply solution for products powered by either a one-cell, two-cell, or
+three-cell alkaline, NiCd or NiMH, or one-cell Li-ion or Li-polymer battery. Output currents can go as high as 75
+mA while using a single-cell alkaline, and discharge it down to 0.9 V. It can also be used for generating 5 V at
+200 mA from a 3.3 V rail or a Li-ion battery. The boost converter is based on a fixed frequency, pulse-width-
+modulation (PWM) controller using a synchronous rectifier to obtain maximum efficiency. At low load currents the
+TPS61070 and TPS61073 enter the power-save mode to maintain a high efficiency over a wide load current
+range. The power-save mode is disabled in the TPS61071 and TPS61072, forcing the converters to operate at a
+fixed switching frequency. The maximum peak current in the boost switch is typically limited to a value of 600
+mA. The TPS6107x output voltage is programmed by an external resistor divider. The converter can be disabled
+to minimize battery drain. During shutdown, the load is completely disconnected from the battery.
+
+10.2 Functional Block Diagram
+
+                                                                  SW
+
+                                                                                  Backgate
+                                                                                   Control
+                     VBAT
+                                                                                                                 VOUT
+
+                                     VOUT                                                             5 kΩ
+
+                                                                                                        3 pF
+                                        Vmax             Gate
+                                       Control          Control
+
+                                                                  GND
+
+                                                                           Error
+                                                                          Amplifier
+                                                                                        160 kΩ         50 kΩ
+                                                                              _                                  FB
+                                               Regulator
+                                                                              +              5 pF
+
+
+
+                                                                                                        +
+                                                                                      Vref = 0.5 V      _
+
+                                                                                               GND
+                                             Control Logic               Oscillator
+
+
+                                                                        Temperature
+                                                                          Control
+                        EN
+
+                      GND
+
+
+
+10.3 Feature Description
+10.3.1 Controller Circuit
+The controller circuit of the device is based on a fixed frequency multiple feedforward controller topology. Input
+voltage, output voltage, and voltage drop on the NMOS switch are monitored and forwarded to the regulator. So,
+changes in the operating conditions of the converter directly affect the duty cycle and must not take the indirect
+and slow way through the control loop and the error amplifier. The control loop, determined by the error amplifier,
+only has to handle small signal errors. The input for it is the feedback voltage on the FB pin. It is compared with
+the internal reference voltage to generate an accurate and stable output voltage.
+
+Copyright © 2006–2015, Texas Instruments Incorporated                                               Submit Documentation Feedback    9
+                                      Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+TPS61070, TPS61071, TPS61072, TPS61073
+SLVS510E – JULY 2006 – REVISED MARCH 2015                                                                             www.ti.com
+
+
+Feature Description (continued)
+The peak current of the NMOS switch is also sensed to limit the maximum current flowing through the switch and
+the inductor. The typical peak-current limit is set to 600 mA. An internal temperature sensor prevents the device
+from getting overheated in case of excessive power dissipation.
+
+10.3.1.1 Synchronous Rectifier
+The device integrates an N-channel and a P-channel MOSFET transistor to realize a synchronous rectifier.
+Because the commonly used discrete Schottky rectifier is replaced with a low RDS(on) PMOS switch, the power
+conversion efficiency reaches values above 90%. A special circuit is applied to disconnect the load from the input
+during shutdown of the converter. In conventional synchronous rectifier circuits, the backgate diode of the high-
+side PMOS is forward biased in shutdown and allows current flowing from the battery to the output. However,
+this device uses a special circuit which takes the cathode of the backgate diode of the high-side PMOS and
+disconnects it from the source when the regulator is not enabled (EN = low).
+The benefit of this feature for the system design engineer is that the battery is not depleted during shutdown of
+the converter. No additional components must be added to the design to make sure that the battery is
+disconnected from the output of the converter.
+
+10.3.1.2 Device Enable
+The device is put into operation when EN is set high. It is put into a shutdown mode when EN is set to GND. In
+shutdown mode, the regulator stops switching, all internal control circuitry is switched off, and the load is isolated
+from the input (as described in the Synchronous Rectifier section). This also means that the output voltage can
+drop below the input voltage during shutdown. During start-up of the converter, the duty cycle and the peak
+current are limited in order to avoid high-peak currents drawn from the battery.
+
+10.3.1.3 Undervoltage Lockout
+An undervoltage lockout function prevents the device from operating if the supply voltage on VBAT is lower than
+approximately 0.8 V. When in operation and the battery is being discharged, the device automatically enters the
+shutdown mode if the voltage on VBAT drops below approximately 0.8 V. This undervoltage lockout function is
+implemented in order to prevent the malfunctioning of the converter.
+
+10.3.1.4 Soft Start and Short-Circuit Protection
+When the device enables, the internal start-up cycle starts with the first step, the precharge phase. During
+precharge, the rectifying switch is turned on until the output capacitor is charged to a value close to the input
+voltage. The rectifying switch is current limited during this phase. The current limit increases with the output
+voltage. This circuit also limits the output current under short-circuit conditions at the output. Figure 11 shows the
+typical precharge current vs output voltage for specific input voltages:
+
+
+
+
+10     Submit Documentation Feedback                                          Copyright © 2006–2015, Texas Instruments Incorporated
+
+                                 Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+                                                                                                      TPS61070, TPS61071, TPS61072, TPS61073
+www.ti.com                                                                                                          SLVS510E – JULY 2006 – REVISED MARCH 2015
+
+
+Feature Description (continued)
+
+                                                         0.15
+                                                         0.14
+                                                         0.13
+                                                         0.12
+                                                         0.11
+
+
+
+
+                                 Precharge Current - A
+                                                          0.1
+                                                         0.09
+                                                                                                                VBAT = 5 V
+                                                         0.08                                    VBAT = 3.6 V
+                                                                                  VBAT = 2.4 V
+                                                         0.07
+                                                         0.06
+                                                         0.05           VBAT = 1.8 V
+                                                         0.04
+                                                         0.03
+                                                         0.02
+                                                                 VBAT = 1.2 V
+                                                         0.01
+                                                            0
+                                                             0   0.5    1   1.5       2    2.5     3     3.5    4      4.5    5
+                                                                                  VO - Output Voltage - V
+
+                                                           Figure 11. Precharge and Short-Circuit Current
+
+After charging the output capacitor to the input voltage, the device starts switching. If the input voltage is below
+1.8 V, the device works with a fixed duty cycle of 70% until the output voltage reaches 1.8 V. After that the duty
+cycle is set depending on the input output voltage ratio. Until the output voltage reaches its nominal value, the
+boost switch current limit is set to 50% of its nominal value to avoid high peak currents at the battery during start-
+up. As soon as the output voltage is reached, the regulator takes control, and the switch current limit is set back
+to 100%.
+
+10.4 Device Functional Modes
+10.4.1 Power-Save Mode
+The TPS61070 and TPS61073 are capable of operating in two different modes. At light loads, when the inductor
+current becomes zero, they automatically enter the power-save mode to improve efficiency. In the power-save
+mode, the converters only operate when the output voltage trips below a set threshold voltage. It ramps up the
+output voltage with one or several pulses and returns to the power-save mode once the output voltage exceeds
+the set threshold voltage. If output power demand increases and the inductor current no longer goes below zero,
+the device again enters the fixed PWM mode. In this mode, there is no difference between the PWM only
+versions TPS61071 and TPS61072 and the power-save mode enabled versions TPS61070 and TPS61073.
+
+
+
+
+Copyright © 2006–2015, Texas Instruments Incorporated                                                                 Submit Documentation Feedback       11
+                                                         Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+TPS61070, TPS61071, TPS61072, TPS61073
+SLVS510E – JULY 2006 – REVISED MARCH 2015                                                                                 www.ti.com
+
+
+11 Application and Implementation
+
+                                                         NOTE
+             Information in the following applications sections is not part of the TI component
+             specification, and TI does not warrant its accuracy or completeness. TI’s customers are
+             responsible for determining suitability of components for their purposes. Customers should
+             validate and test their design implementation to confirm system functionality.
+
+
+11.1 Application Information
+The TPS6107x DC-DC converters are intended for systems powered by a single-cell, up to triple-cell alkaline,
+NiCd, NiMH battery with a typical terminal voltage between 0.9 V and 5.5 V. They can also be used in systems
+powered by one-cell Li-Ion or Li-Polymer with a typical voltage between 2.5 V and 4.2 V. Additionally, any other
+voltage source with a typical output voltage between 0.9 V and 5.5 V can power systems where the TPS6107x is
+used. Due to the nature of boost converters, the output voltage regulation is only maintained when the input
+voltage applied is lower than the programmed output voltage.
+
+11.2 Typical Application
+                                                 L1
+                                                                    VOUT                  VCC
+                                                          SW
+                                                                                    C2    Boost Output
+                                                                            R1
+                                                          VBAT        FB
+                            Power        C1                                 R2
+                            Supply                            EN
+
+                                                              GND
+
+                                                               TPS61070
+
+                  Figure 12. Typical Application Circuit for Adjustable Output Voltage Option
+
+11.2.1 Design Requirements
+In this example, TPS61070 is used to design a 3.3-V power supply with 75-mA output current capability. The
+TPS61200 can be powered by either a single-cell, two-cell, or three-cell alkaline, NiCd or NiMH, or one-cell Li-Ion
+or Li-Polymer battery. In this example, the input voltage range is from 0.9 V to 1.65 V for single-cell alkaline input
+design.
+
+11.2.2 Detailed Design Procedure
+
+11.2.2.1 Programming the Output Voltage
+The output voltage of the TPS6107x dc/dc converter can be adjusted with an external resistor divider. The typical
+value of the voltage at the FB pin is 500 mV. The maximum recommended value for the output voltage is 5.5 V.
+The current through the resistive divider should be about 100 times greater than the current into the FB pin. The
+typical current into the FB pin is 0.01 µA, and the voltage across R2 is typically 500 mV. Based on those two
+values, the recommended value for R2 should be lower than 500 kΩ, in order to set the divider current at 1 µA or
+higher. Because of internal compensation circuitry, the value for this resistor should be in the range of 200 kΩ.
+From that, the value of resistor R1, depending on the needed output voltage (VO), is calculated using Equation 1:
+
+      R1 + R2       ǒ V
+                        V
+
+                          FB
+                            O *1 Ǔ    + 180 kW        ǒ   V
+                                                         O *1
+                                                      500 mV
+                                                                     Ǔ                                                             (1)
+For example, if an output voltage of 3.3 V is needed, a 1 MΩ resistor should be chosen for R1. If for any reason
+the value chosen for R2 is significantly lower than 200 kΩ, additional capacitance in parallel to R1 is
+recommended, if the device shows instable regulation of the output voltage. The required capacitance value is
+calculated using Equation 2:
+                    æ 200kW ö
+     CparR1 = 3pF ´ ç        - 1÷
+                    è R2        ø                                                                             (2)
+
+12     Submit Documentation Feedback                                              Copyright © 2006–2015, Texas Instruments Incorporated
+
+                                     Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+                                                                                TPS61070, TPS61071, TPS61072, TPS61073
+www.ti.com                                                                              SLVS510E – JULY 2006 – REVISED MARCH 2015
+
+
+Typical Application (continued)
+11.2.2.2 Inductor Selection
+A boost converter normally requires two main passive components for storing energy during the conversion. A
+boost inductor and a storage capacitor at the output are required. To select the boost inductor, it is
+recommended to keep the possible peak inductor current below the current limit threshold of the power switch in
+the chosen configuration. For example, the current limit threshold of the TPS6107x's switch is 600 mA. The
+highest peak current through the inductor and the switch depends on the output load, the input (VBAT), and the
+output voltage (VOUT). Estimation of the maximum average inductor current is done using Equation 3:
+                VOUT
+     L = IO ´
+              VBAT ´ 0.8                                                                                     (3)
+For example, for an output current of 75 mA at 3.3 V, at least 340 mA of average current flows through the
+inductor at a minimum input voltage of 0.9 V.
+The second parameter for choosing the inductor is the desired current ripple in the inductor. Normally, it is
+advisable to work with a ripple of less than 20% of the average inductor current. A smaller ripple reduces the
+magnetic hysteresis losses in the inductor, as well as output voltage ripple and EMI. But in the same way,
+regulation time rises at load changes. In addition, a larger inductor increases the total system costs. With these
+parameters, it is possible to calculate the value for the inductor by using Equation 4:
+          VBAT ´ (VOUT - VBAT)
+     L=
+               DIL ´ f ´ VOUT                                                                                   (4)
+Parameter f is the switching frequency and ΔIL is the ripple current in the inductor, i.e., 40% ΔIL. In this example,
+the desired inductor has the value of 4 µH. With this calculated value and the calculated currents, it is possible to
+choose a suitable inductor. In typical applications, a 4.7-µH inductance is recommended. The device has been
+optimized to operate with inductance values between 2.2 µH and 10 µH. Nevertheless, operation with higher
+inductance values may be possible in some applications. Detailed stability analysis is then recommended. Care
+must be taken because load transients and losses in the circuit can lead to higher currents as estimated in
+Equation 4. Also, the losses in the inductor caused by magnetic hysteresis losses and copper losses are a major
+parameter for total circuit efficiency.
+The following inductor series from different suppliers have been used with the TPS6107x converters:
+
+                                                         Table 1. List of Inductors
+VENDOR                                            INDUCTOR SERIES
+                                                  VLF3010
+TDK
+                                                  VLF4012
+                                                  744031xxx
+Wurth Elektronik
+                                                  744042xxx
+EPCOS                                             B82462-G4
+                                                  SD18
+Cooper Electronics Technologies
+                                                  SD20
+                                                  CB2016B xxx
+Taiyo Yuden
+                                                  CB2518B xxx
+
+
+11.2.2.3 Capacitor Selection
+
+11.2.2.3.1     Input Capacitor
+At least a 10 µF input capacitor is recommended to improve transient behavior of the regulator and EMI behavior
+of the total power supply circuit. A ceramic capacitor or a tantalum capacitor with a 100-nF ceramic capacitor in
+parallel, placed close to the IC, is recommended.
+
+
+
+
+Copyright © 2006–2015, Texas Instruments Incorporated                                     Submit Documentation Feedback       13
+                                      Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+TPS61070, TPS61071, TPS61072, TPS61073
+SLVS510E – JULY 2006 – REVISED MARCH 2015                                                                               www.ti.com
+
+11.2.2.3.2   Output Capacitor
+The major parameter necessary to define the output capacitor is the maximum allowed output voltage ripple of
+the converter. This ripple is determined by two parameters of the capacitor, the capacitance and the ESR. It is
+possible to calculate the minimum capacitance needed for the defined ripple, supposing that the ESR is zero, by
+using Equation 5:
+             I ´ (VOUT - VBAT)
+     Cmin = O
+                f ´ DV ´ VOUT                                                                                (5)
+Parameter f is the switching frequency and ΔV is the maximum allowed ripple.
+With a chosen ripple voltage of 10 mV, a minimum capacitance of 4.5 µF is needed. In this value range, ceramic
+capacitors are a good choice. The ESR and the additional ripple created are negligible. It is calculated using
+Equation 6:
+     DVESR = IO ´ RESR                                                                                      (6)
+The total ripple is the sum of the ripple caused by the capacitance and the ripple caused by the ESR of the
+capacitor. Additional ripple is caused by load transients. This means that the output capacitor has to completely
+supply the load during the charging phase of the inductor. The value of the output capacitance depends on the
+speed of the load transients and the load current during the load change. With the calculated minimum value of
+4.5 µF and load transient considerations, the recommended output capacitance value is in a 10 µF range.
+Care must be taken on capacitance loss caused by derating due to the applied dc voltage and the frequency
+characteristic of the capacitor. For example, larger form factor capacitors (in 1206 size) have their self resonant
+frequencies in the same frequency range as the TPS6107x operating frequency. So the effective capacitance of
+the capacitors used may be significantly lower. Therefore, the recommendation is to use smaller capacitors in
+parallel instead of one larger capacitor.
+
+11.2.2.4 Small Signal Stability
+To analyze small signal stability in more detail, the small signal transfer function of the error amplifier and the
+regulator, which is given in Equation 7, can be used:
+                 d          5 ´ (R1 + R2)
+     A (REG) =        =
+               V(FB) R2 ´ (1 + i ´ w ´ 0.8ms)                                                                    (7)
+
+11.2.3 Application Curves
+
+                                                                                                         FIGURE
+Output voltage in continuous mode (TPS61071)                                                             Figure 13
+Output voltage in continuous mode (TPS61071)                                                             Figure 14
+Output voltage in power-save mode (TPS61070)                                                             Figure 15
+Output voltage in power-save mode (TPS61070)                                                             Figure 16
+Load transient response (TPS61071)                                                                       Figure 17
+Load transient response (TPS61071)                                                                       Figure 18
+Line transient response (TPS61071)                                                                       Figure 19
+Line transient response (TPS61071)                                                                       Figure 20
+Start-up after enable (TPS61070)                                                                         Figure 21
+Start-up after enable (TPS61070)                                                                         Figure 22
+Start-up after enable (TPS61071)                                                                         Figure 23
+Start-up after enable (TPS61071)                                                                         Figure 24
+
+
+
+
+14     Submit Documentation Feedback                                            Copyright © 2006–2015, Texas Instruments Incorporated
+
+                                   Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+                                                                                                          TPS61070, TPS61071, TPS61072, TPS61073
+www.ti.com                                                                                                             SLVS510E – JULY 2006 – REVISED MARCH 2015
+
+
+                              VI = 1.2 V, RL = 33 W , VO = 3.3 V                                              VI = 3.6 V, RL = 25 W, VO = 5 V
+
+        Output Voltage                                                                 Output Voltage
+
+
+          20 mV/div
+                                                                                        20 mV/div
+
+
+
+
+                                                                                       Inductor Current
+        Inductor Current
+
+
+                                                                                          200 mA/div
+           100 mA/div
+
+
+
+
+                                             t − Time − 1 ms/div                                                            t − Time − 1 ms/div
+        Figure 13. TPS61071 Output Voltage in Continuous Mode                         Figure 14. TPS61071 Output Voltage In Continuous Mode
+
+                               VI = 1.2 V, RL = 330 W, VO = 3.3 V                                             VI = 3.6 V, RL = 250 W, VO = 5 V
+
+        Output Voltage                                                                Output Voltage
+
+
+
+        20 mV/div, AC                                                                 100 mV/div, AC
+
+
+
+
+        Inductor Current                                                              Inductor Current
+
+
+
+         100 mA/div, DC                                                                200 mA/div, DC
+
+
+
+
+                                             t − Time − 10 ms/div                                                          t − Time − 20 ms/div
+        Figure 15. TPS61070 Output Voltage in Power-Save Mode                         Figure 16. TPS61070 Output Voltage in Power-Save Mode
+
+                                VI = 1.2 V, IL = 20 mA to 80 mA, VO = 3.3 V                                    VI = 3.6 V, IL = 20 mA to 80 mA, VO = 5 V
+
+
+        Output Current                                                                Output Current
+
+
+
+         50 mA/div, DC                                                                 50 mA/div, DC
+
+
+
+
+        Output Voltage                                                                Output Voltage
+
+
+
+        50 mV/div, AC                                                                 50 mV/div, AC
+
+
+
+
+                                             t − Time − 2 ms/div                                                           t − Time − 2 ms/div
+                           Figure 17. TPS61071 Load Transient Response                                    Figure 18. TPS61071 Load Transient Response
+
+
+
+Copyright © 2006–2015, Texas Instruments Incorporated                                                                     Submit Documentation Feedback      15
+                                                    Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+TPS61070, TPS61071, TPS61072, TPS61073
+SLVS510E – JULY 2006 – REVISED MARCH 2015                                                                                                                                                          www.ti.com
+
+
+                                      VI = 1.8 V to 2.4 V, RL = 33 W, VO = 3.3 V                                                                       VI = 3 V to 3.6 V, RL = 25 W, VO = 5 V
+
+                  Input Voltage                                                                                                    Input Voltage
+
+
+
+                 500 mV/div, AC                                                                                                   500 mV/div, AC
+
+
+
+
+                 Output Voltage                                                                                                   Output Voltage
+
+
+
+                 20 mV/div, AC                                                                                                    50 mV/div, AC
+
+
+
+
+                                                      t − Time − 2 ms/div                                                                                              t − Time − 2 ms/div
+                                  Figure 19. TPS61071 Line Transient Response                                                                      Figure 20. TPS61071 Line Transient Response
+
+
+
+
+     Output Voltage Enable
+                                                                                                                       Output Voltage Enable       VI = 3.6 V,
+                                                                        VI = 2.4 V,
+                                                                                                                                                   RL = 50 W,
+                                                                        RL = 33 Ω,
+                                                                                                                                                   VO = 5 V
+                                                                        VO = 3.3 V
+
+
+      1 V/div, DC 5 V/div, DC
+                                                                                                                        2 V/div, DC 5 V/div, DC
+                                                                                                                                                                                                     Inductor Current
+
+
+                                                                                      Voltage at SW Inductor Current
+                                                                                                                                                                                                      200 mA/div, DC
+
+
+
+
+                                                                                                     200 mA/div, DC
+                                                                                                                                                                                                     Voltage at SW
+
+
+                                                                                       2 V/div, DC
+                                                                                                                                                                                                      2 V/div, DC
+
+
+                                                t − Time − 200 µs/div                                                                                            t − Time − 400 ms/div
+                                    Figure 21. TPS61070 Start-Up After Enable                                                                        Figure 22. TPS61070 Start-Up After Enable
+
+
+
+
+      Output Voltage Enable                                                                                            Output Voltage Enable
+                                  VI = 2.4 V,                                                                                                      VI = 3.6 V,
+                                  RL = 33 W,                                                                                                       RL = 50 W,
+                                  VO = 3.3 V                                                                                                       VO = 5 V
+
+
+
+       1 V/div, DC 5 V/div, DC                                                                                          2 V/div, DC 5 V/div, DC
+                                                                                       Inductor Current                                                                                              Inductor Current
+
+
+
+                                                                                        200 mA/div, DC                                                                                                200 mA/div, DC
+
+
+
+                                                                                        Voltage at SW                                                                                                Voltage at SW
+
+
+
+                                                                                         2 V/div, DC                                                                                                  2 V/div, DC
+
+
+                                                t − Time − 200 ms/div                                                                                            t − Time − 400 ms/div
+                                    Figure 23. TPS61071 Start-Up After Enable                                                                        Figure 24. TPS61071 Start-Up After Enable
+
+
+
+16                   Submit Documentation Feedback                                                                                                         Copyright © 2006–2015, Texas Instruments Incorporated
+
+                                                            Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+                                                                               TPS61070, TPS61071, TPS61072, TPS61073
+www.ti.com                                                                                 SLVS510E – JULY 2006 – REVISED MARCH 2015
+
+
+11.3 System Examples
+                                                        L1
+                                                                                               VCC
+                                                             SW       VOUT
+                                                                                          C2   Boost Output
+                                                                                R1
+                                                             VBAT       FB
+                              Power                     C1                      R2
+                                                              EN
+                              Supply
+                                                              GND
+
+                                                                TPS6107x
+
+                             List of Components:
+                             U1 = TPS61070DDC
+                             L1 = 4.7 µH Wurth Elektronik 744031004
+                             C1 = 2 x 4.7 µF, 0603, X7R/X5R Ceramic
+                             C2 = 2 x 4.7 µF, 0603, X7R/X5R Ceramic
+
+           Figure 25. Power Supply Solution for Maximum Output Power Operating from a Single or
+                                             Dual Alkaline Cell
+
+                                                        L1
+                                                                                               VCC
+                                                             SW       VOUT
+                                                                                          C2   Boost Output
+                                                                                R1
+                                                             VBAT       FB
+                              Power                     C1                      R2
+                                                              EN
+                              Supply
+                                                              GND
+
+                                                                TPS6107x
+
+                             List of Components:
+                             U1 = TPS61070DDC
+                             L1 = 4.7 µH Taiyo Yuden CB2016B4R7M
+                             C1 = 1 x 4.7 µF, 0603, X7R/X5R Ceramic
+                             C2 = 2 x 4.7 µF, 0603, X7R/X5R Ceramic
+
+                           Figure 26. Power Supply Solution Having Small Total Solution Size
+
+                                                        L1
+                                                             SW       VOUT
+                                                                                 C2            LED Current
+                                                             VBAT                              Up To 30 mA
+                                                        C1                           D1
+                              Power                           EN        FB
+                              Supply                                                      R1
+                                                              GND
+
+                                                                TPS6107x
+
+                             List of Components:
+                             U1 = TPS61070DDC
+                             L1 = 4.7 µH Taiyo Yuden CB2016B4R7M
+                             C1 = 1 x 4.7 µF, 0603, X7R/X5R Ceramic
+                             C2 = 2 x 4.7µF, 0603, X7R/X5R Ceramic
+
+               Figure 27. Power Supply Solution for Powering White LEDs in Lighting Applications
+
+
+
+
+Copyright © 2006–2015, Texas Instruments Incorporated                                          Submit Documentation Feedback     17
+                                       Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+TPS61070, TPS61071, TPS61072, TPS61073
+SLVS510E – JULY 2006 – REVISED MARCH 2015                                                                                www.ti.com
+
+
+System Examples (continued)
+
+                                                                                              VCC2 ~2 x VCC
+                                                  C5         DS1                              Unregulated
+                                                                                              Auxiliary Output
+                                                                                C6
+                                                 0.1 µF                         1 µF
+
+                                    L1
+                                                                                  VCC
+                                                   SW       VOUT
+                                                                           C2     Boost Output
+                                                                   R1
+                   Power                 C1        VBAT       FB
+                   Supply                          EN              R2
+
+                                                   GND
+
+                                                       TPS6107x
+
+                  List of Components:
+                  U1 = TPS61070DDC
+                  L1 = 4.7 µH Wurth Elektronik 744031004
+                  C1 = 2 x 4.7 µF, 0603, X7R/X5R Ceramic
+                  C2 = 2 x 4.7 µF, 0603, X7R/X5R Ceramic
+
+                    Figure 28. Power Supply Solution With Auxiliary Positive Output Voltage
+
+                                                                                               VCC2 ~−VCC
+                                                  C5         DS1                               Unregulated
+                                                                                C6             Auxiliary Output
+                                                                                1 µF
+                                                 0.1 µF
+
+                                    L1
+                                                                                  VCC
+                                                   SW       VOUT
+                                                                           C2     Boost Output
+                                                                   R1
+                                                   VBAT       FB
+                    Power                   C1                     R2
+                                                   EN
+                    Supply
+                                                   GND
+
+                                                       TPS6107x
+
+                   List of Components:
+                   U1 = TPS61070DDC
+                   L1 = 4.7 µH Wurth Elektronik 744031004
+                   C1 = 2 x 4.7 µF, 0603, X7R/X5R Ceramic
+                   C2 = 2 x 4.7 µF, 0603, X7R/X5R Ceramic
+
+                   Figure 29. Power Supply Solution With Auxiliary Negative Output Voltage
+
+
+
+
+18     Submit Documentation Feedback                                             Copyright © 2006–2015, Texas Instruments Incorporated
+
+                                 Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+                                                                                      TPS61070, TPS61071, TPS61072, TPS61073
+www.ti.com                                                                                      SLVS510E – JULY 2006 – REVISED MARCH 2015
+
+
+12 Power Supply Recommendations
+The power supply can be one-cell, two-cell, or three-cell alkaline, NiCd or NiMH, or one-cell Li-Ion or Li-Polymer
+battery. The input supply should be well regulated with the rating of TPS6107x. If the input supply is located
+more than a few inches from the device, additional bulk capacitance may be required in addition to the ceramic
+bypass capacitors. An electrolytic or tantalum capacitor with a value of 47 µF is a typical choice.
+
+13 Layout
+
+13.1 Layout Guidelines
+As for all switching power supplies, the layout is an important step in the design, especially at high-peak currents
+and high switching frequencies. If the layout is not carefully done, the regulator could show stability problems as
+well as EMI problems. Therefore, use wide and short traces for the main current path and for the power ground
+tracks. The input capacitor, output capacitor, and the inductor should be placed as close as possible to the IC.
+Use a common ground node for power ground and a different one for control ground to minimize the effects of
+ground noise. Connect these ground nodes at any place close to the ground pin of the IC.
+The feedback divider should be placed as close as possible to the ground pin of the IC. To lay out the control
+ground, it is recommended to use short traces as well, separated from the power ground traces. This avoids
+ground shift problems, which can occur due to superimposition of power ground current and control ground
+current.
+
+
+
+
+                                             xxx
+13.2 Layout Example
+
+
+
+
+                                             xxxxxx
+                                                xxx x
+                                       Top              Bottom
+
+
+
+
+                                                   xx
+                                                                                      R2   R1
+                                      VBAT
+
+
+
+
+                                                xx xx
+                                                             CIN
+                                               L
+                                                                   VBAT   VOUT   FB
+
+
+
+
+                                                xxxx
+                                                   xx
+                                                                                                 VOUT
+                                                                                                COUT
+                                                                   SW     GND    EN
+
+
+
+
+                                      GND
+
+                                                           Figure 30. PCB Layout
+
+
+
+
+Copyright © 2006–2015, Texas Instruments Incorporated                                             Submit Documentation Feedback       19
+                                      Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+TPS61070, TPS61071, TPS61072, TPS61073
+SLVS510E – JULY 2006 – REVISED MARCH 2015                                                                             www.ti.com
+
+
+13.3 Thermal Considerations
+Implementation of integrated circuits in low-profile and fine-pitch surface-mount packages typically requires
+special attention to power dissipation. Many system-dependent issues such as thermal coupling, airflow, added
+heat sinks and convection surfaces, and the presence of other heat-generating components affect the power-
+dissipation limits of a given component.
+Three basic approaches for enhancing thermal performance follow.
+• Improving the power dissipation capability of the PCB design
+• Improving the thermal coupling of the component to the PCB
+• Introducing airflow in the system
+The maximum recommended junction temperature (TJ) of the TPS6107x devices is 125°C. The thermal
+resistance of the 6-pin thin SOT package (DDC) is RΘJA = 139.1°C/W. Specified regulator operation is assured to
+a maximum ambient temperature TA of 85°C. Therefore, the maximum power dissipation is about 288 mW. More
+power can be dissipated if the maximum ambient temperature of the application is lower.
+                TJ(MAX) - TA 125°C - 85°C
+      PD(MAX) =              =             = 288 mW
+                    RqJA       139.1°C / W                                                                   (8)
+
+
+
+
+20     Submit Documentation Feedback                                          Copyright © 2006–2015, Texas Instruments Incorporated
+
+                                 Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+                                                                                   TPS61070, TPS61071, TPS61072, TPS61073
+www.ti.com                                                                                     SLVS510E – JULY 2006 – REVISED MARCH 2015
+
+
+14 Device and Documentation Support
+
+14.1 Device Support
+14.1.1 Third-Party Products Disclaimer
+TI'S PUBLICATION OF INFORMATION REGARDING THIRD-PARTY PRODUCTS OR SERVICES DOES NOT
+CONSTITUTE AN ENDORSEMENT REGARDING THE SUITABILITY OF SUCH PRODUCTS OR SERVICES
+OR A WARRANTY, REPRESENTATION OR ENDORSEMENT OF SUCH PRODUCTS OR SERVICES, EITHER
+ALONE OR IN COMBINATION WITH ANY TI PRODUCT OR SERVICE.
+
+14.2 Related Links
+The table below lists quick access links. Categories include technical documents, support and community
+resources, tools and software, and quick access to sample or buy.
+
+                                                             Table 2. Related Links
+                                                                          TECHNICAL               TOOLS &               SUPPORT &
+        PARTS             PRODUCT FOLDER                SAMPLE & BUY
+                                                                          DOCUMENTS              SOFTWARE               COMMUNITY
+      TPS61070                  Click here                Click here        Click here             Click here             Click here
+      TPS61071                  Click here                Click here        Click here             Click here             Click here
+      TPS61072                  Click here                Click here        Click here             Click here             Click here
+      TPS61073                  Click here                Click here        Click here             Click here             Click here
+
+
+14.3 Trademarks
+All trademarks are the property of their respective owners.
+14.4 Electrostatic Discharge Caution
+          These devices have limited built-in ESD protection. The leads should be shorted together or the device placed in conductive foam
+          during storage or handling to prevent electrostatic damage to the MOS gates.
+
+
+14.5 Glossary
+SLYZ022 — TI Glossary.
+   This glossary lists and explains terms, acronyms, and definitions.
+
+15 Mechanical, Packaging, and Orderable Information
+The following pages include mechanical, packaging, and orderable information. This information is the most
+current data available for the designated devices. This data is subject to change without notice and revision of
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+
+
+
+
+Copyright © 2006–2015, Texas Instruments Incorporated                                            Submit Documentation Feedback          21
+                                      Product Folder Links: TPS61070 TPS61071 TPS61072 TPS61073
+                                                                                                                                                                    PACKAGE OPTION ADDENDUM
+
+       www.ti.com                                                                                                                                                                                                   10-Nov-2025
+
+
+
+
+PACKAGING INFORMATION
+
+       Orderable part number          Status     Material type      Package | Pins     Package qty | Carrier       RoHS             Lead finish/             MSL rating/             Op temp (°C)               Part marking
+                                        (1)            (2)                                                            (3)           Ball material            Peak reflow                                              (6)
+                                                                                                                                          (4)                      (5)
+
+          TPS61070DDCR                Active      Production          SOT-23-           3000 | LARGE T&R             Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                    AUH
+                                                                    THIN (DDC) | 6
+         TPS61070DDCR.B               Active      Production          SOT-23-           3000 | LARGE T&R             Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                    AUH
+                                                                    THIN (DDC) | 6
+         TPS61070DDCRG4               Active      Production          SOT-23-           3000 | LARGE T&R             Yes               NIPDAU            Level-1-260C-UNLIM             -40 to 85                    AUH
+                                                                    THIN (DDC) | 6
+          TPS61071DDCR                Active      Production          SOT-23-           3000 | LARGE T&R             Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                    AUJ
+                                                                    THIN (DDC) | 6
+         TPS61071DDCR.B               Active      Production          SOT-23-           3000 | LARGE T&R             Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                    AUJ
+                                                                    THIN (DDC) | 6
+         TPS61071DDCRG4               Active      Production          SOT-23-           3000 | LARGE T&R             Yes               NIPDAU            Level-1-260C-UNLIM             -40 to 85                    AUJ
+                                                                    THIN (DDC) | 6
+          TPS61072DDCR                Active      Production          SOT-23-           3000 | LARGE T&R             Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                    BUM
+                                                                    THIN (DDC) | 6
+         TPS61072DDCR.B               Active      Production          SOT-23-           3000 | LARGE T&R             Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                    BUM
+                                                                    THIN (DDC) | 6
+         TPS61072DDCRG4               Active      Production          SOT-23-           3000 | LARGE T&R             Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                    BUM
+                                                                    THIN (DDC) | 6
+        TPS61072DDCRG4.B              Active      Production          SOT-23-           3000 | LARGE T&R             Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                    BUM
+                                                                    THIN (DDC) | 6
+          TPS61073DDCR                Active      Production          SOT-23-           3000 | LARGE T&R             Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                    BUN
+                                                                    THIN (DDC) | 6
+         TPS61073DDCR.B               Active      Production          SOT-23-           3000 | LARGE T&R             Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                    BUN
+                                                                    THIN (DDC) | 6
+
+(1)
+      Status: For more details on status, see our product life cycle.
+
+(2)
+   Material type: When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+
+(3)
+      RoHS values: Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+
+
+
+
+                                                                                                         Addendum-Page 1
+                                                                                                                                                                      PACKAGE OPTION ADDENDUM
+
+       www.ti.com                                                                                                                                                                                                 10-Nov-2025
+
+
+
+
+(4)
+   Lead finish/Ball material: Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+
+(5)
+  MSL rating/Peak reflow: The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+
+(6)
+      Part marking: There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+
+
+OTHER QUALIFIED VERSIONS OF TPS61071 :
+
+• Automotive : TPS61071-Q1
+
+NOTE: Qualified Version Definitions:
+
+           • Automotive - Q100 devices qualified for high-reliability automotive applications targeting zero defects
+
+
+
+
+                                                                                                            Addendum-Page 2
+                                                                                PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                                                          18-Jun-2025
+
+
+
+TAPE AND REEL INFORMATION
+
+       REEL DIMENSIONS                                                                       TAPE DIMENSIONS
+                                                                                        K0         P1
+
+
+
+                                                                                                                         B0 W
+                                          Reel
+                                        Diameter
+                                                                                     Cavity             A0
+                                                                 A0   Dimension designed to accommodate the component width
+                                                                 B0   Dimension designed to accommodate the component length
+                                                                 K0   Dimension designed to accommodate the component thickness
+                                                                 W    Overall width of the carrier tape
+                                                                 P1   Pitch between successive cavity centers
+
+
+                                         Reel Width (W1)
+                               QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+
+                                                                                                        Sprocket Holes
+
+
+                                                   Q1       Q2          Q1    Q2
+
+                                                   Q3       Q4          Q3    Q4                    User Direction of Feed
+
+
+
+                                                             Pocket Quadrants
+
+
+*All dimensions are nominal
+             Device           Package Package Pins               SPQ       Reel   Reel   A0                    B0         K0     P1     W     Pin1
+                               Type Drawing                              Diameter Width (mm)                  (mm)       (mm)   (mm)   (mm) Quadrant
+                                                                           (mm) W1 (mm)
+     TPS61070DDCR             SOT-23-     DDC           6        3000        179.0           8.4        3.2    3.2       1.4    4.0    8.0     Q3
+                               THIN
+     TPS61071DDCR             SOT-23-     DDC           6        3000        179.0           8.4        3.2    3.2       1.4    4.0    8.0     Q3
+                               THIN
+     TPS61072DDCR             SOT-23-     DDC           6        3000        179.0           8.4        3.2    3.2       1.4    4.0    8.0     Q3
+                               THIN
+   TPS61072DDCRG4             SOT-23-     DDC           6        3000        179.0           8.4        3.2    3.2       1.4    4.0    8.0     Q3
+                               THIN
+     TPS61073DDCR             SOT-23-     DDC           6        3000        179.0           8.4        3.2    3.2       1.4    4.0    8.0     Q3
+                               THIN
+
+
+
+
+                                                                       Pack Materials-Page 1
+                                                                PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                              18-Jun-2025
+
+
+
+ TAPE AND REEL BOX DIMENSIONS
+
+
+
+
+                                                               Width (mm)
+                                                                              H
+
+
+
+
+                      W                                   L
+
+
+
+
+*All dimensions are nominal
+             Device           Package Type   Package Drawing   Pins         SPQ    Length (mm)   Width (mm)   Height (mm)
+     TPS61070DDCR             SOT-23-THIN         DDC           6           3000      200.0        183.0         25.0
+     TPS61071DDCR             SOT-23-THIN         DDC           6           3000      200.0        183.0         25.0
+     TPS61072DDCR             SOT-23-THIN         DDC           6           3000      200.0        183.0         25.0
+    TPS61072DDCRG4            SOT-23-THIN         DDC           6           3000      200.0        183.0         25.0
+     TPS61073DDCR             SOT-23-THIN         DDC           6           3000      200.0        183.0         25.0
+
+
+
+
+                                                        Pack Materials-Page 2
+                                                                                                             PACKAGE OUTLINE
+ DDC0006A                                                           SCALE 4.000
+                                                                                                             SOT-23 - 1.1 max height
+                                                                                                                 SMALL OUTLINE TRANSISTOR
+
+
+
+
+                                              3.05                                                                  1.1
+                                              2.55                                                                  0.7
+                                              1.75                                                                                0.1 C
+                                                                B                        A
+                                              1.45
+                 PIN 1
+           INDEX AREA
+
+                             1
+                                                                                   6
+
+
+                   4X 0.95
+
+                                                                                        3.05
+             1.9
+                                                                                        2.75
+
+
+
+
+                                                                                   4
+                             3                                                                    4X 0 -15
+
+
+                                                                                           0.5                               0.1
+                                                                                        6X                                       TYP
+                                                                                           0.3                               0.0
+                                                                                          0.2    C A B
+
+
+
+
+                                                                          4X 4 -15
+
+
+
+
+                                                                                             C
+      0 -8 TYP
+
+
+
+                                                 SEATING PLANE                          0.25
+           0.20
+                TYP                                                                     GAGE PLANE
+           0.12
+                                       0.6
+                                           TYP
+                                       0.3
+
+
+
+
+                                                                                                                          4214841/E 08/2024
+
+NOTES:
+
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+   per ASME Y14.5M.
+2. This drawing is subject to change without notice.
+3. Reference JEDEC MO-193.
+
+
+
+
+                                                                                  www.ti.com
+                                                                               EXAMPLE BOARD LAYOUT
+ DDC0006A                                                                                     SOT-23 - 1.1 max height
+                                                                                                     SMALL OUTLINE TRANSISTOR
+
+
+
+
+                                                                SYMM
+                                                  6X (1.1)
+                                             1
+
+                                  6X (0.6)                                                6
+
+
+
+                                                                                              SYMM
+
+
+                              4X (0.95)
+
+                                                                                          4
+                                             3
+
+                            (R0.05) TYP
+                                                                 (2.7)
+
+
+                                                     LAND PATTERN EXAMPLE
+                                                         EXPLOSED METAL SHOWN
+                                                               SCALE:15X
+
+
+
+
+                                                                         METAL UNDER                     SOLDER MASK
+              SOLDER MASK                        METAL                   SOLDER MASK                     OPENING
+              OPENING
+
+                                                                 EXPOSED METAL
+
+
+                                                      EXPOSED METAL
+
+                                    0.07 MAX                                                  0.07 MIN
+                                    ARROUND                                                   ARROUND
+
+                             NON SOLDER MASK                                             SOLDER MASK
+                                 DEFINED                                                   DEFINED
+
+
+                                                    SOLDERMASK DETAILS
+
+
+
+
+                                                                                                              4214841/E 08/2024
+
+NOTES: (continued)
+
+4. Publication IPC-7351 may have alternate designs.
+5. Solder mask tolerances between and around signal pads can vary based on board fabrication site.
+
+
+
+
+                                                                 www.ti.com
+                                                                               EXAMPLE STENCIL DESIGN
+ DDC0006A                                                                                       SOT-23 - 1.1 max height
+                                                                                                      SMALL OUTLINE TRANSISTOR
+
+
+
+
+                                                                SYMM
+                                                6X (1.1)
+                                            1
+
+                                 6X (0.6)                                                6
+
+
+
+                                                                                             SYMM
+
+
+                             4X(0.95)
+
+                                                                                         4
+                                            3
+
+                           (R0.05) TYP
+                                                                 (2.7)
+
+
+                                                   SOLDER PASTE EXAMPLE
+                                                   BASED ON 0.125 THICK STENCIL
+                                                           SCALE:15X
+
+
+
+
+                                                                                                                   4214841/E 08/2024
+
+NOTES: (continued)
+
+6. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+    design recommendations.
+7. Board assembly site may have different recommendations for stencil design.
+
+
+
+
+                                                                  www.ti.com
+                                         IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+
+                                                Copyright © 2025, Texas Instruments Incorporated
+                                                                Last updated 10/2025
+

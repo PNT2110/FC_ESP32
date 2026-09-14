@@ -1,5 +1,7 @@
 # Bàn giao dự án FC_ESP32 cho AI tiếp theo
 
+> Cập nhật sau khi người dùng cho phép tiếp tục: PCB chính đã nối đủ và đạt ERC/DRC/parity 0 lỗi trên KiCad 10.0.6. Xem `validation/FINAL_REVIEW.md` để biết trạng thái mới nhất. Nội dung bên dưới là lịch sử bàn giao trước khi sửa xong C3; không dùng các lỗi còn thiếu bên dưới làm trạng thái hiện tại.
+
 Tiếp tục dự án KiCad 10 tại `/home/pnt/FC_ESP32`. Đọc `AGENTS.md` và kiểm tra trạng thái file thực tế trước khi sửa. Không xem dự án là hoàn tất khi còn lỗi kết nối.
 
 Thông tin dưới đây ghi lại trạng thái khi dừng ngày 2026-09-14, không thay thế việc kiểm tra lại PCB hiện tại. Người dùng đã yêu cầu dừng công việc và viết tài liệu bàn giao; chỉ tiếp tục chỉnh sửa khi được yêu cầu.

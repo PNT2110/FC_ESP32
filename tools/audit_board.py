@@ -2,12 +2,17 @@
 """Check design invariants not enforced by ordinary KiCad DRC."""
 import json
 import math
+import argparse
 from pathlib import Path
 import pcbnew as p
 from build_fc import OUT
 
 def main():
-    b=p.LoadBoard(str(OUT/'FC_ESP32.kicad_pcb'))
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--board',default=str(OUT/'FC_ESP32.kicad_pcb'))
+    parser.add_argument('--output',default=str(OUT/'invariant_audit.json'))
+    args=parser.parse_args()
+    b=p.LoadBoard(args.board)
     fps={f.GetReference():f for f in b.GetFootprints()}
     failures=[]
     def require(condition,message):
@@ -58,7 +63,8 @@ def main():
     result={'passed':not failures,'failures':failures,'motor_pads':moved,
             'j2_orientation_deg':fps['J2'].GetOrientationDegrees(),'netclass_widths_mm':widths,
             'narrow_tracks':narrow}
-    (OUT/'invariant_audit.json').write_text(json.dumps(result,indent=2)+'\n')
+    from pathlib import Path
+    Path(args.output).write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps(result,indent=2))
     return int(bool(failures))
 

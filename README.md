@@ -21,10 +21,13 @@ An ESP32-WROOM-32 based flight controller designed for 1S brushed quadcopters.
 
 ## Current status
 
-Work in progress; not released for manufacturing or flight. Motor pitch is
+PCB routing and final ERC/DRC/parity checks passed on 2026-09-14 (KiCad 10.0.6):
+zero violations and zero unconnected items. Motor solder pads moved 1.5 mm inward;
+J2 faces outward. See `validation/FINAL_REVIEW.md` and `validation/final_3d.png`.
+Not released for manufacturing or flight. Motor pitch is
 66.8 mm, prop diameter 40 mm, board thickness 0.8 mm. Components are on the front;
-copper routing uses both layers. Firmware currently provides sensor bring-up with
-all motors stopped; see `firmware/README.md`.
+copper routing uses both layers. Firmware motor actuation is disabled by default;
+see `firmware/README.md`.
 
 ## Reproducible hardware workflow
 
@@ -46,9 +49,15 @@ design coordinates. Session import validates placement before replacing copper.
 The legacy `critical_routes.py` and `repair_connections.py` contain assumptions
 from the older layout and are not part of this workflow.
 
-On the current machine the Python add-ons are under `/tmp/fc-pylibs`; prefix
-system-Python commands with `PYTHONPATH=/tmp/fc-pylibs`. That temporary directory
-is environment-specific and should be replaced with a persistent installation.
+On the current machine, prefix system-Python commands with
+`PYTHONPATH=/home/pnt/miniconda3/lib/python3.14/site-packages`.
+This path is environment-specific. Generation was verified in an isolated copy;
+all 72 component placements, orientations, values, footprints and nets matched.
+
+The current SES predates the final repairs: do not import it onto the final PCB.
+`validation/final_routed.kicad_pcb` preserves the reviewed routing.
+`tools/repair_c3_ground.py` documents the deterministic final copper repair from
+`validation/only_c3_ground_remaining.kicad_pcb` to its candidate output.
 
 Open `FC_ESP32/FC_ESP32.kicad_pro` for review. Validation records current ERC,
 DRC, netlist parity and source hashes in `FC_ESP32/validation_summary.json` and

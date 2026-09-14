@@ -183,7 +183,9 @@ def setup():
         ('BUTTON','FSM4JSMA','TE_FSM4JSMA')]:
         folder = ROOT/'Library'/folder
         symbol(name,next(folder.glob('*.kicad_sym')))
-        local_fp(name,folder/(fpn+'.kicad_mod'),next(folder.glob('*.step')))
+        models=sorted((path for path in folder.iterdir() if path.suffix.lower()=='.step'),key=lambda path:(len(path.name),path.name))
+        if not models:raise FileNotFoundError(f'No STEP model in {folder}')
+        local_fp(name,folder/(fpn+'.kicad_mod'),models[0])
     for name, lib, orig in [('R','Device','R'),('C','Device','C'),('L','Device','L'),('D_Schottky','Device','D_Schottky'),('Conn2','Connector_Generic','Conn_01x02'),('Conn4','Connector_Generic','Conn_01x04'),('TPS63001','Regulator_Switching','TPS63001'),('USBLC6','Power_Protection','USBLC6-2SC6')]:
         symbol(name,f'/usr/share/kicad/symbols/{lib}.kicad_sym',orig)
     symbol('PWR_FLAG','/usr/share/kicad/symbols/power.kicad_sym','PWR_FLAG')

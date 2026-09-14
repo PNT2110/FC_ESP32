@@ -1,0 +1,21 @@
+{
+  "net": "+5V_FLOW",
+  "length_mm_by_width_mm": {
+    "0.4": 73.603677540284,
+    "0.18": 8.447539674441616
+  },
+  "assumed_copper_thickness_um": 35,
+  "copper_resistivity_ohm_m_at_20C": 1.724e-08,
+  "sum_segment_resistance_ohm": 0.1137544308483963,
+  "at_100mA": {
+    "drop_V": 0.01137544308483963,
+    "loss_W": 0.0011375443084839633
+  },
+  "at_200mA_sensitivity_only": {
+    "drop_V": 0.02275088616967926,
+    "loss_W": 0.004550177233935853
+  },
+  "load_source": "https://micoair.com/optical_range_sensor_mtf-01p/",
+  "load_basis": "Manufacturer specifies 5V, 500mW; average current 100mA. Peak/startup current unspecified.",
+  "limitations": "Conservative sum of all net segments, including branches; excludes vias/connectors/return path. Not a thermal simulation or converter qualification. Verify finished copper and peak load on bench."
+}

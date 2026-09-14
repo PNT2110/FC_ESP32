@@ -1,0 +1,177 @@
+                                                                                                                                                               8.64
+                                                                                                                                                               6.40
+H                                                                                                                                                              4.80                                                                                                                                                                                               Mating                                      Mating
+                                                                                                                                                                                                                                                                                                                                           Pin     Signal                            Pin        Signal
+                                                                                                                                                               3.50
+
+                                                                                                                                                                                                                           12x 1.15
+                                                                                                                                                                                                                                                                                                                                                                 Sequence                                    Sequence
+                                                                                                           4x 0.60
+                                                                                                                                                                0.50                                                                                                                                                                       A1       GND              First           B12        GND            First
+                                                                                                           8x 0.30
+                                                                                                                                                                                                                                                                                                                                           A4       VBUS             First            B9        VBUS           First
+                                                                                                                                 A1 B12 A4 B9   B8   A5   B7   A6   A7   B6   A8   B5   B4 A9   B1 A12
+
+                                                                                                                                                                                                                                                                                                                                           A5       CC1            Second             B8        SBU2          Second
+                                                                                                          2x 2.10
+                                                                                                                                                                                                                                                                                                                                           A6       Dp1            Second             B7        Dn2           Second
+                                                                                                          2x 1.70                                                                                                                                                                                                                          A7       Dn1            Second             B6        Dp2           Second
+G                                                                                                                                                                                                                                2x 2.60
+                                                                                                        2x Ø0.65                                                                                                                                                                                                                           A8      SBU1            Second             B5        CC2           Second
+                                                                                                                                                                                                                                  2x 3.68
+                                           GCT
+                                                                                                                                                                                                                                                                                                                                           A9       VBUS             First            B4        VBUS           First
+               7.35                                                                                                                                                                                                               12x 4.18                                                                                                 A12      GND              First            B1        GND            First
+
+                                                                                                                                                                                                                                                                                                                                                 SHELL               GND                    SHELL              GND
+
+
+
+
+                                                                                                      2x 1.80   2x 1.40
+F                                                                                                                                                                                                                                                                                                                                        Specifications
+                                                                                                                                                                                                                                      4x 0.60
+                                                     8.94                                                                                                      5.78                                                                   4x 1.00                                                                                            Material
+                                                                                                   PCB Edge                                                                                                                                                                                                                               Insulator: LCP, UL 94V-0, Black
+                                                                                                                                    Recommended PCB Layout                                                                                                                                                                                Contact: Copper Alloy
+                                                                                                                       As viewed from component side                                    Tolerance:±0.05mm                                                                                                                                 Shell: Stainless steel
+                                                                                                                                        Solder Area                           Component Outline                                                                                                                                           Mid Plate: Stainless Steel
+E
+                                                8.34+0.06
+                                                    -0.02                                                                                                                                                                                                                                                                                Plating
+           A1                                                                                   A12
+                                                                                                                                                                                                                                                                                                                                          Contact:
+                                                                                                                                                                                                                                                                                                                                            Contact Area: See Ordering Grid
+
+
+           2.56±0.04
+                                                                                                                                                                                                                                                                                                                                            Solder Tails: Gold Flash
+                                                                                                      3.31                                                                                                                                                                                                0.60                              Underplating: 50µ" min. Nickel All Over
+                                                                                                                1.73                                                                                                                      0.10                                                                                            Shell: 30µ" min. Nickel
+                                                                                                                                                                                                                                                                                                                                          Mid Plate: Clear
+D     B12                                                                                       B1
+                                                     5.78                                                                 0.80                                 1.10                                                                                                                                                                      Electrical
+
+
+
+
+                                                                                                                                                                                                    (0.95mm stake shown)
+                                                     8.64                                                                     1.30                                                                                                                                                                                                        Current Rating:   5.00A collectively for VBUS pins
+                                                                                                                               2.60                       4.18                                                                                                                                                                                              6.25A collectively for GND pins
+
+                                                                                                                                                                                           S±0.15
+                                                                                                                                                                                                                                                                         1.85 Min                                                                           1.25A for A5/B5 pin
+                                                                                                                                                                                                                                                                                                                                                            0.25A per pin for all other pins
+                                                                                                                                                                                                                                                                                                                                          Voltage Rating: 48V DC
+C                                                                                                                                                                                                                                                                                                                                         Power Rating: 240W
+
+                                                                                                                                                                                                                               6.5 Max.
+                                                                                                                                                                                                                                                                                                                                          Contact Resistance: 40mΩ max. initial.
+                                                                                                                                                                                                                                                  Plug                                                                                                         50mΩ max. after test
+                                                                                                                                                                                                                                                                                                                                          Dielectric Withstanding Voltage: 100V AC
+       3.68
+                                                                                               2x Ø0.50                                                                                                                                                                                                                                   Insulation Resistance 100MΩ min.
+
+    0.38                                                                                                                                                                                                                                                                                                                                 Mechanical & Environmental
+B                                                                                                                                                                                                                                                        Plug and Receptacle Mating View                                                  Operating Temperature: -40°C to +85°C
+                                                                                                           Ordering Grid
+                                                                                                                                                                                                                                                                                                                                          Mating Force: 5 to 20 N.
+                                                                                                           USB4105                              XX                  A                   XXX                                     Request Samples
+                                                                                                                                                                                                                                                                                                                                          Unmated Force: 6 to 20 N after test
+                       A1 B12 A4 B9   B8   A5   B7   A6   A7   B6   A8   B5   B4 A9   B1 A12
+
+
+           4x 0.45                                                                      16x 0.20                                                                                                                                 and Quotation
+                                                                                                                                                                                                                                                                                                                                          Durability: 20,000 cycles
+                                                                2x 0.25                                   Contact Plating
+                                                                                                                                                                                                                 Shell Stake Length "S"
+                                                                2x 0.75                                   GF = Gold Flash (standard)                                                                                                                      Part Number                              Product Description
+                                                                                                                                                                                                                 Blank = 0.95mm
+                                                                                                          15 = 15µ" Gold                                                                                                                                  USB4105
+                                                                2x 1.25                                   30 = 30µ" Gold
+                                                                                                                                                                                                                 060 = 0.60mm                                                                      USB Type C Receptacle for USB 2.0
+                                                                                                                                                                                                                                                          Drawing Date
+                                                                                                                                                                                                                 120 = 1.20mm                                                                      SMT Type, PCB Top Mount
+A                                                               2x 1.75                                                                                                                                                                                   4th October 2019
+                                                                                                                                Packing Options                                                                                                                By         CC       Tolerances (Except as Noted)
+                                                                2x 2.40                                                         A = Tape & Reel                                                                                                                         USB4105
+                                                                                                                                                                                                                                                                                      Length          Angle
+                                                                                                                                                                                                                                                                                                                    Units:
+                                                                                                                                                                                                                                                                                                                  Metric (mm)
+                                                                                                                                                                                                                                                                                                                                                             This drawing is confidential and
+                                                                                                                                                                                                                                                                                                                                                             copyright of Global Connector           www.gct.co
+                                                     6.40                                                                                                                                                                                                     Detail
+
+                                                                                                                                                                                                                                                          Revision
+                                                                                                                                                                                                                                                                         B PCN
+                                                                                                                                                                                                                                                                           B4
+                                                                                                                                                                                                                                                                                     X. ± 0.38
+                                                                                                                                                                                                                                                                                    X.X ± 0.30       X.±2°                                            C      Technology, Ltd (GCT).
+                                                                                                                                                                                                                                                                                                                                                             This drawing must not be copied
+                                                                                                                                                                                                                                                                                                                                                             or disclosed without written       Not to   Drawn By      Sheet No.
+                                                                                                                                                                                                                                                                                   X.XX ± 0.15       X.X±1°
+                                                                                                                                                                                                                                                           Date         18/12/23   X.XXX ± 0.10                   3rd Angle Projection                       consent. E & OE                    Scale       CC           1/2
+               1                                                         2                                                3                                                               4                                                               5                                           6                                                  7                                               8
+H                                                                                                                                                                         Folder Paper Board
+               Unloaded Section                      800 PCS               Unloaded Section
+                  (20 Pockets)                                                (20 Pockets)
+                                                                                                                                     Paper Board
+
+
+
+G
+
+
+                                              Direction of Unreeling
+
+
+F                                                          Peeling       165°~180°                Vacuum Bag
+                                                            Angle
+
+
+                                                                                                  Reel and Tape
+
+E
+
+                            Ø330                                                                                                                                                                                                    Carton
+
+                                                                            Ø1
+                                                                                 3
+D
+                                                                  Label
+                         W+0.5
+                                                                                                                                                                                                                                                 320
+                                                                                                  Paper Board
+                                                                                                                                                                                             34                                         0
+C                                                                                                                                                                                               0                                    34
+                                                   16.00
+                                   4.00                        Direction of Unreeling
+                                   2.00
+
+
+
+               1.75
+B       24.0                                                                                                                                     Pcs /                    Reels /            Total
+                                                                                                                                                 Reel                     Carton           Quantity
+                                                                                                                                                  800                       10             8000 pcs
+
+                                                                                                            Part Number                              Product Description
+                                                                                                            USB4105                                  USB Type C Receptacle for USB 2.0
+                                                                                                            Drawing Date
+                                                                                                                                                     SMT Type, PCB Top Mount
+A                                                                                                           4th October 2019
+                                                                                                                By          CC       Tolerances (Except as Noted)     Units:                     This drawing is confidential and
+                                                                                                                          USB4105
+                                                                                                                                        Length          Angle
+                                                                                                                                                                    Metric (mm)                  copyright of Global Connector           www.gct.co
+                                                                                                               Detail
+
+                                                                                                            Revision
+                                                                                                                           B PCN
+                                                                                                                             B4           -                 -
+                                                                                                                                                                                            C    Technology, Ltd (GCT).
+                                                                                                                                                                                                 This drawing must not be copied
+                                                                                                                                                                                                 or disclosed without written       Not to   Drawn By   Sheet No.
+                                                                                                             Date         18/12/23                                  3rd Angle Projection         consent. E & OE                    Scale       CC         2/2
+    1                                     2                          3                        4            5                                            6                                    7                                               8
+

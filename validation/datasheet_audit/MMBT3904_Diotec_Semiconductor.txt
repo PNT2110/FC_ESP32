@@ -1,0 +1,219 @@
+MMBT3904
+
+                               MMBT3904                                       IC    = 200 mA                    VCEO = 40 V
+                SMD General Purpose NPN Transistors                           hFE = 100 ... 300                 Ptot = 350 mW
+                  SMD Universal-NPN-Transistoren                              Tjmax = 150°C
+Version 2025-11-18
+
+                SOT-23                    Typical Applications                                         Typische Anwendungen
+                TO-236                    Signal processing                                                    Signalverarbeitung
+                                          Switching                                                                      Schalten
+                           3              Amplification                                                                Verstärken
+                                          Commercial grade                                                   Standardausführung
+                                          Suffix -Q: AEC-Q101 compliant 1)                       Suffix -Q: AEC-Q101 konform 1)
+            1
+                                          Suffix -AQ: AEC-Q101 qualified 1)                   Suffix -AQ: AEC-Q101 qualifiziert 1)
+                                          Features                                                             Besonderheiten
+                          2               General purpose                                                   Universell anwendbar
+                                          Compliant to RoHS (w/o exemp.)                           Konform zu RoHS (ohne Ausn.),
+                                          REACH, Conflict Minerals 1)                                 REACH, Konfliktmineralien 1)
+
+
+     SPICE Model & STEP File 1)
+
+                                          Mechanical Data 1)                                                Mechanische Daten 1)
+                                          Taped and reeled                          3000 / 7“                     Gegurtet auf Rolle
+                                          Weight approx.                                 0.01 g                            Gewicht ca.
+                                          Case material                             UL 94V-0                         Gehäusematerial
+          Marking Code
+       MMBT3904 = 1AM or 1E               Solder & assembly conditions              260°C/10s            Löt- und Einbaubedingungen
+        MMBT3904-AQ = 1E                                                             MSL = 1
+
+         HS Code 85412100                 Recommended                                                                Empfohlene
+                                                                                   MMBT3906/
+                                          complementary                                                          komplementäre
+                                                                                     -AQ
+                                          PNP transistors                                                       PNP-Transistoren
+
+
+
+Maximum ratings 2)                                                                                                     Grenzwerte 2)
+                                                                                                         MMBT3904/-AQ
+Collector-Emitter-voltage - Kollektor-Emitter-Spannung             B open        VCEO                           40 V
+Collector-Base-voltage - Kollektor-Basis-Spannung                  E open        VCBO                           60 V
+Emitter-Base-voltage - Emitter-Basis-Spannung                      C open        VEBO                           6V
+Power dissipation – Verlustleistung                                               Ptot                       350 mW 3)
+Collector current – Kollektorstrom                                 DC             IC                          200 mA
+Junction temperature – Sperrschichttemperatur                                     Tj                        -55...+150°C
+Storage temperature – Lagerungstemperatur                                         TS                        -55…+150°C
+
+
+Characteristics                                                                                                          Kennwerte
+                                                                            (Tj = 25°C)           Min.          Typ.         Max.
+DC current gain – Kollektor-Basis-Stromverhältnis 1)
+    VCE = 1 V         IC = 0.1 mA                                                                  40                          –
+                      IC = 1 mA                                                                    80                          –
+                      IC = 10 mA                                                  hFE             100            –            300
+                      IC = 50 mA                                                                   60                          –
+                      IC = 100 mA                                                                  30                          –
+
+
+
+1   Please note the detailed information on our website or at the beginning of the data book
+    Bitte beachten Sie die detaillierten Hinweise auf unserer Internetseite bzw. am Anfang des Datenbuches
+2   TA = 25°C and per diode, unless otherwise specified – T A = 25°C und pro Diode, wenn nicht anders angegeben
+3   Mounted on P.C. board with 3 mm 2 copper pad at each terminal
+    Montage auf Leiterplatte mit 3 mm 2 Kupferbelag (Lötpad) an jedem Anschluss
+1   Tested with pulses tp = 300 µs, duty cycle ≤ 2% – Gemessen mit Impulsen tp = 300 µs, Schaltverhältnis ≤ 2%
+
+
+© Diotec Semiconductor AG                            http://www.diotec.com/                                                          1
+                                                                                                                                  MMBT3904
+
+Characteristics                                                                                                                  Kennwerte
+                                                                              (Tj = 25°C)          Min.              Typ.              Max.
+Collector-Emitter saturation voltage – Kollektor-Sättigungsspannung )     1
+
+
+    IC = 10 mA, IB = 1 mA                                                                              –               –               0.2 V
+                                                                                  VCEsat
+    IC = 50 mA, IB = 5 mA                                                                              –               –               0.3 V
+Base-Emitter saturation voltage – Basis-Sättigungsspannung 1)
+    IC = 10 mA, IB = 1 mA                                                                     0.65 V                   –              0.85 V
+                                                                                  VBEsat
+    IC = 50 mA, IB = 5 mA                                                                        –                     –              0.95 V
+Collector-Base cutoff current – Kollektor-Basis-Reststrom
+    VCE = 30 V, VEB = 3 V                                                          ICBX                –               –              50 nA
+Emitter-Base cutoff current – Emitter-Basis-Reststrom
+    VCE = 30 V, - VEB = 3 V                                                        IEBV                –               –-             50 nA
+Gain-Bandwidth Product – Transitfrequenz
+    IC = 10 mA, VCE = 20 V, f = 100 MHz                                             fT       300 MHz                   –                   –
+Collector-Base Capacitance – Kollektor-Basis-Kapazität
+    VCB = 5 V, IE = ie = 0, f = 1 MHz                                              CCBO                –               –               4 pF
+Emitter-Base Capacitance – Emitter-Basis-Kapazität
+    VEB = 0.5 V, IC = ic = 0, f = 1 MHz                                            CEBO                –               –                8 pf
+Noise Figure
+VCE = 5 V, IC = 0.1 mA, RS = 1kΩ, f = 10 Hz to 15.7 kHz                            NF                  –               –               5 dB
+Switching times – Schaltzeiten (between 10% and 90% levels)
+    delay time                             VCC = 3 V, VBE = 0.5 V                   td                 –               –               35 ns
+    rise time                              IC = 10 mA, IB1 = 1mA                    tr                 –               –               35 ns
+    storage time                           VCC = 3 V, IC = 10 mA,                   ts                 –               –              200 ns
+    fall time                              IB1 = IB2 = 1 mA                         tf                 –               –               50 ns
+Typical thermal resistance junction to ambient
+                                                                                   RthA                          357 K/W 2)
+Typischer Wärmewiderstand Sperrschicht – Umgebung
+
+
+Dimensions – Maße [mm]                                                                      120
+                                                                                            [%]
+
+                                                                                            100
+
+
+                                                                                             80
+
+
+                                                                                             60
+
+
+                                                                                             40
+
+
+                                                                                             20
+                                                                                            Ptot
+                                                                                             0
+                                                                                                   0       TA   50       100         150       [°C]
+                                                                                                                                                 1
+                                                                                                   Power dissipation versus ambient temperature )
+                                                                                                                                                1
+                                                                                                   Verlustleistung in Abh. von d. Umgebungstemp. )
+
+
+
+
+                                     Disclaimer: See data book page 2 or website
+                               Haftungssauschluss: Siehe Datenbuch Seite 2 oder Internet
+
+1   Tested with pulses tp = 300 µs, duty cycle ≤ 2% – Gemessen mit Impulsen tp = 300 µs, Schaltverhältnis ≤ 2%
+2   Valid, if leads are kept at ambient temperature – Gültig, wenn die Anschlüsse auf Umgebungstemperatur gehalten werden
+
+
+2                                                    http://www.diotec.com/                                      © Diotec Semiconductor AG
+All rights reserved                                                         Alle Rechte vorbehalten
+The information presented in our data sheets and other docu-                Die Angaben in unseren Datenblättern und sonstigen Doku-
+ments is to the best of our knowledge true and accurate. It de-             menten sind nach bestem Wissen und Gewissen gemacht. Sie
+scribes the type of component or application and shall not be               dienen jedoch allein der Beschreibung und sind nicht als zuge-
+considered as assured characteristics. No warranty or guaran-               sagte Eigenschaften im Rechts-Sinne zu verstehen. Es wird kei-
+tee, expressed or implied is made regarding the capacity, deliv-            ne Gewähr bezüglich Liefermöglichkeit, Ausführung oder Ein-
+ery, performance or suitability of any product or circuit etc, nei-         satzmöglichkeit der Bauelemente übernommen, noch dass die
+ther does it convey any license under the patent rights of oth-             angegebenen Bauelemente, Baugruppen, Schaltungen etc. frei
+ers.                                                                        von Schutzrechten sind.
+Diotec reserves the right to make changes without further no-               Wir behalten uns Änderungen der aufgeführten Daten ohne
+tice. However, regular updating of all product information is               vorherige Ankündigung vor. Alle Änderungen werden jedoch re-
+provided on our website 1). All Diotec products are sold and                gelmäßig auf unserer Internet-Seite veröffentlicht 1). Verkauf
+shipped subject to our “Standard Terms and Conditions of Busi-              und Lieferung von Diotec-Produkten erfolgt gemäß unseren
+ness” 2). The reproduction of all documents is prohibited with-             “Allgemeinen Geschäftsbedingungen” 2). Die Vervielfältigung al-
+out the expressed written permission of Diotec Semiconductor                ler Dokumente ist nur mit schriftlicher Genehmigung des Vor-
+AG's Managing Board.                                                        standes der Diotec Semiconductor AG gestattet.
+
+
+Disclaimer                                                                  Haftungsausschluss
+1. All products described or contained are designed and in-                 1. Alle beschriebenen oder enthaltenen Produkte sind für den
+tended for use in standard applications, so called commercial/              Gebrauch in Standardanwendungen mit einem gewöhnlichen
+industrial grade, requiring an ordinary level of reliability.               Zuverlässigkeitsniveau entworfen und bestimmt, bekannt als
+                                                                            kommerziell/industrielle Anwendungen.
+
+2. Some products are available with the special grades “AEC-                2. Einige Produkte sind mit den speziellen Qualifikationen „AEC-
+Q101 compliant” respectively “AEC-Q101 qualified”. These are                Q101 konform“ oder „AEC-Q101 qualifiziert“ erhältlich. Dies
+automotive standards 3).                                                    sind Automotive-Standards 3).
+
+3. Customers using these parts in applications requiring a spe-             3. Falls diese Produkte in Anwendungen verwendet werden sol-
+cial or specific grade of quality or reliability, such as (but not          len, die einen besonderen Grad der Qualität oder Zuverlässig-
+limited to) life supporting devices or systems, where failure or            keit erfordern, z. B. (aber nicht begrenzt auf) lebenserhaltende
+malfunction of the product may directly affect human life or                Geräte oder Systeme, bei denen durch Ausfall oder eine Stö-
+health, are obliged to validate whether the use in such cases is            rung des Produktes menschliches Leben oder Gesundheit direkt
+appropriate.                                                                beeinflusst werden kann, ist der Anwender verpflichtet sicher-
+Diotec does not assume any liability arising out of such applica-           zustellen, dass der beabsichtigte Gebrauch des vorgesehenen
+tions or uses of its products. Usage in all such cases is on the            Produktes unbedenklich ist.
+own and sole risk of the customer.                                          Diotec übernimmt keine Haftung die sich aus solchen Anwen-
+                                                                            dungen oder der Verwendung der Produkte ergibt. Der Ge-
+                                                                            brauch für alle solche Anwendungen erfolgt auf eigenes und
+                                                                            ausschließliches Risiko des Anwenders.
+
+4. Although Diotec continuously enhances the quality and relia-             4. Obwohl Diotec die Qualität und die Zuverlässigkeit seiner
+bility of its products, customers must incorporate sufficient               Produkte beständig erhöht, müssen Kunden ausreichende Si-
+safety measures in their designs, such as redundancy, fire con-             cherheitsvorkehrungen in ihren Designs vornehmen – wie Red-
+tainment, and anti-failure, so that personal injury, fire or envi-          undanz, Feuereindämmung und Ausfallschutz – damit Perso-
+ronmental damage can be prevented. Diotec excludes explicitly               nenschäden, Feuer oder Umweltschädigung verhindert werden
+every implied warranty or liability regarding the fitness of the            können. Diotec schließt ausdrücklich jede implizierte Garantie
+products to any other than standard applications.                           oder Verbindlichkeit aus, welche die Eignung der Produkte zu
+                                                                            irgendwelchen anderen als Standardanwendungen betrifft.
+
+5. All information described or contained herein are subject to             5. Alle Informationen, die hier beschrieben oder enthalten sind,
+change without notice. Please contact Diotec to obtain the lat-             können jederzeit ohne jede Benachrichtigung geändert werden.
+est information before incorporating Diotec products into any               Vor Einsatz eines Diotec Produktes in irgendeiner Anwendung
+design.                                                                     sind bei Diotec die neuesten Informationen einzuholen.
+
+6. All information described and contained herein are intended              6. Alle Informationen, die hier beschrieben oder enthalten sind,
+only to enable the buyer to order Diotec's products. The infor-             sollen dem Kunden nur ermöglichen, Diotec Produkte zu bestel-
+mation must not be used for any other purpose.                              len. Die Informationen dürfen zu keinem anderen Zweck ver-
+                                                                            wendet werden.
+
+7. In the event that any product described or contained herein              7. Sollte ein hier beschriebenes oder enthaltenes Produkt unter
+falls under the category of strategic products controlled by the            Beschränkungen fallen, die durch das deutsche Bundesamt für
+German Federal Office of Economics and Export Control, this                 Wirtschaft und Ausfuhrkontrolle geregelt werden, darf dieses
+product must not be exported without obtaining an export li-                Produkt in Übereinstimmung mit den gültigen Gesetzen nicht
+cense from the German Federal Ministry for Economic Affairs                 ohne Exportgenehmigung vom deutschen Bundesministerium
+and Climate Action in accordance with the valid laws.                       für Wirtschaft und Klimaschutz exportiert werden.
+
+
+
+1   Refer to http://diotec.com/ “Products/Product Changes” respectively “News/Datasheets”
+    Siehe http://diotec.com/ „Produkte/Produktänderungen“ bzw. „News/Datenblätter“
+2   Refer data book or http://diotec.com/ “Company” – Siehe Datenbuch oder http://diotec.com/ „Unternehmen“
+3   Refer to http://diotec.com/ “Products/Information/Qualification/Commercial Grade and AEC-Q101”
+    Siehe http://diotec.com/ „Produkte/Informationen/Qualifizierung/Standard und AEC-Q101“
+
+
+© Diotec Semiconductor AG                                     https://diotec.com/                                                 Disclaimer
+

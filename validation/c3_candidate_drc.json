@@ -1,0 +1,1119 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-14T19:46:25",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.0",
+    "schematic_parity": [],
+    "source": "c3_candidate.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint J4",
+                    "pos": {
+                        "x": 73.26066,
+                        "y": 73.26066
+                    },
+                    "uuid": "00491ca6-c35d-5282-9c07-af6ce171dc78"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 110.25,
+                        "y": 112.2
+                    },
+                    "uuid": "0400d22c-65b6-5532-8518-25f5f784b9f5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C17",
+                    "pos": {
+                        "x": 81.25,
+                        "y": 84.5
+                    },
+                    "uuid": "101f876f-d44e-5abf-8c0c-333c224622d4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R15",
+                    "pos": {
+                        "x": 74.7,
+                        "y": 76.8
+                    },
+                    "uuid": "156a1c39-a80f-5224-9261-fdcef47b38f1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C11",
+                    "pos": {
+                        "x": 106.5,
+                        "y": 109.75
+                    },
+                    "uuid": "1de3fd25-af34-54a3-9bb3-c657a6c9a5b0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R17",
+                    "pos": {
+                        "x": 125.3,
+                        "y": 78.8
+                    },
+                    "uuid": "2231a861-ed14-5421-97a9-4c906fba77fe"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R18",
+                    "pos": {
+                        "x": 122.8,
+                        "y": 75.8
+                    },
+                    "uuid": "348f26e1-2397-511a-a75e-677c11fd2e0c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint Q2",
+                    "pos": {
+                        "x": 125.55,
+                        "y": 76.45
+                    },
+                    "uuid": "34a3e9d9-6b8c-5f0c-a98c-0dca69b177d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R7",
+                    "pos": {
+                        "x": 93.5,
+                        "y": 113.5
+                    },
+                    "uuid": "34bf83b7-f43f-5c07-922f-814088eecd6a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint U6",
+                    "pos": {
+                        "x": 86.0,
+                        "y": 90.5
+                    },
+                    "uuid": "391f2c29-bb24-58e7-a4b2-35cb115e5f60"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint Q6",
+                    "pos": {
+                        "x": 104.25,
+                        "y": 106.0
+                    },
+                    "uuid": "3eb60846-cfdb-5504-b50f-049b961781d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 112.0,
+                        "y": 102.0
+                    },
+                    "uuid": "41390c08-ea2f-5f06-b562-85c82a734db8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C24",
+                    "pos": {
+                        "x": 77.25,
+                        "y": 126.25
+                    },
+                    "uuid": "47132974-983d-5abe-89bf-6e737c0a482d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C21",
+                    "pos": {
+                        "x": 72.75,
+                        "y": 69.25
+                    },
+                    "uuid": "4a9697c0-59de-5850-b7c9-f663c68d4572"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 107.0
+                    },
+                    "uuid": "4c7b0d68-711a-5013-9a6d-ef09b278b984"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C9",
+                    "pos": {
+                        "x": 94.0,
+                        "y": 104.75
+                    },
+                    "uuid": "4ca7e863-9659-5ff9-a5fb-b0a61311ebe1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R4",
+                    "pos": {
+                        "x": 88.4,
+                        "y": 95.9
+                    },
+                    "uuid": "4fb7592e-67bd-56cc-bc9d-66e216a53811"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R23",
+                    "pos": {
+                        "x": 115.75,
+                        "y": 90.75
+                    },
+                    "uuid": "5149a271-ecda-5a2a-8127-23da042edbb1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint L1",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 85.25
+                    },
+                    "uuid": "52804509-60ec-5abc-9d90-d6f8249fc4ea"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R16",
+                    "pos": {
+                        "x": 73.45,
+                        "y": 76.8
+                    },
+                    "uuid": "568e0e16-a045-587f-8fd3-ea09a3d76261"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C19",
+                    "pos": {
+                        "x": 111.2,
+                        "y": 115.7
+                    },
+                    "uuid": "56f662fc-7fc5-5f56-a76e-4bd3490b5c15"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C18",
+                    "pos": {
+                        "x": 109.0,
+                        "y": 108.3
+                    },
+                    "uuid": "5a6ca38a-967a-5e2d-94d2-c54d91338fea"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint J5",
+                    "pos": {
+                        "x": 126.739339,
+                        "y": 73.26066
+                    },
+                    "uuid": "5a8d3c51-904a-5479-948a-da630abec57d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint Q1",
+                    "pos": {
+                        "x": 76.45,
+                        "y": 74.45
+                    },
+                    "uuid": "5b7a3710-b77b-56da-945c-701022729203"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 88.7,
+                        "y": 85.4
+                    },
+                    "uuid": "5c6d651d-fffa-546a-ba25-2a26713dc466"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R11",
+                    "pos": {
+                        "x": 111.0,
+                        "y": 93.5
+                    },
+                    "uuid": "5d544984-1495-57f6-9e9b-d2178b24588b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint U4",
+                    "pos": {
+                        "x": 95.5,
+                        "y": 109.25
+                    },
+                    "uuid": "5d6f5b74-9217-5bd2-a281-70a09305a843"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C12",
+                    "pos": {
+                        "x": 112.0,
+                        "y": 86.0
+                    },
+                    "uuid": "60739533-e3aa-5be0-8877-558f85777849"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C8",
+                    "pos": {
+                        "x": 96.7,
+                        "y": 104.75
+                    },
+                    "uuid": "63ca3f16-ccce-5a3e-9d21-bd75c1d0b37b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R3",
+                    "pos": {
+                        "x": 89.15,
+                        "y": 91.85
+                    },
+                    "uuid": "6695888e-7c52-532d-8c2f-c7fc838a2894"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 86.0,
+                        "y": 82.7
+                    },
+                    "uuid": "6ee3019a-f3d5-5916-a106-4b4943f93c20"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C13",
+                    "pos": {
+                        "x": 112.0,
+                        "y": 83.75
+                    },
+                    "uuid": "756d104c-e90b-537c-9ea1-ded5fcf67305"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint J8",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 96.85
+                    },
+                    "uuid": "75c64c4f-3c1d-5c12-8009-7636b0dc3a47"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C6",
+                    "pos": {
+                        "x": 96.7,
+                        "y": 106.0
+                    },
+                    "uuid": "7893be30-11e1-53f2-aaf2-bc2bcc1de770"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint U5",
+                    "pos": {
+                        "x": 112.0,
+                        "y": 89.25
+                    },
+                    "uuid": "7d9ead9d-d182-5d30-811d-c556677aedb4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D6",
+                    "pos": {
+                        "x": 88.5,
+                        "y": 100.5
+                    },
+                    "uuid": "81c0681b-3825-5cd3-a79c-712687bbd8b0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R1",
+                    "pos": {
+                        "x": 88.3,
+                        "y": 88.25
+                    },
+                    "uuid": "888913d2-f4a4-5eda-b303-63ac01b54fd6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint Q4",
+                    "pos": {
+                        "x": 73.7,
+                        "y": 123.55
+                    },
+                    "uuid": "8953694f-dc98-5853-a0e8-c1138c7759e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint L2",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 86.25
+                    },
+                    "uuid": "8aae7433-525a-58f4-834a-8a9f13a17712"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 89.15,
+                        "y": 90.7
+                    },
+                    "uuid": "8adeecd6-9a1a-565f-9e91-571c79579617"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R12",
+                    "pos": {
+                        "x": 89.0,
+                        "y": 94.75
+                    },
+                    "uuid": "92a68341-45b2-5acd-8453-798c11ddd400"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint Q3",
+                    "pos": {
+                        "x": 123.55,
+                        "y": 126.3
+                    },
+                    "uuid": "92d4d5b1-7ae5-5b43-a406-9dcc4f8f88b8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R13",
+                    "pos": {
+                        "x": 89.0,
+                        "y": 87.0
+                    },
+                    "uuid": "98d40c03-caf7-593e-a623-d800e3fd9b83"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D5",
+                    "pos": {
+                        "x": 82.5,
+                        "y": 116.0
+                    },
+                    "uuid": "997089e3-addb-5f2a-bf11-088a75d6e618"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 116.0
+                    },
+                    "uuid": "9a04d0aa-e17d-5613-ad69-89b3f7bf51bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C23",
+                    "pos": {
+                        "x": 120.25,
+                        "y": 123.75
+                    },
+                    "uuid": "a178a8fa-7192-5f7c-bba6-6a570ff9b676"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R20",
+                    "pos": {
+                        "x": 125.05,
+                        "y": 123.2
+                    },
+                    "uuid": "a292f71c-6ca6-5f8f-b9c4-e95209cd5838"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R24",
+                    "pos": {
+                        "x": 112.25,
+                        "y": 94.75
+                    },
+                    "uuid": "a44c13e1-9e96-5517-b66a-af5fc8320753"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 88.0,
+                        "y": 109.5
+                    },
+                    "uuid": "a62c82a2-b329-571c-b7c5-ccca33ebf8db"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R19",
+                    "pos": {
+                        "x": 126.3,
+                        "y": 123.2
+                    },
+                    "uuid": "a9d41a50-025a-54da-8d28-f75ec05c3f70"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint J9",
+                    "pos": {
+                        "x": 85.25,
+                        "y": 98.75
+                    },
+                    "uuid": "adcb6c8c-39b2-55dd-aaf2-b1372fabdd1e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 90.5
+                    },
+                    "uuid": "b11c6bc9-f954-5ffb-914a-3254ca224448"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C15",
+                    "pos": {
+                        "x": 111.0,
+                        "y": 92.0
+                    },
+                    "uuid": "b3ae872c-38dc-5438-9fd3-e357ab92150b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D4",
+                    "pos": {
+                        "x": 78.75,
+                        "y": 122.75
+                    },
+                    "uuid": "b3ec36da-1b5d-57f6-9b49-2a48ecb23e9e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C7",
+                    "pos": {
+                        "x": 94.7,
+                        "y": 106.9
+                    },
+                    "uuid": "b42595ac-9d5a-557b-a90b-5413c4656dd5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint Q5",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 106.0
+                    },
+                    "uuid": "bb34071a-2770-5353-810b-881f0418d893"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 88.55,
+                        "y": 93.25
+                    },
+                    "uuid": "bbab7da0-83b8-51c9-b5fe-e323d5c0aecf"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R21",
+                    "pos": {
+                        "x": 76.2,
+                        "y": 124.95
+                    },
+                    "uuid": "bf4042ac-e08c-5047-84fc-4f9d6f3b0158"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint J7",
+                    "pos": {
+                        "x": 73.26066,
+                        "y": 126.739339
+                    },
+                    "uuid": "c60d6186-33c8-58e3-8d80-330da56d8034"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R9",
+                    "pos": {
+                        "x": 110.5,
+                        "y": 98.0
+                    },
+                    "uuid": "cac7a090-454c-55b9-b27c-ec6c4572387c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D2",
+                    "pos": {
+                        "x": 120.5,
+                        "y": 78.0
+                    },
+                    "uuid": "d03251f8-7c83-5caa-8198-fbb126ebdd6a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint J6",
+                    "pos": {
+                        "x": 126.739339,
+                        "y": 126.739339
+                    },
+                    "uuid": "d694288d-1ffd-587c-a43e-13bdd464435b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D1",
+                    "pos": {
+                        "x": 78.0,
+                        "y": 79.5
+                    },
+                    "uuid": "dd78090f-408e-548b-af8b-328d7f7d3bc5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C22",
+                    "pos": {
+                        "x": 122.75,
+                        "y": 73.75
+                    },
+                    "uuid": "dfb4b442-0f24-52e5-85d8-fe7ad91ff5d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R5",
+                    "pos": {
+                        "x": 103.3,
+                        "y": 108.45
+                    },
+                    "uuid": "dff187db-9212-5cab-9cb3-70c96a566d41"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R6",
+                    "pos": {
+                        "x": 105.5,
+                        "y": 108.3
+                    },
+                    "uuid": "e0b29c5c-ea07-5d07-8dd3-e5edca694cd4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R22",
+                    "pos": {
+                        "x": 75.45,
+                        "y": 120.45
+                    },
+                    "uuid": "e297a2c8-f7ce-597d-89df-db7d54daead5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R8",
+                    "pos": {
+                        "x": 106.5,
+                        "y": 114.25
+                    },
+                    "uuid": "e652b815-21cb-5b1c-b327-1ae92b727d86"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C5",
+                    "pos": {
+                        "x": 102.8,
+                        "y": 109.7
+                    },
+                    "uuid": "e9eac104-6d91-5227-8df3-5d24e2c32891"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 113.95,
+                        "y": 106.8
+                    },
+                    "uuid": "f1ae49fc-2a95-5ce7-b6dc-854c4c040014"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R10",
+                    "pos": {
+                        "x": 110.5,
+                        "y": 100.5
+                    },
+                    "uuid": "f518ad0d-cf94-5fec-b0a2-38259ad82e7c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'FC_Local' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D3",
+                    "pos": {
+                        "x": 122.75,
+                        "y": 121.25
+                    },
+                    "uuid": "f77faa6a-50c2-5a7a-87cb-72cd2615d3f7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Copper sliver (F.Cu)",
+            "items": [],
+            "severity": "warning",
+            "type": "copper_sliver"
+        }
+    ]
+}

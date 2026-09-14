@@ -38,9 +38,9 @@
   "j2_orientation_deg": 90.0,
   "netclass_widths_mm": {
     "Default": 0.18,
+    "Battery": 1.2,
     "LogicPower": 0.4,
-    "MotorPower": 0.8,
-    "Battery": 1.2
+    "MotorPower": 0.8
   },
   "narrow_tracks": []
 }

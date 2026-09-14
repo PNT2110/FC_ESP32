@@ -1,11 +1,12 @@
 # Firmware bring-up
 
-Current firmware initializes peripherals and logs MPU-6500 acceleration and angular
-rates at 10 Hz. All four motor PWM outputs start and remain at zero. The old mock
-attitude/throttle loop has been removed. This is not flight firmware: estimator, calibration, tuned control, battery cutoff and transmitter hardware
-integration are still required before powered flight. The ESP-NOW receiver and
-logical arming/failsafe gate are implemented and tested; the gate is intentionally
-not connected to motor actuation during bring-up.
+Current firmware includes MPU-6500 acquisition, gyro calibration, attitude estimation,
+PID/mixing, battery monitoring and an ESP-NOW command/arming/failsafe path.
+Motor actuation is disabled by default (`CONFIG_FC_ENABLE_MOTORS`); the default
+build keeps PWM outputs at zero. Host tests pass for the sensor driver, protocol,
+arming/failsafe and controller fault/output limits. These tests do not establish
+stable flight: transmitter integration, sensor axes, motor order, control tuning
+and battery behavior still require hardware testing.
 
 Verified build: ESP-IDF 5.4.2, ESP32 target. Uses `driver/i2c_master.h` and `esp_adc/adc_oneshot.h`:
 

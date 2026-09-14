@@ -1,0 +1,197 @@
+              Web           Sample         Tools &               Support
+              page          & buy          software              & FAQ                                                                Document 433-1
+
+
+
+
+                        Shielded Power Inductors – LPS4012
+Halogen                                                                            • Very low DCR; excellent current handling
+ Free
+                                                                                   • 4.0 × 4.0 mm footprint; less than 1.2 mm tall
+                                                                                   • AEC-Q200 Grade 1 qualified (–40°C to +125°C ambient)
+
+                                                                                   Core material Ferrite
+ AEC
+Q200 125°C
+    +
+                                                                                   Core and winding loss See www.coilcraft.com/coreloss
+                                                                                   Environmental RoHS compliant, halogen free
+                                                                                   Terminations RoHS compliant matte tin over nickel over silver.
+                                                                                   Other terminations available at additional cost.
+                                                                                   Weight 54 – 64 mg
+                                                                                   Ambient temperature –40°C to +85°C with (40°C rise) Irms current.
+                                                                                   Maximum part temperature +125°C (ambient + temp rise). Derating.
+                                                                                   Storage temperature Component: –40°C to +125°C.
+                                                                                   Tape and reel packaging: –40°C to +80°C
+                                                                                   Resistance to soldering heat Max three 40 second reflows at
+                                                                                   +260°C, parts cooled to room temperature between cycles
+                                                                                   Moisture Sensitivity Level (MSL) 1 (unlimited floor life at <30°C /
+                                                                                   85% relative humidity)
+                                                                                   Failures in Time (FIT) / Mean Time Between Failures (MTBF)
+                                                                                   38 per billion hours / 26,315,789 hours, calculated per Telcordia SR-332
+                                                                                   Recommended pick and place nozzle OD: 4 mm; ID: ≤ 2 mm
+                                                                                   PCB washing Tested to MIL-STD-202 Method 215 plus an additional
+                                                                                   aqueous wash. See Doc787_PCB_Washing.pdf.
+
+
+                                                        Isat (A)5		    Irms (A)6                    1. Please specify termination and packaging codes:
+             		                         DCR    SRF
+             		             Inductance2 max3   typ4 10% 20% 30% 20°C 40°C                                           LPS4012-682MRC
+             Part number1      (µH)    (Ohms) (MHz) drop drop drop rise rise                           Termination: R = RoHS compliant matte tin over
+             LPS4012-331MR_	   0.33 ±20% 0.025   375     5.2      5.4      5.5     2.2   3.0                               nickel over silver.
+                                                                                                                           Special order, added cost:
+             LPS4012-681MR_	   0.68 ±20% 0.055   220     3.5      3.6      3.7     1.8   2.4                               Q = RoHS tin-silver-copper (95.5/4/0.5)
+             LPS4012-102NR_	   1.0 ±30% 0.060    180     2.8      2.9      3.0     1.7   2.4                               or P = non-RoHS tin-lead (63/37).
+             LPS4012-152MR_	   1.5 ±20% 0.070    140     2.6      2.7      2.8     1.6   2.2           Packaging: C = 7″ machine-ready reel. EIA-481
+             LPS4012-222MR_	   2.2 ±20% 0.100    115     2.3      2.4      2.5     1.2   1.75                              embossed plastic tape (1000 parts
+                                                                                                                           per full reel).
+             LPS4012-332MR_	   3.3 ±20% 0.100    100     1.3      1.4      1.4     1.45 2.00
+                                                                                                                      B = Less than full reel. In tape, but not
+             LPS4012-472MR_	   4.7 ±20% 0.175     70     1.6      1.7      1.8     1.10 1.45                               machine ready.
+             LPS4012-562MR_	   5.6 ±20% 0.260     60     1.5      1.6      1.6     0.85 1.10                               To have a leader and trailer added
+             LPS4012-682MR_	   6.8 ±20% 0.340     55     1.3      1.3      1.4     0.80 0.98                               ($25 charge), use code letter C
+                                                                                                                           instead.
+             LPS4012-103MR_	  10 ±20%    0.350    40     0.98     1.0      1.1     0.55 0.75
+                                                                                                                      D = 13″ machine-ready reel. EIA-481
+             LPS4012-153MR_	  15 ±20%    0.550    30     0.79     0.82     0.84    0.53 0.73                               embossed plastic tape. Factory
+             LPS4012-223MR_	  22 ±20%    0.600    25     0.74     0.78     0.79    0.52 0.70                               order only, not stocked (3500 parts
+             LPS4012-333MR_	  33 ±20%    0.825    22     0.45     0.47     0.48    0.46 0.61                               per full reel).
+             LPS4012-473MR_	  47 ±20%    1.40     19     0.35     0.37     0.38    0.40 0.52        2. Inductance tested at 100 kHz, 0.1 Vrms using an
+             LPS4012-683MR_	  68 ±20%    1.70     15     0.30     0.32     0.33    0.35 0.46           Agilent/HP 4192A. Inductance at 1 MHz is the same for
+                                                                                                       parts with SRF ≥10 MHz.
+             LPS4012-104MR_	 100 ±20%    2.40     12     0.24     0.26     0.27    0.30 0.40        3. DCR measured on a micro-ohmmeter.
+             LPS4012-124MR_	 120 ±20%    3.30     11.5   0.23     0.24     0.25    0.27 0.36        4. SRF measured using Agilent/HP 8753ES or equivalent.
+             LPS4012-154MR_	 150 ±20%    3.50     10.0   0.21     0.22     0.23    0.25 0.32        5. DC current at 25°C that causes the specified induc-
+             LPS4012-184MR_	 180 ±20%    5.00      8.0   0.18     0.19     0.20    0.23 0.29           tance drop from its value without current.
+             LPS4012-224MR_	 220 ±20%    5.20      7.0   0.15     0.16     0.17    0.21 0.27           Click for temperature derating information.
+                                                                                                    6. Current that causes the specified temperature rise from
+             LPS4012-334MR_	 330 ±20%    7.20      7.0   0.14     0.14     0.15    0.17 0.225          25°C ambient. This information is for reference only and
+             LPS4012-474MR_	 470 ±20% 10.0         4.0   0.10     0.11     0.12    0.13 0.175          does not represent absolute maximum ratings.
+             LPS4012-564MR_	 560 ±20% 12.5         3.5   0.10     0.105    0.115   0.11 0.140          Click for temperature derating information.
+             LPS4012-684MR_	 680 ±20% 13.5         3.0   0.10     0.105    0.110   0.11 0.135       7. Electrical specifications at 25°C.
+             LPS4012-824MR_	 820 ±20% 20.0         3.0   0.090    0.095    0.095   0.105 0.132      Refer to Doc 362 “Soldering Surface Mount Components”
+                                                                                                    before soldering.
+             LPS4012-105MR_ 1000 ±20% 21.5         3.0   0.080    0.090    0.095   0.100 0.130
+             LPS4012-155MR_ 1500 ±20% 30.0         2.5   0.080    0.090    0.090   0.087 0.115
+             LPS4012-185MR_ 1800 ±20% 35.0         2.0   0.079    0.085    0.087   0.075 0.100
+             LPS4012-225MR_ 2200 ±20% 42.0         1.0   0.079    0.083    0.085   0.070 0.090
+
+
+
+                                                                                                                      Document 433-1         Revised 10/01/19
+                                                                                                                                                                               Document 433-2
+
+
+
+
+             Shielded SMT Power Inductors – LPS4012 Series
+             Typical L vs Frequency                                                                             Typical L vs Current
+                 10000                                                                                              10000
+                                                                      2200 µH
+                                                                                                                                                        2200 µH
+Halogen                1000
+                                                                      1000 µH
+                                                                                                                          1000
+ Free                                                                                                                                                       1000 µH
+                                                                      220 µH
+
+
+
+
+             Inductance (µH)                                                                                   Inductance (µH)
+                                                                      100 µH                                                                                    220 µH
+                               100                                                                                               100                                  100 µH
+ AEC
+Q200 125°C
+    +
+                                                                      22 µH
+                                                                                                                                                                               22 µH
+                                                                      10 µH
+                               10                                                                                                10                                                10 µH
+                                                                      5.6 µH                                                                                                           5.6 µH
+
+                                                                      2.2 µH                                                                                                                 2.2 µH
+                                 1                                                                                                 1                                                          1 µH
+                                                                       1 µH
+
+
+                               0.1                                                                                               0.1
+                                     0.01                    0.1                    1                    10                            0.01            0.1                     1                      10
+                                                               Frequency (MHz)                                                                                Current (A)
+
+                          0.1535 ±0.003*                                                                        Packaging 1000/7″ reel; 3500/13″ reel Plastic tape: 12 mm wide,
+                           3,90 ±0,076                                                                          0.25 mm thick, 8 mm pocket spacing, 1.32 mm pocket depth
+                                                                                                                NOTE NEW PART ORIENTATION Parts are rotated 90° in the
+                                                                                                                packaging tape compared to previous versions of this product.
+                                                    0.1535 ±0.003*                Winding
+                                                     3,90 ±0,076                  direction                                                     NEW                            OLD
+                               XXX X
+                                                                                                                                          123   123   123                123   123     123
+                   Dash                  Internal
+                  number                   code                                Recommended
+                                                                                Land Pattern
+                                                    0.0433 ±0.004 *                0.105
+                                                      1,10 ±0,10                    2,66
+                                                                                   0.059
+                                                                                    1,50                        Coilcraft Designer’s Kit C392 contains samples of 0.56 µH to 33
+                                                                                                                µH parts (3 each) from LPS3008, LPS3010 and LPS3015. Kit C401
+                                                                                                                contains samples of 0.56 µH to 33 µH parts (3 each) from LPS4012
+                                                                                  0.0305                        and LPS4018. Kit C402 contains samples of 220 µH to 2200 µH
+                                                             0.110 0.045           0,775         0.153
+                                                                                                                parts (3 each) from all five series. For details of kit contents and to
+                                                              2,79 1,15                           3,89
+                                                                                                                order, contact Coilcraft or visit http://order.coilcraft.com.
+
+
+                                 0.060                                             0.129
+                                  1,52                                              3,28
+                                                                                   0.173
+              * Dimensions   are of the case not including
+                the termination. For maximum overall
+                                                                                    4,40
+                      dimensions including the termination, add
+                      0.005 in / 0,13 mm.
+                      For optional tin-lead and tin-silver-copper
+                      terminations, dimensions are for the
+                      mounted part. Dimensions before mounting
+                      can be an additional 0.005 inch / 0,13 mm).                                     inches
+                                                                                  Dimensions are in
+                                                                                                        mm
+
+
+             Packaging 1000/7″ reel; 3500/13″ reel Plastic tape: 12 mm wide,
+             0.25 mm thick, 8 mm pocket spacing, 1.32 mm pocket depth
+
+
+
+
+                                                                                                                                                               Document 433-2        Revised 10/01/19
+Mouser Electronics
+
+Authorized Distributor
+
+
+
+Click to View Pricing, Inventory, Delivery & Lifecycle Information:
+
+
+
+Coilcraft:
+ LPS4012-224MLB LPS4012-185MLB LPS4012-331MLB LPS4012-564MLB LPS4012-562MLB LPS4012-153MLB
+LPS4012-681MLB LPS4012-824MLB LPS4012-222MLC LPS4012-332MLC LPS4012-155MLB LPS4012-472MLC
+LPS4012-105MLC LPS4012-332MLB LPS4012-335MLC LPS4012-333MLC LPS4012-124MLC LPS4012-153MLC
+LPS4012-681MLC LPS4012-473MLC LPS4012-473MLB LPS4012-472MLB LPS4012-683MLC LPS4012-334MLB
+LPS4012-104MLB LPS4012-185MLC LPS4012-152MLC LPS4012-105MLB LPS4012-335MLB LPS4012-224MLC
+LPS4012-225MLC LPS4012-333MLB LPS4012-225MLB LPS4012-154MLB LPS4012-684MLB LPS4012-223MLC
+LPS4012-682MLC LPS4012-682MLB LPS4012-562MLC LPS4012-152MLB LPS4012-184MLB LPS4012-474MLB
+LPS4012-474MLC LPS4012-103MLB LPS4012-683MLB LPS4012-222MLB LPS4012-102NLB LPS4012-223MLB
+LPS4012-684MLC LPS4012-104MLC LPS4012-103MLC LPS4012-184MLC LPS4012-334MLC LPS4012-124MLB
+LPS4012-154MLC LPS4012-564MLC LPS4012-155MLC LPS4012-331MLC LPS4012-102NLC LPS4012-824MLC
+LPS4012-681MRC LPS4012-681MRB LPS4012-331MRB LPS4012-331MRC LPS4012-472MRB LPS4012-224MRB
+ LPS4012-224MRC LPS4012-334MRB LPS4012-562MRC LPS4012-103MRC LPS4012-684MRC LPS4012-
+824MRB LPS4012-103MRB LPS4012-333MRC LPS4012-225MRB LPS4012-683MRB LPS4012-824MRC
+LPS4012-184MRC LPS4012-562MRB LPS4012-564MRB LPS4012-564MRC LPS4012-682MRB LPS4012-105MRC
+ LPS4012-152MRB LPS4012-155MRB LPS4012-474MRC LPS4012-682MRC LPS4012-684MRB LPS4012-
+124MRB LPS4012-683MRC LPS4012-154MRC LPS4012-155MRC LPS4012-102NRB LPS4012-102NRC
+LPS4012-333MRB LPS4012-334MRC LPS4012-472MRC LPS4012-473MRB LPS4012-473MRC LPS4012-474MRB
+

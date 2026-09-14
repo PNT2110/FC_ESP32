@@ -1,0 +1,436 @@
+                                                                                                   SS12 – SS115
+                                                                                             Taiwan Semiconductor
+
+         1A, 20V - 150V Schottky Barrier Surface Mount Rectifier
+FEATURES                                                                                KEY PARAMETERS
+●   Low power loss, high efficiency                                          PARAMETER                 VALUE           UNIT
+●   Ideal for automated placement
+                                                                                        IF                 1            A
+●   Guard ring for overvoltage protection
+●   High surge current capability                                                    VRRM              20 - 150         V
+●   Moisture sensitivity level: level 1, per J-STD-020                                 IFSM               40            A
+●   RoHS Compliant
+                                                                                   TJ MAX              125, 150         °C
+●   Halogen-free
+                                                                                  Package              DO-214AC (SMA)
+
+APPLICATIONS                                                                  Configuration                Single die
+●   Switching mode power supply (SMPS)
+●   Adapters
+●   Monitor
+●   DC/DC converters
+●   TV
+
+MECHANICAL DATA
+●   Case: DO-214AC (SMA)
+●   Molding compound meets UL 94V-0 flammability rating
+●   Terminal: Matte tin plated leads, solderable per J-STD-002
+●   Meet JESD 201 class 2 whisker test
+                                                                                              DO-214AC (SMA)
+●   Polarity: Indicated by cathode band
+●   Weight: 0.060g (approximately)
+
+
+
+
+ABSOLUTE MAXIMUM RATINGS (TA = 25°C unless otherwise noted)
+PARAMETER                       SYMBOL SS12 SS13 SS14 SS15 SS16 SS19 SS110 SS115 UNIT
+Marking code on the device                   SS12 SS13 SS14 SS15 SS16 SS19                         SS110       SS115
+Repetitive peak reverse
+                                   VRRM       20         30       40   50         60          90    100         150      V
+voltage
+Reverse voltage, total rms
+                                  VR(RMS)     14         21       28   35         42          63    70          105      V
+value
+Forward current                     IF                                        1                                          A
+Peak forward surge current,
+8.3ms single half sine-wave        IFSM                                      40                                          A
+superimposed on rated load
+Critical rate of rise of off-
+                                  dV/dt                                     10,000                                      V/µs
+state voltage
+Junction temperature                TJ             - 55 to +125                         - 55 to +150                    °C
+Storage temperature                TSTG                                - 55 to +150                                     °C
+
+
+
+
+                                                              1                                                Version: R2305
+                                                                                     SS12 – SS115
+                                                                             Taiwan Semiconductor
+
+THERMAL PERFORMANCE
+ PARAMETER                                                      SYMBOL          TYP             UNIT
+ Junction-to-lead thermal resistance                             RӨJL               28           °C/W
+ Junction-to-ambient thermal resistance                          RӨJA               88           °C/W
+
+
+ELECTRICAL SPECIFICATIONS (TA = 25°C unless otherwise noted)
+ PARAMETER                                  CONDITIONS            SYMBOL      TYP        MAX     UNIT
+                                  SS12
+                                  SS13                                          -        0.50      V
+                                  SS14
+                                  SS15
+                                          IF = 1A, TJ = 25°C                    -        0.75      V
+                                  SS16
+                                  SS19
+                                                                                -        0.80      V
+                                  SS110
+                                  SS115                                         -        0.95      V
+ Forward voltage(1)                                                     VF
+                                  SS12
+                                  SS13                                          -        0.40      V
+                                  SS14
+                                  SS15
+                                          IF = 1A, TJ = 100°C                   -        0.65      V
+                                  SS16
+                                  SS19
+                                                                                -        0.70      V
+                                  SS110
+                                  SS115                                         -        0.85      V
+                                  SS12
+                                  SS13
+                                  SS14                                          -        200       μA
+                                  SS15
+                                          TJ = 25°C
+                                  SS16
+                                  SS19
+                                  SS110                                         -        100       μA
+                                  SS115
+                                  SS12
+                                  SS13                                          -         6       mA
+                                  SS14
+                                  SS15
+ Reverse current @ rated VR(2)            TJ = 100°C                    IR      -         5       mA
+                                  SS16
+                                  SS19
+                                  SS110                                         -         -       mA
+                                  SS115
+                                  SS12
+                                  SS13                                          -         -       mA
+                                  SS14
+                                  SS15
+                                          TJ = 125°C                            -         -       mA
+                                  SS16
+                                  SS19
+                                  SS110                                         -         2       mA
+                                  SS115
+Notes:
+1. Pulse test with PW = 0.3ms
+2. Pulse test with PW = 30ms
+
+
+
+
+                                                       2                                   Version: R2305
+                                                                    SS12 – SS115
+                                                              Taiwan Semiconductor
+
+ORDERING INFORMATION
+       ORDERING CODE(1)                        PACKAGE            PACKING
+               SS1x                          DO-214AC (SMA)    7,500 / Tape & Reel
+Notes:
+1. “x” defines voltage from 20V(SS12) to 150V(SS115)
+
+
+
+
+                                                       3                   Version: R2305
+                                                                                                                                                                                                                       SS12 – SS115
+                                                                                                                                                                                                            Taiwan Semiconductor
+
+CHARACTERISTICS CURVES
+(TA = 25°C unless otherwise noted)
+
+                                                               Fig.1 Forward Current Derating Curve                                                                             Fig.2 Typical Junction Capacitance
+
+                                                          2                                                                                                            1000
+
+
+
+
+                        AVERAGE FORWARD CURRENT (A)
+                                                                                                                      CAPACITANCE (pF)
+                                                                                                  SS15 - SS115                                                         100
+
+
+                                                          1
+
+                                                                                                                                                                         10         SS12-14
+                                                                                    SS12 - SS14                                                                                     SS15-16
+                                                                                                                                                                                    SS19-110                                  f=1.0MHz
+                                                                                                                                                                                    SS115                                     Vsig=50mVp-p
+                                                          0                                                                                                              1
+                                                              25         50         75     100       125        150                                                           0.1                       1                    10                 100
+
+                                                                              LEAD TEMPERATURE (°C)                                                                                                REVERSE VOLTAGE (V)
+
+
+                                                               Fig.3 Typical Reverse Characteristics                                                                           Fig.4 Typical Forward Characteristics
+
+
+
+
+ INSTANTANEOUS REVERSE CURRENT (μA)                                                                                                INSTANTANEOUS FORWARD CURRENT (A)
+                                                      10000                                                                                                             10
+                                                                   SS12-14          TJ=125°C                                                                                        SS12-14
+
+                                                       1000
+                                                                                                                                                                                           TJ=125°C
+                                                                                     TJ=100°C
+                                                        100                                                                                                              1           TJ=100°C                                                         (A)
+                                                                                                                                                                                                                              TJ=25°C
+
+                                                         10                                                                                                                                                                TJ=-55°C
+                                                                                     TJ=25°C
+                                                                                                                                                                                                                          Pulse width 300μs
+                                                                                                                                                                                                                          1% duty cycle
+                                                          1                                                                                                             0.1
+                                                              10    20   30    40    50   60    70   80    90   100                                                           0.1     0.2         0.3       0.4      0.5      0.6         0.7   0.8
+
+                                                               PERCENT OF RATED PEAK REVERSE VOLTAGE (%)                                                                                           FORWARD VOLTAGE (V)
+
+
+                                                               Fig.5 Typical Reverse Characteristics                                                                           Fig.6 Typical Forward Characteristics
+
+
+
+
+INSTANTANEOUS REVERSE CURRENT (μA)                                                                                          INSTANTANEOUS FORWARD CURRENT (A)
+                                                      10000                                                                                                             10
+                                                                   SS15-16          TJ=150°C                                                                                    SS15-16
+
+                                                       1000                                                                                                                                   TJ=150°C
+
+                                                                                    TJ=125°C
+                                                                                                                                                                                           TJ=125°C
+                                                        100
+                                                                                     TJ=100°C                                                                                        TJ=100°C                                                         (A)
+                                                                                                                                                                         1
+                                                         10
+                                                                                                                                                                                                                     TJ=25°C
+
+                                                          1                          TJ=25°C                                                                                                                      TJ=-55°C
+                                                                                                                                                                                                                          Pulse width 300μs
+                                                                                                                                                                                                                          1% duty cycle
+                                                        0.1                                                                                                             0.1
+                                                              10    20   30    40    50   60    70   80    90   100                                                           0.2    0.3    0.4     0.5     0.6     0.7     0.8     0.9     1   1.1
+                                                              PERCENT OF RATED PEAK REVERSE VOLTAGE (%)                                                                                        FORWARD VOLTAGE (V)
+
+
+
+
+                                                                                                                      4                                                                                                              Version: R2305
+                                                                                                                                                                                                                                SS12 – SS115
+                                                                                                                                                                                                                    Taiwan Semiconductor
+
+CHARACTERISTICS CURVES
+(TA = 25°C unless otherwise noted)
+
+                                               Fig.7 Typical Reverse Characteristics                                                                                                       Fig.8 Typical Forward Characteristics
+
+
+
+
+ INSTANTANEOUS REVERSE CURRENT (μA)
+                                      1000                                                                                                                                          10
+
+
+
+
+                                                                                                                                                INSTANTANEOUS FORWARD CURRENT (A)
+                                                  SS19-110                                          TJ=150°C                                                                                SS19-110
+
+                                       100                                                                                                                                                         TJ=150°C
+
+                                                                                                    TJ=125°C
+                                                                                                                                                                                            TJ=125°C
+                                        10
+                                                                                                    TJ=100°C
+                                                                                                                                                                                     1                                                                     (A)
+                                                                                                                                                                                                                         TJ=100°C
+                                         1
+                                                                                                                                                                                                                      TJ=25°C
+                                       0.1                                                          TJ=25°C                                                                                                         TJ=-55°C
+                                                                                                                                                                                                                                Pulse width 300μs
+                                                                                                                                                                                                                                1% duty cycle
+                                      0.01                                                                                                                                          0.1
+                                             10     20                                30    40      50   60    70   80   90   100                                                         0.3       0.5       0.7       0.9      1.1       1.3       1.5
+
+                                              PERCENT OF RATED PEAK REVERSE VOLTAGE (%)                                                                                                                     FORWARD VOLTAGE (V)
+
+
+                                               Fig.9 Typical Reverse Characteristics                                                                                                       Fig.10 Typical Forward Characteristics
+
+
+
+
+ INSTANTANEOUS REVERSE CURRENT (μA)                                                                                                         INSTANTANEOUS FORWARD CURRENT (A)
+                                      1000                                                                                                                                          10
+                                                   SS115                                            TJ=150°C                                                                                SS115
+                                       100
+                                                                                                                                                                                                      TJ=150°C
+                                        10                                                          TJ=125°C
+                                                                                                                                                                                                  TJ=125°C
+                                         1                                                          TJ=100°C                                                                         1                                                                     (A)
+
+                                                                                                                                                                                                 TJ=100°C                              TJ=25°C
+                                        0.1
+                                                                                                                                                                                                                                TJ=-55°C
+                                       0.01
+                                                                                                                                                                                                                                Pulse width 300μs
+                                                                                                    TJ=25°C                                                                                                                     1% duty cycle
+                                      0.001                                                                                                                                         0.1
+                                              10    20                                30    40      50   60    70   80   90   100                                                         0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9                 1      1.1 1.2
+                                              PERCENT OF RATED PEAK REVERSE VOLTAGE (%)                                                                                                                     FORWARD VOLTAGE (V)
+
+
+                                                                                                     Fig.11 Maximum Non-Repetitive Forward Surge Current
+
+                                                                                           50
+
+
+
+
+                                                     PEAK FORWARD SURGE CURRENT (A)
+                                                                                                                                                                                                8.3ms single half sine wave
+
+                                                                                           40
+
+
+                                                                                           30
+
+
+                                                                                           20
+
+
+                                                                                           10
+
+
+                                                                                           0
+                                                                                                1                                        10                                                                                     100
+                                                                                                                              NUMBER OF CYCLES AT 60 Hz
+
+
+                                                                                                                                        5                                                                                                 Version: R2305
+                                                                                                                 SS12 – SS115
+                                                                                                           Taiwan Semiconductor
+
+CHARACTERISTICS CURVES
+(TA = 25°C unless otherwise noted)
+
+                                                              Fig.12 Typical Transient Thermal Characteristics
+
+                                                    100
+
+
+
+
+               TRANSIENT THERMAL IMPEDANCE (°C/W)
+                                                    10
+
+
+
+
+                                                     1
+
+
+
+
+                                                    0.1
+                                                       0.01         0.1                 1           10           100
+
+                                                                             PULSE DURATION (s)
+
+
+
+
+                                                                                    6                                  Version: R2305
+                                                                                           SS12 – SS115
+                                                                                  Taiwan Semiconductor
+
+PACKAGE OUTLINE DIMENSIONS
+
+                                                   DO-214AC (SMA)
+
+                        0.13     C A B
+
+                                                                           C
+
+
+                                                                                      H
+   4    4.60                              5.33
+   5    4.06                              4.95
+
+                                                                                      1.58
+                                                                                      1.27
+         B                                                                               0.13    C A B
+                                 2.83
+               A                 2.29                 DETAIL A
+                                 4    5
+
+
+
+
+                        H                                         2.50
+                                                                  1.95
+                                                        2.30
+                                                        1.90
+                                                                                                 4.00
+             0.31                           0.20
+             0.15                           0.05                   C
+                                                                               1.60
+                 1.41                        SEATING
+                 0.75                          PLANE
+
+                            DETAIL A, ROTATED -90°                                        1.90
+                                     (SCALE 2:1)
+
+                                                                                SUGGESTED PAD
+                                                                                   LAYOUT
+
+                        CATHODE
+                        INDICATOR
+
+
+
+                P/N                                    NOTES: UNLESS OTHERWISE SPECIFIED
+                  GYWF                                   1. ALL DIMENSIONS ARE IN MILLIMETERS.
+                                                         2. DIMENSIONING AND TOLERANCING PER
+                                                             ASME Y14.5M-1994.
+
+       MARKING DIAGRAM                                   3. PACKAGE OUTLINE REFERENCE:
+                                                            JEDEC DO-214, VARIATION AC, ISSUE D.
+                                                         4       MOLDED PLASTIC BODY DIMENSIONS DO NOT
+       P/N = MARKING CODE                                        INCLUDE MOLD FLASH.
+       G = GREEN COMPOUND                                5       MOLDED PLASTIC BODY LATERAL DIMENSIONS
+       YW = DATE CODE                                            TO BE DETERMINED AT DATUM PLANE H.
+       F = FACTORY CODE                                  6. DWG NO. REF: HQ2SD07-DO214SMC-034 REV A.
+
+
+                                                             7                                    Version: R2305
+                                                                                                 SS12 – SS115
+                                                                                        Taiwan Semiconductor
+
+
+
+
+                                                       Notice
+Specifications of the products displayed herein are subject to change without notice. TSC or anyone on its behalf
+assumes no responsibility or liability for any errors or inaccuracies.
+
+Purchasers are solely responsible for the choice, selection, and use of TSC products and TSC assumes no liability
+for application assistance or the design of Purchasers’ products.
+
+Information contained herein is intended to provide a product description only. No license, express or implied, to
+any intellectual property rights is granted by this document. Except as provided in TSC’s terms and conditions of
+sale for such products, TSC assumes no liability whatsoever, and disclaims any express or implied warranty,
+relating to sale and/or use of TSC products including liability or warranties relating to fitness for a particular purpose,
+merchantability, or infringement of any patent, copyright, or other intellectual property right.
+
+The products shown herein are not designed for use in medical, life-saving, or life-sustaining applications.
+Customers using or selling these products for use in such applications do so at their own risk and agree to fully
+indemnify TSC for any damages resulting from such improper use or sale.
+
+                                                             8                                           Version: R2305
+
