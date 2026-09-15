@@ -1,0 +1,94 @@
+[
+  {
+    "uuid": "0915f903-41fd-497d-97ed-c08b31269bc1",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "18a33a6d-1dda-4446-a333-ce40d4d163c6",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "1ba812e0-3343-4359-b1c4-de8101a5294a",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "42664143-afc7-4add-b7f1-8fe005a43fb6",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "4acd6147-f373-4bd5-be89-018dfe8d0d07",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "60c5c1dc-aa73-4d99-a554-80e90648d0f9",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "6e3bfb84-103f-48ac-8d1c-13e9cf72efef",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "70435e8c-797e-4bd0-8531-759e98a7a887",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "768b382f-ce6c-439b-9b3d-41b3e00834b3",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "7c25d9f9-f80a-4438-ac4f-90cbe4f8c35a",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "7eff24e9-a70c-4abb-9197-1282e98ae23e",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "7f0057b6-3bd0-4792-ac79-886142743d7a",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "80381871-669e-4b2a-8710-952f7ce65eca",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "84028e52-05dc-48e0-9910-478e7f40e2b2",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "889a3bfc-d1d9-4f48-a30b-d57fd268cbdd",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "9ed84ba4-5f01-479e-8b7d-55cf644f1ae1",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "bb8c1804-8a2f-43bf-98b3-1afc832ae090",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "c628b722-dd07-468e-baca-667a05407637",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "c86a83d9-3cff-471c-a13f-c3c9096f6eaf",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "e0143245-03ee-4535-bc81-8937e70f8d66",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "e3eaddc9-1772-40b6-8650-58ef0a13bda3",
+    "net": "VBAT"
+  },
+  {
+    "uuid": "82c5540c-7432-413c-a3e2-ad7dfc8bd635",
+    "net": "PWM1"
+  },
+  {
+    "uuid": "cb01c464-386a-4033-bec9-e89d3ab5b249",
+    "net": "PWM1"
+  }
+]

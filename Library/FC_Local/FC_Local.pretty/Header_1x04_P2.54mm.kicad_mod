@@ -6,7 +6,7 @@
 	(property "Reference" ""
 		(at 0 0 0)
 		(layer "F.SilkS")
-		(uuid "e3ffb644-0007-4fe1-afc1-579a20848d78")
+		(uuid "b8edb5d9-8790-4064-8db3-f4c1153fa90a")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16,7 +16,7 @@
 	(property "Value" ""
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "4f3d77c2-d99f-469e-9696-a74735903dbc")
+		(uuid "3839efa4-0cd6-4149-a6fb-d5f8820d8e24")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -27,7 +27,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "045e0a49-41d5-40f7-81d2-01db0397cc3e")
+		(uuid "67fefa79-d71d-4991-b92a-b425bf189e30")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -38,7 +38,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "dffb9fd7-6765-46ac-adc0-8e617a77564b")
+		(uuid "1b2fda20-01eb-4ed0-944a-f75e7be95bc5")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -55,7 +55,7 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "90d62586-bb27-4ad9-9b94-388939fdb4cc")
+		(uuid "f1562e73-c7dc-459e-b121-94f74f3e22bc")
 	)
 	(fp_line
 		(start -5.33 1.52)
@@ -65,7 +65,7 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "db06d09f-9522-4b78-b527-722a8175ea3a")
+		(uuid "89bc4e83-dd2f-441a-b866-49b0711274c1")
 	)
 	(fp_line
 		(start 5.33 -1.52)
@@ -75,7 +75,7 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "118b2407-c7f4-4d98-8b88-f7a2653b0635")
+		(uuid "1f9294aa-8328-4e91-b398-c99b9d9e3bb0")
 	)
 	(fp_line
 		(start 5.33 1.52)
@@ -85,7 +85,7 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "0494c840-99d0-454b-beaa-0040bc2482e8")
+		(uuid "884bb2c9-e4fc-4834-8036-09f16b5aad54")
 	)
 	(pad "1" thru_hole roundrect
 		(at -3.81 0)
@@ -94,8 +94,9 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.2)
+		(solder_mask_margin 0)
 		(thermal_bridge_angle 45)
-		(uuid "7c1af66e-9166-4092-a414-386e7e176f7e")
+		(uuid "b235455e-b62f-4fb5-af47-05d89596fce5")
 	)
 	(pad "2" thru_hole roundrect
 		(at -1.27 0)
@@ -104,8 +105,9 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.2)
+		(solder_mask_margin 0)
 		(thermal_bridge_angle 45)
-		(uuid "6ab4a00a-9bf6-4d43-a14c-df12a1b76b06")
+		(uuid "1ec65425-f670-46d8-9cfd-a82b976056cc")
 	)
 	(pad "3" thru_hole roundrect
 		(at 1.27 0)
@@ -114,8 +116,9 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.2)
+		(solder_mask_margin 0)
 		(thermal_bridge_angle 45)
-		(uuid "a72e5aae-365a-45f1-a5f3-83829db3ff29")
+		(uuid "737d49e9-cb80-4c65-adea-180ca04c81fb")
 	)
 	(pad "4" thru_hole roundrect
 		(at 3.81 0)
@@ -124,8 +127,9 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.2)
+		(solder_mask_margin 0)
 		(thermal_bridge_angle 45)
-		(uuid "55125070-1e50-43ea-bcdc-07e57c1015af")
+		(uuid "234f88fe-c009-45a7-99c8-8941d77fc183")
 	)
 	(embedded_fonts no)
 	(model "/usr/share/kicad/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step"

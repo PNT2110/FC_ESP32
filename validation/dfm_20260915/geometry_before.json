@@ -1,0 +1,12 @@
+{
+  "board": "validation/dfm_20260915/before.kicad_pcb",
+  "mask_dams_below_0_1mm": [],
+  "back_silk_texts": [
+    "USB",
+    "1S ONLY",
+    "BAT+  BAT-",
+    "PNT"
+  ],
+  "track_count": 1416,
+  "footprints": 76
+}

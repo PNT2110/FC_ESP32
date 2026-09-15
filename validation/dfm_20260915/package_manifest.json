@@ -1,0 +1,17 @@
+{
+  "purpose": "DFM recheck only; not manufacturing release",
+  "pcb_sha256": "2a6920bc4e8653a59f1190030693dd4bb53099eccd5c49292ef21a443f4ce0e6",
+  "files": {
+    "FC_ESP32-F_Cu.gtl": "2674ee60e64fbf85ccb4143d9e245c2d02bd3dc2d6a0cef1cf89d67e15f727b9",
+    "FC_ESP32-B_Cu.gbl": "ab3031dc09fe7e393924acdbbcca8ba935a6f95a30afc54dd34be41b4b035057",
+    "FC_ESP32-F_Mask.gts": "ff2acdf9cfd995877e5ba1776bfa52d5d43a57af84c8e601c5fdfbe142d177b8",
+    "FC_ESP32-B_Mask.gbs": "163738c426343f56d0682dd54ff50468f82e1a1ba36d3c4ee7c99463ea344510",
+    "FC_ESP32-F_Silkscreen.gto": "5dec2cf291e3e165ae61711030ccd015578edecd923ee6bfec15d12bb32f30df",
+    "FC_ESP32-B_Silkscreen.gbo": "a5c72ff85a14a5efcd3ce2831bb37681cadf0326f9381baa01167eb13712ffde",
+    "FC_ESP32-F_Paste.gtp": "13e06533ff93c317e99e45868ae5617a40d13b871466a1312c4dec561d4f4a6f",
+    "FC_ESP32-Edge_Cuts.gm1": "f3120628c3790a3716a2558bc7ffae498c0479161820275d7dde7cfad7b2f6ab",
+    "FC_ESP32-PTH.drl": "b8df6016bee1aba881db61ec6d740867b3573bec3753ff3f34aecd366c58f55f",
+    "FC_ESP32-NPTH.drl": "8e1a2c845958c6676a8a12ee8730121a38fdc6a14a90437fe269da96c1a3a83c"
+  },
+  "zip_sha256": "1f12153a25ae2f051840e44a4e40296d5f0df45b5ea54314900f6e08fa7a0b08"
+}

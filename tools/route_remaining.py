@@ -65,14 +65,14 @@ def route(net,width):
     print('Copper bounds:',[(int(labels[j]),i,tuple(round(v,3) for v in g.bounds)) for j,(i,g) in enumerate(pieces)],flush=True)
     if count<=1:return False
     sh,motors=shape_board();safe=sh.buffer(-.25-width/2-.075)
-    safe=safe.difference(unary_union([Point(c).buffer(4.3+.25+width/2+.075) for c in motors])).difference(box(90.9,77.5,109.1,84.1))
+    safe=safe.difference(unary_union([Point(c).buffer(4.3+.25+width/2+.075) for c in motors])).difference(box(91,77.75,109,84.05).buffer(width/2+.05))
     inside=contains_xy(safe,xx,yy)
     clear=[];vc=[]
     for i in range(2):
         obs=unary_union([g for name,ls,g in data if name!=net and i in ls])
         clear.append(inside & ~contains_xy(obs.buffer(.15+width/2+.018),xx,yy))
         vc.append(inside & ~contains_xy(obs.buffer(.15+.3+.018),xx,yy))
-    clear=np.array(clear);viaok=vc[0]&vc[1]
+    clear=np.array(clear);viaok=vc[0]&vc[1] & ~contains_xy(box(91,77.75,109,84.05).buffer(.35),xx,yy)
     access=clear | np.array([viaok & clear[1],viaok & clear[0]])
     masks=[]
     for group in range(count):

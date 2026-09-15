@@ -79,7 +79,7 @@ for t in board.GetTracks():
  cut=g.intersection(antenna)
  if cut.area>1e-6:
   overlaps.append(cut);hits.append({'net':t.GetNetname(),'layer':layer,'uuid':t.m_Uuid.AsString(),'intersection_area_mm2':cut.area})
-(OUT/'antenna_audit.json').write_text(json.dumps({'passed':not hits,'antenna_bounds_mm':list(antenna.bounds),'overlap_union_area_mm2':unary_union(overlaps).area,'track_via_hits':hits,'note':'Existing U1 rule areas forbid tracks on F.Cu but allow B.Cu tracks; clean DRC does not prove all-layer antenna clearance.'},indent=2))
+(OUT/'antenna_audit.json').write_text(json.dumps({'passed':not hits,'antenna_bounds_mm':list(antenna.bounds),'overlap_union_area_mm2':unary_union(overlaps).area,'track_via_hits':hits,'note':'Track/via geometry audit inside U1 antenna envelope; audit_antenna.py additionally checks pads, filled zones and two-layer keepout.'},indent=2))
 fw=(ROOT/'firmware/main/main.c').read_text()
 pin_macros={'MOTOR1_PIN':25,'MOTOR2_PIN':26,'MOTOR3_PIN':27,'MOTOR4_PIN':33,'MPU_MISO_PIN':19,'MPU_MOSI_PIN':23,'MPU_CLK_PIN':18,'MPU_CS_PIN':21,'MPU_INT_PIN':34,'OPTFLOW_TX_PIN':17,'OPTFLOW_RX_PIN':16,'I2C_MASTER_SDA_IO':4,'I2C_MASTER_SCL_IO':22,'EXP_TX_PIN':14,'EXP_RX_PIN':32}
 for name,number in pin_macros.items():

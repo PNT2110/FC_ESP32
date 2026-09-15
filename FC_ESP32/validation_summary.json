@@ -1,22 +1,20 @@
 {
   "kicad_version": "10.0.6",
-  "date": "2026-09-15T02:43:19",
+  "date": "2026-09-15T04:53:46",
   "erc_violations": 0,
-  "drc_violations": 4,
+  "drc_violations": 0,
   "unconnected_items": 0,
   "schematic_parity_issues": 0,
-  "errors": 4,
-  "counts_by_type": {
-    "hole_clearance": 4
-  },
-  "electrical_checks_pass": false,
+  "errors": 0,
+  "counts_by_type": {},
+  "electrical_checks_pass": true,
   "manufacturing_release": false,
   "note": "DRC/ERC alone do not validate component ratings, current capacity, sensor cable orientation or flight behavior.",
   "sha256": {
-    "FC_ESP32/FC_ESP32.kicad_pcb": "5ec35a3b53d7775ff258953710880d5b71dcf4502375ffc64cd9f57436dfd607",
-    "FC_ESP32/FC_ESP32.kicad_pro": "52e126ea19ec2f1e6205bd318095dff688eb1646324bb1393b5c3a258477fc5b",
+    "FC_ESP32/FC_ESP32.kicad_pcb": "2a6920bc4e8653a59f1190030693dd4bb53099eccd5c49292ef21a443f4ce0e6",
+    "FC_ESP32/FC_ESP32.kicad_pro": "878c7f1fcd4cb4e84b405d2dab1f54639d8c1b6b9fb50257002f9cb6fb39931a",
     "FC_ESP32/FC_ESP32.kicad_sch": "bfe475bdc30aba87e188ebb814f05204f7824bd9cc2c20b4160e329e56d667ba",
-    "tools/build_fc.py": "68227d58c46c7215dbf7251cfdc360b6498b4a0700fecc28c6f86b116d80cf92",
+    "tools/build_fc.py": "d7d3bebc1cc6d587550874a0e4e581cfaa2f129e1aecb2f0899d0ac177a5b514",
     "tools/place_fc.py": "93d93832afb52c69605d371f212fa11781a8a55fab78e5eac99aa61251b0bea1"
   }
 }

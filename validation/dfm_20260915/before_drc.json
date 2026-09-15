@@ -1,0 +1,382 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-15T04:33:31",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "FC_ESP32.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+            "items": [
+                {
+                    "description": "Pad A1 [GND] of J1 on F.Cu",
+                    "pos": {
+                        "x": 96.8,
+                        "y": 112.32
+                    },
+                    "uuid": "1f039eca-8b89-417a-8998-4d518633a629"
+                },
+                {
+                    "description": "NPTH pad of J1",
+                    "pos": {
+                        "x": 97.11,
+                        "y": 113.395
+                    },
+                    "uuid": "78954c05-e0fb-4c1e-a9c1-dbefe2e39224"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+            "items": [
+                {
+                    "description": "Pad B12 [GND] of J1 on F.Cu",
+                    "pos": {
+                        "x": 96.8,
+                        "y": 112.32
+                    },
+                    "uuid": "4eae501a-5a95-45c5-81df-672e46e9d020"
+                },
+                {
+                    "description": "NPTH pad of J1",
+                    "pos": {
+                        "x": 97.11,
+                        "y": 113.395
+                    },
+                    "uuid": "78954c05-e0fb-4c1e-a9c1-dbefe2e39224"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of H4",
+                    "pos": {
+                        "x": 66.599999,
+                        "y": 133.4
+                    },
+                    "uuid": "575871c9-d648-44b1-9cad-4c9dc45cb154"
+                },
+                {
+                    "description": "Zone [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 67.739293,
+                        "y": 126.46243
+                    },
+                    "uuid": "403802f2-8828-475f-ad00-07d513687ef2"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of J1",
+                    "pos": {
+                        "x": 97.11,
+                        "y": 113.395
+                    },
+                    "uuid": "78954c05-e0fb-4c1e-a9c1-dbefe2e39224"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 67.739293,
+                        "y": 126.46243
+                    },
+                    "uuid": "067af83a-824c-4979-a5fc-6423f62a9390"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of H3",
+                    "pos": {
+                        "x": 133.4,
+                        "y": 133.4
+                    },
+                    "uuid": "c00370ab-9cd6-45ad-817b-095eb082f559"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 67.739293,
+                        "y": 126.46243
+                    },
+                    "uuid": "067af83a-824c-4979-a5fc-6423f62a9390"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of H1",
+                    "pos": {
+                        "x": 66.599999,
+                        "y": 66.599999
+                    },
+                    "uuid": "ae635f67-e85e-471b-b16e-f73bf87e3200"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 67.739293,
+                        "y": 126.46243
+                    },
+                    "uuid": "067af83a-824c-4979-a5fc-6423f62a9390"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of J1",
+                    "pos": {
+                        "x": 97.11,
+                        "y": 113.395
+                    },
+                    "uuid": "78954c05-e0fb-4c1e-a9c1-dbefe2e39224"
+                },
+                {
+                    "description": "Zone [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 67.739293,
+                        "y": 126.46243
+                    },
+                    "uuid": "403802f2-8828-475f-ad00-07d513687ef2"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+            "items": [
+                {
+                    "description": "Pad B1 [GND] of J1 on F.Cu",
+                    "pos": {
+                        "x": 103.2,
+                        "y": 112.32
+                    },
+                    "uuid": "a3a5fe9d-942b-4998-94db-706e98b06f67"
+                },
+                {
+                    "description": "NPTH pad of J1",
+                    "pos": {
+                        "x": 102.89,
+                        "y": 113.395
+                    },
+                    "uuid": "ff9c346d-f553-4198-8775-8216ec874424"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of H1",
+                    "pos": {
+                        "x": 66.599999,
+                        "y": 66.599999
+                    },
+                    "uuid": "ae635f67-e85e-471b-b16e-f73bf87e3200"
+                },
+                {
+                    "description": "Zone [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 67.739293,
+                        "y": 126.46243
+                    },
+                    "uuid": "403802f2-8828-475f-ad00-07d513687ef2"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of H3",
+                    "pos": {
+                        "x": 133.4,
+                        "y": 133.4
+                    },
+                    "uuid": "c00370ab-9cd6-45ad-817b-095eb082f559"
+                },
+                {
+                    "description": "Zone [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 67.739293,
+                        "y": 126.46243
+                    },
+                    "uuid": "403802f2-8828-475f-ad00-07d513687ef2"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+            "items": [
+                {
+                    "description": "Pad A12 [GND] of J1 on F.Cu",
+                    "pos": {
+                        "x": 103.2,
+                        "y": 112.32
+                    },
+                    "uuid": "c338105d-7d07-4c07-8a37-d2131620e97e"
+                },
+                {
+                    "description": "NPTH pad of J1",
+                    "pos": {
+                        "x": 102.89,
+                        "y": 113.395
+                    },
+                    "uuid": "ff9c346d-f553-4198-8775-8216ec874424"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of H2",
+                    "pos": {
+                        "x": 133.4,
+                        "y": 66.599999
+                    },
+                    "uuid": "b42f0d46-69b2-4cb6-8316-a63a1e74bdc4"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 67.739293,
+                        "y": 126.46243
+                    },
+                    "uuid": "067af83a-824c-4979-a5fc-6423f62a9390"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of J1",
+                    "pos": {
+                        "x": 102.89,
+                        "y": 113.395
+                    },
+                    "uuid": "ff9c346d-f553-4198-8775-8216ec874424"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 67.739293,
+                        "y": 126.46243
+                    },
+                    "uuid": "067af83a-824c-4979-a5fc-6423f62a9390"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of H2",
+                    "pos": {
+                        "x": 133.4,
+                        "y": 66.599999
+                    },
+                    "uuid": "b42f0d46-69b2-4cb6-8316-a63a1e74bdc4"
+                },
+                {
+                    "description": "Zone [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 67.739293,
+                        "y": 126.46243
+                    },
+                    "uuid": "403802f2-8828-475f-ad00-07d513687ef2"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1505 mm)",
+            "items": [
+                {
+                    "description": "NPTH pad of J1",
+                    "pos": {
+                        "x": 102.89,
+                        "y": 113.395
+                    },
+                    "uuid": "ff9c346d-f553-4198-8775-8216ec874424"
+                },
+                {
+                    "description": "Zone [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 67.739293,
+                        "y": 126.46243
+                    },
+                    "uuid": "403802f2-8828-475f-ad00-07d513687ef2"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        }
+    ]
+}

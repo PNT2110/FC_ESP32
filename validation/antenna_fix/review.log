@@ -1,0 +1,15 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+{
+  "connectivity_pass": true,
+  "antenna_pass": true,
+  "automated_checks_pass": true,
+  "independently_checked_pad_instances": 135,
+  "all_pad_instances_logged": 279,
+  "errors": [],
+  "explicit_uncertainties": [
+    "MPU6500 exposed pad 25 is not a numbered signal in the local datasheet; grounded in design, assembly guidance still required.",
+    "Pin connectivity does not prove power integrity, assembly fit, motor current or stable flight."
+  ]
+}

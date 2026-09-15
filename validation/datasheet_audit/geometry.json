@@ -182,7 +182,7 @@
       ]
     },
     "PWM1": {
-      "total_segment_length_mm": 47.27768897799281,
+      "total_segment_length_mm": 46.9775047575068,
       "widths_mm": [
         0.18
       ]
@@ -272,7 +272,7 @@
       ]
     },
     "VBAT": {
-      "total_segment_length_mm": 209.7234240548333,
+      "total_segment_length_mm": 208.94634252681624,
       "widths_mm": [
         0.4,
         1.2

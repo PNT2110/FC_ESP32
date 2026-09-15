@@ -6,7 +6,7 @@
 	(property "Reference" ""
 		(at 0 0 0)
 		(layer "F.SilkS")
-		(uuid "79de983d-81aa-458b-bf03-96b0dbc7f622")
+		(uuid "5573171a-5cef-43fc-bea0-1032b99573d1")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16,7 +16,7 @@
 	(property "Value" ""
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "1172320f-da81-400a-a295-7e217a94281c")
+		(uuid "68bce872-8081-4459-85d7-ed867134c5f9")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -27,7 +27,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c3bdc286-df3f-4588-97aa-7e5a1ea5427c")
+		(uuid "05e1e43b-05f9-4b8f-8b1b-9276297a5b8c")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -38,7 +38,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d5aa62e4-25a1-43c9-bc4a-9b42740d2c62")
+		(uuid "648d2db1-7038-4fba-adfb-8f43c7a75dec")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -52,16 +52,18 @@
 		(size 1.5 3.8)
 		(layers "F.Cu" "F.Mask")
 		(roundrect_rratio 0.2)
+		(solder_mask_margin 0)
 		(thermal_bridge_angle 45)
-		(uuid "611cd251-8a6b-49a6-8fe9-aa27e27190df")
+		(uuid "7ea2e2ff-e51f-4935-a312-bebace37944e")
 	)
 	(pad "2" smd roundrect
 		(at 1.5 0)
 		(size 1.5 3.8)
 		(layers "F.Cu" "F.Mask")
 		(roundrect_rratio 0.2)
+		(solder_mask_margin 0)
 		(thermal_bridge_angle 45)
-		(uuid "266dc164-d3a4-4738-9bdc-0ae6339aeec0")
+		(uuid "7998599d-62e3-4e17-b094-51473a68ec07")
 	)
 	(embedded_fonts no)
 	(model "/usr/share/kicad/3dmodels/Inductor_SMD.3dshapes/L_APV_ANR4012.step"

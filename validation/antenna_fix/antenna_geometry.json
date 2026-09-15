@@ -1,0 +1,13 @@
+{
+  "pcb_sha256": "2a6920bc4e8653a59f1190030693dd4bb53099eccd5c49292ef21a443f4ce0e6",
+  "passed": true,
+  "keepout_enforced_both_layers": true,
+  "antenna_bounds_mm": [
+    91.0,
+    77.75,
+    109.0,
+    84.05
+  ],
+  "copper_hits": [],
+  "scope": "Nominal copper envelope check, not RF range or antenna tuning validation."
+}

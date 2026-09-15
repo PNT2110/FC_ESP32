@@ -1,0 +1,9 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+PWM1 islands 2
+Copper bounds: [(0, 0, (98.214, 87.749, 102.699, 88.351)), (0, 0, (90.499, 96.082, 95.359, 97.121)), (1, 0, (74.379, 77.039, 84.032, 80.104)), (0, 1, (94.757, 87.749, 102.699, 96.683)), (0, 1, (98.214, 87.749, 98.816, 88.351)), (1, 1, (83.43, 79.502, 87.397, 83.469))]
+Accessible grid points: [np.int64(8819), np.int64(5537)]
+Added 103 segments; cost 12.787184335382374
+PWM1 islands 1
+Copper bounds: [(0, 0, (98.214, 87.749, 102.699, 88.351)), (0, 0, (90.499, 96.082, 95.359, 97.121)), (0, 0, (74.379, 77.039, 84.032, 80.104)), (0, 1, (94.757, 87.749, 102.699, 96.683)), (0, 1, (83.43, 79.502, 98.816, 88.351))]

@@ -1,3 +1,5 @@
+> Cập nhật 15/09/2026: đã sửa đường VBAT/PWM1 xâm lấn antenna; kiểm tra độc lập cả hai lớp không còn track/via/pad/zone trong vùng antenna. ERC/DRC và kiểm tra đồng nhất schematic/PCB sạch. Chi tiết mới nhất: [log sửa antenna](validation/antenna_fix/BAO_CAO.md). Các nhận xét antenna chưa đạt ở nội dung cũ bên dưới là kết quả trước đợt sửa này.
+
 # Báo cáo đối chiếu datasheet, sơ đồ, PCB, 3D và firmware FC_ESP32
 
 Ngày kiểm tra: 14/09/2026. Công cụ: KiCad 10.0.6, Python/pcbnew, kiểm tra mã C trên host với AddressSanitizer và UndefinedBehaviorSanitizer.

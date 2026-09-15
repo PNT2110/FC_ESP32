@@ -1,0 +1,31 @@
+Found 0 violations
+Saved ERC Report to /home/pnt/FC_ESP32/FC_ESP32/erc_current.json
+Found 0 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to /home/pnt/FC_ESP32/FC_ESP32/drc_current.json
+{
+  "kicad_version": "10.0.6",
+  "date": "2026-09-15T04:40:02",
+  "erc_violations": 0,
+  "drc_violations": 0,
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "errors": 0,
+  "counts_by_type": {},
+  "electrical_checks_pass": true,
+  "manufacturing_release": false,
+  "note": "DRC/ERC alone do not validate component ratings, current capacity, sensor cable orientation or flight behavior."
+}
+Plotted to '/home/pnt/FC_ESP32/FC_ESP32/dfm_recheck/FC_ESP32-F_Cu.gtl'.
+Plotted to '/home/pnt/FC_ESP32/FC_ESP32/dfm_recheck/FC_ESP32-B_Cu.gbl'.
+Plotted to '/home/pnt/FC_ESP32/FC_ESP32/dfm_recheck/FC_ESP32-F_Paste.gtp'.
+Plotted to '/home/pnt/FC_ESP32/FC_ESP32/dfm_recheck/FC_ESP32-F_Silkscreen.gto'.
+Plotted to '/home/pnt/FC_ESP32/FC_ESP32/dfm_recheck/FC_ESP32-B_Silkscreen.gbo'.
+Plotted to '/home/pnt/FC_ESP32/FC_ESP32/dfm_recheck/FC_ESP32-F_Mask.gts'.
+Plotted to '/home/pnt/FC_ESP32/FC_ESP32/dfm_recheck/FC_ESP32-B_Mask.gbs'.
+Plotted to '/home/pnt/FC_ESP32/FC_ESP32/dfm_recheck/FC_ESP32-Edge_Cuts.gm1'.
+Created file '/home/pnt/FC_ESP32/FC_ESP32/dfm_recheck/FC_ESP32-PTH.drl'
+Created file '/home/pnt/FC_ESP32/FC_ESP32/dfm_recheck/FC_ESP32-NPTH.drl'
+Done.
+/home/pnt/FC_ESP32/FC_ESP32/FC_ESP32_DFM_RECHECK.zip

@@ -112,7 +112,7 @@ def local_fp(name, source, model=None):
     if fp is None: raise ValueError(source)
     fp.SetFPID(pcb.LIB_ID('FC_Local', name))
     for pad in fp.Pads():
-        pad.SetLocalSolderMaskMargin(mm(0.04))
+        pad.SetLocalSolderMaskMargin(0)
         if pad.GetAttribute() == pcb.PAD_ATTRIB_NPTH: pad.SetNumber('')
     if model:
         fp.Models().clear()
@@ -380,25 +380,93 @@ def shape_board():
     return sh,motor
 
 def finish_fp_artwork(fp):
-    if str(fp.GetFPID().GetLibItemName()) in ('CH340C','MMBT3904','SS16'):
-        for item in fp.GraphicalItems():
-            if isinstance(item,pcb.PCB_SHAPE) and item.GetLayer()==pcb.F_SilkS and item.GetShape()==pcb.SHAPE_T_CIRCLE:
+    # 1:1 copper/mask apertures for LDI; do not enlarge fine-pitch openings.
+    for pad in fp.Pads():
+        pad.SetLocalSolderMaskMargin(0)
+        if str(fp.GetFPID().GetLibItemName()) == 'USB_C':
+            if pad.GetNumber() in ('A1','A12','B1','B12'):
+                # Same 0.6 x 1.15 mm bounds, increased corner radius 0.15 -> 0.24.
+                pad.SetRoundRectRadiusRatio(.4)
+            if pad.GetAttribute()==pcb.PAD_ATTRIB_NPTH:pad.SetLocalClearance(mm(.2))
+    for item in fp.GraphicalItems():
+        if isinstance(item,pcb.PCB_SHAPE) and item.GetLayer()==pcb.F_SilkS:
+            item.SetWidth(max(item.GetWidth(), mm(.15)))
+            if str(fp.GetFPID().GetLibItemName()) in ('R_0402_1005Metric','C_0402_1005Metric'):
+                item.SetLayer(pcb.F_Fab)
+            if str(fp.GetFPID().GetLibItemName()) in ('CH340C','MMBT3904','SS16','MPU6500') and item.GetShape()==pcb.SHAPE_T_CIRCLE:
                 item.SetLayer(pcb.F_Fab)
 
+def enforce_antenna_keepout(b):
+    # U1 antenna envelope, valid for the fixed placement in place_fc.py.
+    name='ESP32_ANTENNA_ALL_COPPER'
+    zone=next((z for z in b.Zones() if z.GetZoneName()==name),None)
+    if zone is None:
+        zone=pcb.ZONE(b);zone.SetZoneName(name);zone.SetIsRuleArea(True)
+        zone.SetLayerSet(layers(pcb.F_Cu,pcb.B_Cu))
+        polygon=zone.Outline();polygon.NewOutline()
+        for x,y in [(91,77.75),(109,77.75),(109,84.05),(91,84.05)]:polygon.Append(mm(x),mm(y))
+        b.Add(zone)
+    zone.SetDoNotAllowTracks(True);zone.SetDoNotAllowVias(True)
+    zone.SetDoNotAllowPads(True);zone.SetDoNotAllowZoneFills(True)
+    zone.SetDoNotAllowFootprints(False) # The module itself covers its antenna.
+
 def finish_artwork(b):
-    for item in list(b.GetDrawings()):
-        if isinstance(item,pcb.PCB_TEXT) and item.GetText() == 'FC ESP32 / A':
-            item.SetText('PNT')
-            item.SetTextSize(vec(2,2))
-            item.SetTextThickness(mm(.3))
-            item.SetLayer(pcb.B_SilkS)
-            item.SetMirrored(True)
+    enforce_antenna_keepout(b)
+    from shapely.geometry import Polygon
+    # Move obsolete rear legends to documentation; leave exactly one rear PNT.
+    pnt = None
+    for item in b.GetDrawings():
+        if isinstance(item,pcb.PCB_TEXT):
+            if item.GetText() in ('FC ESP32 / A','PNT') and pnt is None:
+                pnt=item; item.SetText('PNT'); item.SetPosition(vec(100,111))
+                item.SetTextSize(vec(2,2)); item.SetTextThickness(mm(.3))
+                item.SetLayer(pcb.B_SilkS); item.SetMirrored(True)
+            elif item.GetLayer()==pcb.B_SilkS or item.GetText() in ('1S ONLY','BAT+  BAT-','USB'):
+                item.SetLayer(pcb.Dwgs_User)
+    if pnt is None:
+        pnt=pcb.PCB_TEXT(b);pnt.SetText('PNT');pnt.SetPosition(vec(100,111))
+        pnt.SetTextSize(vec(2,2));pnt.SetTextThickness(mm(.3))
+        pnt.SetLayer(pcb.B_SilkS);pnt.SetMirrored(True);b.Add(pnt)
+    masks=[]
     for fp in b.GetFootprints():
         finish_fp_artwork(fp)
-        for field in fp.GetFields():
+        for field in (fp.Reference(), fp.Value()):
             if field.GetLayer()==pcb.B_SilkS:field.SetVisible(False)
-        for item in list(fp.GraphicalItems()):
-            if isinstance(item,pcb.PCB_TEXT) and item.GetLayer()==pcb.B_SilkS:fp.Remove(item)
+        for pad in fp.Pads():
+            if pad.GetAttribute()==pcb.PAD_ATTRIB_NPTH:
+                pad.SetLocalClearance(mm(.2 if fp.GetReference()=='J1' else .25))
+            if pad.IsOnLayer(pcb.F_Mask):
+                poly=pad.GetEffectivePolygon(pcb.F_Cu)
+                for i in range(poly.OutlineCount()):
+                    chain=poly.COutline(i)
+                    points=[(pcb.ToMM(chain.CPoint(j).x),pcb.ToMM(chain.CPoint(j).y)) for j in range(chain.PointCount())]
+                    if len(points)>2:masks.append(Polygon(points))
+    forbidden=unary_union(masks).buffer(.15)
+    # Clip line silk against every pad, including neighbouring footprints.
+    for fp in b.GetFootprints():
+        additions=[]
+        for item in fp.GraphicalItems():
+            if isinstance(item,pcb.PCB_SHAPE) and item.GetLayer()==pcb.F_SilkS:
+                if item.GetShape()==pcb.SHAPE_T_SEGMENT:
+                    start,end=item.GetStart(),item.GetEnd()
+                    line=LineString([(pcb.ToMM(start.x),pcb.ToMM(start.y)),(pcb.ToMM(end.x),pcb.ToMM(end.y))])
+                    clipped=line.difference(forbidden.buffer(pcb.ToMM(item.GetWidth())/2))
+                    if not clipped.equals(line):
+                        item.SetLayer(pcb.F_Fab)
+                        for part in getattr(clipped,'geoms',[clipped]):
+                            if part.geom_type=='LineString' and part.length>=.15:
+                                g=pcb.PCB_SHAPE(fp);g.SetShape(pcb.SHAPE_T_SEGMENT)
+                                g.SetStart(vec(*part.coords[0]));g.SetEnd(vec(*part.coords[-1]))
+                                g.SetWidth(item.GetWidth());g.SetLayer(pcb.F_SilkS);additions.append(g)
+        for item in additions:fp.Add(item)
+    b.GetDesignSettings().m_SolderMaskExpansion=0
+    b.GetDesignSettings().m_SolderMaskMinWidth=mm(.1)
+    b.GetPlotOptions().SetSubtractMaskFromSilk(True)
+    for item in b.GetTracks():
+        if isinstance(item,pcb.PCB_VIA):
+            item.SetFrontTentingMode(pcb.TENTING_MODE_TENTED)
+            item.SetBackTentingMode(pcb.TENTING_MODE_TENTED)
+    pcb.ZONE_FILLER(b).Fill(b.Zones())
 
 def pcb_board():
     b=pcb.BOARD(); b.SetCopperLayerCount(2); b.GetDesignSettings().SetBoardThickness(mm(.8))
@@ -438,12 +506,18 @@ def pcb_board():
     d = _m.hypot(motors[0][0]-motors[1][0], motors[0][1]-motors[1][1])
     (OUT/'mechanical.json').write_text(json.dumps(dict(outline_mm=coords,motors_mm=motors,hole_diameter_mm=8.6,prop_diameter_mm=40,nearest_pitch_mm=round(d,1),thickness_mm=.8,fr4_area_mm2=sh.area-4*math.pi*4.3**2,estimated_fr4_g=(sh.area-4*math.pi*4.3**2)*.8*.00185),indent=2)+'\n')
 
+def write_fabrication_rules():
+    # GCT layout has 0.1944 mm at roundrect corners. Radius correction gives
+    # >0.21 mm; apply the fabricator's 0.20 mm limit only inside this connector.
+    (OUT/'FC_ESP32.kicad_dru').write_text('(version 1)\n(rule "General hole clearance" (constraint hole_clearance (min 0.25mm)))\n(rule "USB4105 internal NPTH clearance - JLC 0.20mm"\n (condition "A.memberOfFootprint(\'J1\') && B.memberOfFootprint(\'J1\')")\n (constraint hole_clearance (min 0.20mm)))\n')
+
 def project():
+    write_fabrication_rules()
     classes=[]
     for name,width in [('Default',.18),('LogicPower',.4),('MotorPower',.8),('Battery',1.2)]:
         classes.append(dict(name=name,clearance=.15,track_width=width,via_diameter=.6,via_drill=.3,microvia_diameter=.3,microvia_drill=.1,diff_pair_width=.18,diff_pair_gap=.18,diff_pair_via_gap=.25))
     patterns=[dict(netclass='Battery',pattern='VBAT'),dict(netclass='MotorPower',pattern='M*_NEG'),dict(netclass='MotorPower',pattern='BUCK_L*'),dict(netclass='LogicPower',pattern='+*'),dict(netclass='LogicPower',pattern='VSYS'),dict(netclass='LogicPower',pattern='BOOST_SW'),dict(netclass='LogicPower',pattern='VBUS')]
-    data=dict(meta=dict(filename='FC_ESP32.kicad_pro',version=1),board=dict(design_settings=dict(rules=dict(min_clearance=.15,min_track_width=.15,min_via_diameter=.55,min_through_hole_diameter=.3,min_copper_edge_clearance=.25,min_hole_clearance=.25,min_silk_clearance=.1,min_silk_text_height=.6,min_silk_text_thickness=.1,min_solder_mask_sliver=.075))),net_settings=dict(classes=classes,netclass_patterns=patterns,meta=dict(version=4)))
+    data=dict(meta=dict(filename='FC_ESP32.kicad_pro',version=1),board=dict(design_settings=dict(rules=dict(min_clearance=.15,min_track_width=.15,min_via_diameter=.55,min_through_hole_diameter=.3,min_copper_edge_clearance=.25,min_hole_clearance=.2,min_silk_clearance=.1,min_silk_text_height=.6,min_silk_text_thickness=.1,min_solder_mask_sliver=.1))),net_settings=dict(classes=classes,netclass_patterns=patterns,meta=dict(version=4)))
     (OUT/'FC_ESP32.kicad_pro').write_text(json.dumps(data,indent=2)+'\n')
 
 def bom():
@@ -458,6 +532,11 @@ def bom():
 
 if __name__=='__main__':
     if '--finish-artwork' in sys.argv:
+        write_fabrication_rules()
+        project_path=OUT/'FC_ESP32.kicad_pro'
+        settings=json.loads(project_path.read_text())
+        settings['board']['design_settings']['rules'].update(min_hole_clearance=.2,min_solder_mask_sliver=.1,min_silk_text_thickness=.15)
+        project_path.write_text(json.dumps(settings,indent=2)+'\n')
         for path in PRETTY.glob('*.kicad_mod'):
             footprint=pcb.FootprintLoad(str(PRETTY),path.stem)
             finish_fp_artwork(footprint)

@@ -1,0 +1,9 @@
+{
+  "board": "FC_ESP32/FC_ESP32.kicad_pcb",
+  "mask_dams_below_0_1mm": [],
+  "back_silk_texts": [
+    "PNT"
+  ],
+  "track_count": 1416,
+  "footprints": 76
+}
